@@ -1,0 +1,33 @@
+@use "sass:map";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import "variables";
+@import "mixins";
+@import "components/breadcrumb";
+@import "components/sections";
+@import "components/buttons";
+@import "components/pagination";
+@import "reset";
+
+body {
+  font-family: $fontMontserrat;
+  background-color: map.get($colors, "white");
+}
+
+.wrapper {
+  color: map.get($colors, "black");
+  padding: map.get($sizes, "lg") 0;
+}
+
+.main{
+  &--header {
+    margin-top: 2rem;
+    font-size: map.get($sizes, "xl");
+  }
+  &--subheader {
+    font-size: map.get($sizes, "base");
+  }
+  &--line {
+    opacity: 0.25;
+    margin: map.get($sizes, "base") 0;
+  }
+}

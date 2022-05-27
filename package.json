@@ -1,0 +1,11 @@
+{
+	"name": "ep-html-components",
+	"version": "1.0.0",
+	"description": "",
+	"main": "script.js",
+	"scripts": {
+		"build:sass": "sass --watch css/base.scss style.css"
+	},
+	"author": "",
+	"license": "ISC"
+}

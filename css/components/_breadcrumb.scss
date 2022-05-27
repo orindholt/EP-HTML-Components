@@ -1,0 +1,8 @@
+.breadcrumb {
+  font-size: map.get($sizes, "sm");
+  font-weight: 600;
+  color: map.get($colors, "darkGray");
+  &--current {
+    color: map.get($colors, "orange");
+  }
+}
