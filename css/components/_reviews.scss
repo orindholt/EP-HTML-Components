@@ -1,0 +1,45 @@
+.section-reviews {
+  &--header {
+    margin-bottom: map.get($sizes, "sm");
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($sizes, "xs");
+  }
+  .review {
+    background-color: map.get($colors, "gray");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: map.get($sizes, "md");
+    padding: map.get($sizes, "lg") map.get($sizes, "sm");
+    @include query(map.get($screens, "sm")){
+      flex-direction: row;
+    }
+    &--flex {
+      display: flex;
+      align-items: center;
+      gap: map.get($sizes, "md");
+    }
+    &--user {
+      &--content {
+        height: map.get($sizes, "full");
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      &--icon {
+        border-radius: map.get($rounded, "full");
+        min-height: 50px;
+        min-width: 50px;
+        max-height: 50px;
+        max-width: 50px;
+        background-color: map.get($colors, "darkGray");
+      }
+      &--rating {
+        color: map.get($colors, "orange");
+      }
+    }
+  }
+}

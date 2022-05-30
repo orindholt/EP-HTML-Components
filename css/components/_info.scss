@@ -1,0 +1,10 @@
+.section-info {
+  margin-top: map.get($sizes, "6xl");
+  &--header {
+    margin: map.get($sizes, "lg") 0;
+  }
+  &--paragraph {
+    margin-top: map.get($sizes, "sm");
+    font-weight: 500;
+  }
+}

@@ -50,25 +50,6 @@
 					</button>
 					<!-- Filter section -->
 					<div class="section-filters-menu" data-id="menu">
-						<!-- <ul class="section-filters--list">
-							<li class="section-filters--item">
-								NoLimit City
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="12px"
-									height="12px"
-									viewBox="0 0 32 32"
-									id="Outlined"
-								>
-									<title />
-									<g id="Fill" fill="currentColor">
-										<polygon
-											points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"
-										/>
-									</g>
-								</svg>
-							</li>
-						</ul> -->
 						<!-- Clear Filters Button -->
 						<button
 							type="button"
@@ -97,44 +78,150 @@
 				</section>
 				<!-- Product Card Section -->
 				<section class="section section-cards">
-					<!-- Product Card -->
-					<article class="section-cards--item card">
-						<div class="card--section card--section-one">
-							<p class="card--type">
-								Welcome offer <a href="#" class="card--type--link">T&C</a>
-							</p>
-							<h3 class="card--price">€300</h3>
-							<h4 class="card--offer">120% up to €300 + 120 free spins</h4>
-						</div>
-						<h4 class="card--bonus">
-							EP Bonus<br /><span class="card--bonus--value">N/A</span>
-						</h4>
-						<div class="card--logo"></div>
-						<div class="card--section card--section-two">
-							<a class="card--play" href="#">Play now</a>
-							<a class="card--review" href="#">Read full review</a>
-						</div>
-					</article>
-					<!-- Product Card End -->
-					<!-- Product Card -->
-					<article class="section-cards--item card">
-						<div class="card--section card--section-one">
-							<p class="card--type">
-								Welcome offer <a href="#" class="card--type--link">T&C</a>
-							</p>
-							<h3 class="card--price">€300</h3>
-							<h4 class="card--offer">120% up to €300 + 120 free spins</h4>
-						</div>
-						<h4 class="card--bonus">
-							EP Bonus<br /><span class="card--bonus--value">N/A</span>
-						</h4>
-						<div class="card--logo"></div>
-						<div class="card--section card--section-two">
-							<a class="card--play" href="#">Play now</a>
-							<a class="card--review" href="#">Read full review</a>
-						</div>
-					</article>
-					<!-- Product Card End -->
+					<!-- Product View Toggle -->
+					<!-- <div class="section-cards--view">
+						<button
+							type="button"
+							class="button-view"
+							data-id="view-button"
+							data-type="grid"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="32px"
+								height="32px"
+								viewBox="0 0 32 32"
+								fill="currentColor"
+							>
+								<title />
+								<g data-name="67-menu" id="_67-menu">
+									<rect class="cls-1" height="12" width="12" x="1" y="1" />
+									<rect class="cls-1" height="12" width="12" x="1" y="19" />
+									<rect class="cls-1" height="12" width="12" x="19" y="19" />
+									<rect class="cls-1" height="12" width="12" x="19" y="1" />
+								</g>
+							</svg>
+						</button>
+						<button
+							type="button"
+							class="button-view active"
+							data-id="view-button"
+							data-type="list"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="36px"
+								height="36px"
+								viewBox="0 0 512 512"
+								fill="currentColor"
+							>
+								<path
+									d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+								/>
+							</svg>
+						</button>
+					</div> -->
+					<!-- Product View Toggle End -->
+					<div class="section-cards--list" data-id="card-grid">
+						<!-- Product Card -->
+						<article class="section-cards--item card">
+							<div class="card--section-flex">
+								<div class="card--section card--section-one">
+									<p class="card--type">
+										Welcome offer <a href="#" class="card--type--link">T&C</a>
+									</p>
+									<h3 class="card--price">€300</h3>
+									<h4 class="card--offer">120% up to €300 + 120 free spins</h4>
+								</div>
+								<hr class="card--line" />
+								<h4 class="card--bonus">
+									EP Bonus<br /><span class="card--bonus--value">N/A</span>
+								</h4>
+							</div>
+							<div class="card--section-flex">
+								<div class="card--logo"></div>
+								<div class="card--section card--section-two">
+									<a class="card--play" href="#">Play now</a>
+									<a class="card--review" href="#">Read full review</a>
+								</div>
+							</div>
+						</article>
+						<!-- Product Card End -->
+						<!-- Product Card -->
+						<article class="section-cards--item card">
+							<div class="card--section-flex">
+								<div class="card--section card--section-one">
+									<p class="card--type">
+										Welcome offer <a href="#" class="card--type--link">T&C</a>
+									</p>
+									<h3 class="card--price">€300</h3>
+									<h4 class="card--offer">120% up to €300 + 120 free spins</h4>
+								</div>
+								<hr class="card--line" />
+								<h4 class="card--bonus">
+									EP Bonus<br /><span class="card--bonus--value">N/A</span>
+								</h4>
+							</div>
+							<div class="card--section-flex">
+								<div class="card--logo"></div>
+								<div class="card--section card--section-two">
+									<a class="card--play" href="#">Play now</a>
+									<a class="card--review" href="#">Read full review</a>
+								</div>
+							</div>
+						</article>
+						<!-- Product Card End -->
+					</div>
+					<div class="section-cards--grid" data-id="card-grid">
+						<!-- Product Card -->
+						<article class="section-cards--item card">
+							<div class="card--section-flex">
+								<div class="card--section card--section-one">
+									<p class="card--type">
+										Welcome offer <a href="#" class="card--type--link">T&C</a>
+									</p>
+									<h3 class="card--price">€300</h3>
+									<h4 class="card--offer">120% up to €300 + 120 free spins</h4>
+								</div>
+								<hr class="card--line" />
+								<h4 class="card--bonus">
+									EP Bonus<br /><span class="card--bonus--value">N/A</span>
+								</h4>
+							</div>
+							<div class="card--section-flex">
+								<div class="card--logo"></div>
+								<div class="card--section card--section-two">
+									<a class="card--play" href="#">Play now</a>
+									<a class="card--review" href="#">Read full review</a>
+								</div>
+							</div>
+						</article>
+						<!-- Product Card End -->
+						<!-- Product Card -->
+						<article class="section-cards--item card">
+							<div class="card--section-flex">
+								<div class="card--section card--section-one">
+									<p class="card--type">
+										Welcome offer <a href="#" class="card--type--link">T&C</a>
+									</p>
+									<h3 class="card--price">€300</h3>
+									<h4 class="card--offer">120% up to €300 + 120 free spins</h4>
+								</div>
+								<hr class="card--line" />
+								<h4 class="card--bonus">
+									EP Bonus<br /><span class="card--bonus--value">N/A</span>
+								</h4>
+							</div>
+							<div class="card--section-flex">
+								<div class="card--logo"></div>
+								<div class="card--section card--section-two">
+									<a class="card--play" href="#">Play now</a>
+									<a class="card--review" href="#">Read full review</a>
+								</div>
+							</div>
+						</article>
+						<!-- Product Card End -->
+					</div>
 					<div class="pagination">
 						<button type="button" class="button button-pagination">
 							Show more casinos ( +10 )
@@ -560,9 +647,11 @@
 					<h2 class="section-reviews--header">User Reviews</h2>
 					<div class="section-reviews--content">
 						<!-- User Review -->
-						<article class="section-reviews--review review">
-							<div class="review--user--icon"></div>
-							<h3 class="review--user--name">piperka_suva44</h3>
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
+							</div>
 							<div class="review--user--content">
 								<div class="review--user--rating">
 									<svg
@@ -744,9 +833,11 @@
 								<p class="review--user--comment">Good new casino. Bravo!</p>
 							</div>
 						</article>
-						<article class="section-reviews--review review">
-							<div class="review--user--icon"></div>
-							<h3 class="review--user--name">piperka_suva44</h3>
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
+							</div>
 							<div class="review--user--content">
 								<div class="review--user--rating">
 									<svg
@@ -928,7 +1019,6 @@
 								<p class="review--user--comment">Good new casino. Bravo!</p>
 							</div>
 						</article>
-						<!-- User Review End -->
 					</div>
 				</section>
 			</main>

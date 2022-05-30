@@ -1,0 +1,44 @@
+.section-filters {
+  display: flex;
+  gap: map.get($sizes, "xl");
+  margin: map.get($sizes, "xl") 0;
+  &--list {
+      display: flex;
+      gap: map.get($sizes, "sm");
+      align-items: center;
+      height: map.get($sizes, "full");
+  }
+  &--item {
+    padding: 0 map.get($sizes, "xs");
+    border-radius: map.get($rounded, "base");
+    height: map.get($sizes, "full");
+    display: flex;
+    align-items: center;
+    background-color: #2e3746;
+    gap: map.get($sizes, "sm");
+    color: map.get($colors, "white");
+    font-size: map.get($sizes, "base");
+    svg {
+      cursor: pointer;
+    }
+  }
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transform: translateX(-#{map.get($sizes, "full")});
+    transition: transform 0.5s ease;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 50;
+    background-color: map.get($colors, "black");
+    padding: map.get($sizes, "sm");
+    width: 375px;
+  }
+  .active {
+    transform: translateX(0) !important;
+  }
+}
