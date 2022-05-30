@@ -1,0 +1,28 @@
+.section-faq {
+  background-color: map.get($colors, "gray");
+  display: flex;
+  flex-direction: column;
+  &--header {
+    margin: map.get($sizes, "md") 0;
+  }
+  &--item {
+    padding: map.get($sizes, "sm") 0;
+    border-top: 1px solid map.get($colors, "darkGray");
+  }
+  /* There is still an issue with max height animation */
+  &--paragraph {
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, opacity 0.5s;
+  }
+  .active {
+    [data-id="readmore-paragraph"]{
+      max-height: 100px;
+      opacity: 1;
+    }
+    [data-id="readmore-chevron"]{
+      transform: rotate(0deg) !important;
+    }
+  }
+}

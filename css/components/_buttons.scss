@@ -1,8 +1,8 @@
 .button {
-  border-radius: 0.30rem;
+  border-radius: map.get($rounded, "base");
   padding: 0 0.75rem;
   &-filter {
-    width: 100%;
+    width: map.get($sizes, "full");
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@
     font-size: map.get($sizes, "md");
     padding: map.get($sizes, "sm");
     margin-top: auto;
-    width: 100%;
+    width: map.get($sizes, "full");
   }
   &-pagination {
     display: flex;
@@ -30,19 +30,19 @@
     padding: 0 map.get($sizes, "xs");
     font-size: map.get($sizes, "base");
     font-weight: 500;
-    width: 100%;
+    width: map.get($sizes, "full");
     color: map.get($colors, "white");
     background-color: map.get($colors, "black");
   }
   &-related {
-    width: 100%;
+    width: map.get($sizes, "full");
     height: map.get($sizes, "4xl");
     color: map.get($colors, "white");
     font-size: map.get($sizes, "md");
     font-weight: 600;
     display: flex;
     align-items: center;
-    border-radius: 0.3rem;
+    border-radius: map.get($rounded, "base");
     padding: 0 map.get($sizes, "sm");
     @include gradient(200deg, (map.get($colors, "orange"), map.get($colors, "yellow")));
   }
@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     font-weight: 700;
-    width: 100%;
+    width: map.get($sizes, "full");
     justify-content: space-between;
     font-size: map.get($sizes, "base");
     &--icon {
@@ -65,6 +65,9 @@
     @include gradient(200deg, (map.get($colors, "orange"), map.get($colors, "yellow")));
     max-width: 10rem;
     padding: map.get($sizes, "sm") 0;
-    width: 100%;
+    width: map.get($sizes, "full");
+  }
+  &-view {
+    color: map.get($colors, "darkGray");
   }
 }

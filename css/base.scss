@@ -3,9 +3,16 @@
 @import "variables";
 @import "mixins";
 @import "components/breadcrumb";
-@import "components/sections";
 @import "components/buttons";
 @import "components/pagination";
+@import "components/cards/cards-list";
+@import "components/cards/cards-grid";
+@import "components/info";
+@import "components/related-pages";
+@import "components/faq";
+@import "components/comment";
+@import "components/reviews";
+@import "components/filters";
 @import "reset";
 
 body {
@@ -16,6 +23,13 @@ body {
 .wrapper {
   color: map.get($colors, "black");
   padding: map.get($sizes, "lg") 0;
+}
+
+.section {
+  padding: map.get($sizes, "sm") 5%;
+  @include query(map.get($screens, "md")){
+    padding: map.get($sizes, "sm") 15% !important;
+  }
 }
 
 .main{
