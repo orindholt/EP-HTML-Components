@@ -4,15 +4,15 @@
 @import "mixins";
 @import "components/breadcrumb";
 @import "components/buttons";
-@import "components/pagination";
-@import "components/cards/cards-list";
-@import "components/cards/cards-grid";
-@import "components/info";
-@import "components/related-pages";
 @import "components/faq";
 @import "components/comment";
 @import "components/reviews";
-@import "components/filters";
+@import "components/frontpage/pagination";
+@import "components/frontpage/cards/cards-list";
+@import "components/frontpage/cards/cards-grid";
+@import "components/frontpage/info";
+@import "components/frontpage/related-pages";
+@import "components/frontpage/filters";
 @import "reset";
 
 body {

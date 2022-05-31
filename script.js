@@ -5,16 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const toggleEl = el => el.classList.toggle("active");
 
-	filterExit.addEventListener("click", () => toggleEl(filterMenu));
-	filterButton.addEventListener("click", () => toggleEl(filterMenu));
+	if (filterExit)
+		filterExit.addEventListener("click", () => toggleEl(filterMenu));
+	if (filterButton)
+		filterButton.addEventListener("click", () => toggleEl(filterMenu));
 
 	const readMoreButtons = document.querySelectorAll(
 		"[data-id='readmore-button']"
 	);
 
-	readMoreButtons.forEach(el =>
-		el.addEventListener("click", e => toggleEl(e.currentTarget.parentNode))
-	);
+	if (readMoreButtons)
+		readMoreButtons.forEach(el =>
+			el.addEventListener("click", e => toggleEl(e.currentTarget.parentNode))
+		);
 
 	/* 	const viewButtons = document.querySelectorAll("[data-id='view-button']");
 	const cardGrid = document.querySelector("[data-id='card-grid']");
