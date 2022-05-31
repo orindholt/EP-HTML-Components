@@ -6,13 +6,16 @@
     margin-bottom: map.get($sizes, "sm");
     .card {
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-      display: flex;
       background-color: map.get($colors, "lightGray");
       border-radius: map.get($rounded, "base");
-      align-items: center;
-      justify-content: space-between;
-      gap: map.get($sizes, "md");
-      padding: map.get($sizes, "sm");
+      &--link {
+        padding: map.get($sizes, "sm");
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: map.get($sizes, "md");
+
+      }
       &--line {
         width: map.get($sizes, "full");
         opacity: 0.5;

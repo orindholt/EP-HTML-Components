@@ -9,25 +9,30 @@
     }
     .card {
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-      display:flex;
       background-color: map.get($colors, "lightGray");
       border-radius: map.get($rounded, "base");
-      align-items: center;
-      justify-content: space-between;
-      padding: map.get($sizes, "md");
+      
 
-      gap: map.get($sizes, "sm");
-      @include query(map.get($screens, "sm")){
-        gap: map.get($sizes, "md");
-      }
-      @include query(map.get($screens, "md")){
-        gap: map.get($sizes, "xl");
-      }
-      @include query(map.get($screens, "lg")){
-        gap: map.get($sizes, "2xl");
-      }
-      @include query(map.get($screens, "xl")){
-        gap: map.get($sizes, "4xl");
+      &--link {
+        gap: map.get($sizes, "sm");
+        @include query(map.get($screens, "sm")){
+          gap: map.get($sizes, "md");
+        }
+        @include query(map.get($screens, "md")){
+          gap: map.get($sizes, "xl");
+        }
+        @include query(map.get($screens, "lg")){
+          gap: map.get($sizes, "2xl");
+        }
+        @include query(map.get($screens, "xl")){
+          gap: map.get($sizes, "4xl");
+        }
+        width: 100%;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: map.get($sizes, "md");
       }
       &--line {
         width: map.get($sizes, "full");
