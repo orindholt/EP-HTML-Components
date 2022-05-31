@@ -5,6 +5,7 @@
     gap: map.get($sizes, "sm");
     margin-bottom: map.get($sizes, "sm");
     .card {
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
       display: flex;
       background-color: map.get($colors, "lightGray");
       border-radius: map.get($rounded, "base");
@@ -46,6 +47,14 @@
           text-decoration: underline;
         }
       }
+      &--flex {
+        @include query(map.get($screens, "xl")){
+          display: flex;
+          align-items: center;
+          gap: map.get($sizes, "sm");
+
+        }
+      }
       &--price {
         font-size: map.get($sizes, "xl");
       }
@@ -58,7 +67,7 @@
         font-weight: 500;
         border-radius: map.get($rounded, "sm");
         font-size: map.get($sizes, "md");
-        padding: 0 map.get($sizes, "sm");
+        padding: map.get($sizes, "xs") map.get($sizes, "sm");
         @include query(map.get($screens, "lg")){
           width: 200px;
         }
@@ -74,8 +83,8 @@
         padding: 5px 10px;
       }
       &--logo {
-        width: 7rem;
-        height: map.get($sizes, "2xl");
+        width: 8.5rem;
+        height: map.get($sizes, "4xl");
         background-color: map.get($colors, "green");
         border-radius: map.get($rounded, "xl");
         margin-right: auto;
@@ -86,7 +95,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-right: auto;
         margin-left: 0;
         @include query(map.get($screens, "sm")){
           margin-left: auto !important;

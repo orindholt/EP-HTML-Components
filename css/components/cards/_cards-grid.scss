@@ -3,18 +3,32 @@
 		display: grid;
     grid-auto-flow: row;
 		gap: map.get($sizes, "sm");
+    margin-bottom: map.get($sizes, "sm");
     @include query(map.get($screens, "sm")){
       grid-template-columns: repeat(2, 1fr);
     }
     .card {
-      display: flex;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      display:flex;
       background-color: map.get($colors, "lightGray");
       border-radius: map.get($rounded, "base");
       align-items: center;
       justify-content: space-between;
-      
-      gap: map.get($sizes, "md");
-      padding: map.get($sizes, "sm");
+      padding: map.get($sizes, "md");
+
+      gap: map.get($sizes, "sm");
+      @include query(map.get($screens, "sm")){
+        gap: map.get($sizes, "md");
+      }
+      @include query(map.get($screens, "md")){
+        gap: map.get($sizes, "xl");
+      }
+      @include query(map.get($screens, "lg")){
+        gap: map.get($sizes, "2xl");
+      }
+      @include query(map.get($screens, "xl")){
+        gap: map.get($sizes, "4xl");
+      }
       &--line {
         width: map.get($sizes, "full");
         opacity: 0.5;
@@ -34,7 +48,12 @@
           flex-direction: column;
           gap: map.get($sizes, "sm");
         }
+        &-one {
+          justify-content: space-around;
+          height: 100%;
+        }
         &-two {
+          width: 100%;
           height: map.get($sizes, "full");
           gap: map.get($sizes, "xs");
         }
@@ -57,6 +76,8 @@
         font-weight: 500;
         border-radius: map.get($rounded, "sm");
         font-size: map.get($sizes, "md");
+        width: 100%;
+        /* max-width: map.get($sizes, "9xl"); */
         @include gradient(200deg, (map.get($colors, "orange"), map.get($colors, "yellow")))
       }
       &--review {
@@ -69,10 +90,13 @@
         padding: 5px 10px;
       }
       &--logo {
-        width: 7rem;
-        height: map.get($sizes, "2xl");
+        max-width: map.get($sizes, "8xl");
+        width: 100%;
+        height: map.get($sizes, "6xl");
         background-color: map.get($colors, "green");
         border-radius: map.get($rounded, "xl");
+        margin-left: auto;
+        margin-right: auto;
       }
       &--bonus {
         font-weight: 300;
