@@ -1,0 +1,15 @@
+.grid--article {
+  margin-top: map.get($sizes, "2xl");
+  grid-area: 2/1/3/2;
+  display: flex;
+  flex-direction: column;
+  gap: map.get($sizes, "2xl");
+  &--section {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($sizes, "base");
+    p {
+      font-weight: 500;
+    }
+  }
+}

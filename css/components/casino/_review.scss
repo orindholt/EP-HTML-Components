@@ -1,0 +1,86 @@
+.grid--review {
+  grid-area: 1/1/2/2;
+  background-color: map.get($colors, "black");
+  color: map.get($colors, "white");
+  padding: map.get($sizes, "sm") map.get($sizes, "base");
+  border-radius: map.get($rounded, "base");
+  &--header {
+    margin-bottom: map.get($sizes, "xs");
+  }
+  &--rating {
+    display: flex;
+    gap: map.get($sizes, "sm");
+    color: map.get($colors, "yellow");
+    font-size: map.get($sizes, "sm");
+    &--stars {
+      display: flex;
+      gap: map.get($sizes, "xxs");
+      color: map.get($colors, "yellow");
+    }
+    &--amount {
+      color: map.get($colors, "white");
+    }
+  }
+  &--flex {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: map.get($sizes, "sm");
+  }
+  &--logo {
+    flex: 1;
+    min-width: 6.5rem;
+    max-width: 8.5rem;
+    width: 100%;
+    height: map.get($sizes, "4xl");
+    background-color: map.get($colors, "green");
+    border-radius: map.get($rounded, "xl");
+  }
+  &--tc {
+    color: map.get($colors, "darkGray");
+    text-decoration: underline;
+    font-size: map.get($sizes, "sm");
+  }
+  &--offer {
+    font-weight: 500;
+    flex: 1;
+    h3 {
+      font-weight: inherit;
+    }
+  }
+  &--bonus {
+    flex: 1;
+    min-width: fit-content;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      font-weight: inherit;
+    }
+    &--value {
+      color: map.get($colors, "yellow");
+      font-weight: 500;
+    }
+  }
+  &--info {
+    display: flex;
+    flex-direction: column;
+    margin-top: map.get($sizes, "sm");
+    &--item {
+      padding: map.get($sizes, "xs") 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid color.adjust(map.get($colors, "darkGray"), $alpha: -0.7);
+      font-weight: 500;
+    }
+    &--span {
+      $color: map.get($colors, "greenBright");
+      color: $color;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: color.adjust($color, $alpha: -0.5);
+    }
+  }
+}
