@@ -1,3 +1,12 @@
+.section-review-grid {
+  display: grid;
+  column-gap: map.get($sizes, "md");
+  grid-template-columns: 1fr;
+  @include query(map.get($screens, "md")){
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
 .grid--review {
   grid-area: 1/1/2/2;
   background-color: map.get($colors, "black");
@@ -18,6 +27,7 @@
       color: map.get($colors, "yellow");
     }
     &--amount {
+      min-width: fit-content;
       color: map.get($colors, "white");
     }
   }
@@ -29,7 +39,7 @@
   }
   &--logo {
     flex: 1;
-    min-width: 6.5rem;
+    min-width: 7.5rem;
     max-width: 8.5rem;
     width: 100%;
     height: map.get($sizes, "4xl");
@@ -81,6 +91,33 @@
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-decoration-color: color.adjust($color, $alpha: -0.5);
+    }
+  }
+  &--container {
+    display: flex;
+    gap: map.get($sizes, "sm");
+  }
+  &--play {
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    border-radius: map.get($rounded, "base");
+    width: map.get($sizes, "9xl");
+    font-size: map.get($sizes, "md");
+    
+    @include gradient(200deg, (map.get($colors, "orange"), map.get($colors, "yellow")));
+  }
+  &-sm {
+    margin-top: map.get($sizes, "xl");
+    @include query(map.get($screens, "md")){
+      grid-area: 3/1/4/3;
+    }
+    grid-area: 4/1/5/2;
+    .grid--review--bonus {
+      flex: initial;
+    }
+    .grid--review--offer {
+      flex: initial;
     }
   }
 }
