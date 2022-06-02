@@ -1,0 +1,138 @@
+.grid--details {
+  @include query(map.get($screens, "md")){
+    grid-area: 1/2/3/3 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  @include query(map.get($screens, "sm")){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: unset;
+  }
+  display: flex;
+  flex-direction: column;
+  grid-area: 2/1/3/2;
+  gap: map.get($sizes, "sm");
+  &--play {
+    @include query(map.get($screens, "md")){
+      grid-column: unset;
+      margin-top: 0;
+    }
+    grid-column: 1/3;
+    margin-top: map.get($sizes, "sm");
+    font-weight: 500;
+    color: map.get($colors, "white");
+    width: 100%;
+    height: map.get($sizes, "5xl");
+    border-radius: map.get($rounded, "base");
+    display: grid;
+    place-content: center;
+    @include gradient(-90deg, (map.get($colors, "orange"), map.get($colors, "yellow")));
+  }
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 map.get($sizes, "base");
+    height: map.get($sizes, "3xl");
+    border-radius: map.get($rounded, "base");
+    width: 100%;
+    gap: map.get($sizes, "sm");
+    color: map.get($colors, "white");
+    background-color: map.get($colors, "black");;
+    h3 {
+      font-weight: 300;
+    }
+    &-sub {
+      display: flex;
+      align-items: center;
+      margin-bottom: map.get($sizes, "xs");
+      &--link {
+        color: map.get($colors, "darkGray");
+        text-decoration: underline;
+        font-size: map.get($sizes, "sm");
+        margin-left: auto;
+      }
+    }
+  }
+  &--paragraph {
+    font-weight: 500;
+  }
+  &--content {
+    padding: map.get($sizes, "base");
+    display: flex;
+    flex-direction: column;
+    gap: map.get($sizes, "md");
+    background-color: #fff;
+    margin-top: map.get($sizes, "sm");
+    border-radius: map.get($rounded, "base");
+    table {
+      border-spacing: 0 map.get($sizes, "sm");
+      tbody {
+        tr {
+          text-align: left;
+        }
+        th {
+          font-weight: 400;
+          padding-left: map.get($sizes, "base");
+        }
+        td {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &--payments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: map.get($sizes, "lg");
+    gap: map.get($sizes, "xxs");
+    &--item {
+      background-color: map.get($colors, "darkGray");
+      border-radius: map.get($rounded, "sm");
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &--platforms {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($sizes, "sm");
+    margin-top: map.get($sizes, "sm");
+    &--item {
+      display: flex;
+      align-items: center;
+      gap: map.get($sizes, "sm");
+      border-bottom: 1px solid map.get($colors, "gray");
+      padding-bottom: map.get($sizes, "xs");
+    }
+  }
+  &--list {
+    &-pros {
+      ul, li {
+        list-style: initial;
+        list-style-position: inside;
+      }
+      $proColor: map.get($colors, "greenBright");
+      li::marker {
+        color: $proColor;
+      }
+      h4 {
+        color: $proColor;
+      }
+    }
+    &-cons {
+      ul, li {
+        list-style: initial;
+        list-style-position: inside;
+      }
+      $proColor: map.get($colors, "red");
+      li::marker {
+        color: $proColor;
+      }
+      h4 {
+        color: $proColor;
+      }
+    }
+  }
+}

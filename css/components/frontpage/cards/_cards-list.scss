@@ -1,38 +1,43 @@
 .section-cards {
-	&--grid {
-		display: grid;
+  &--list {
+    display: grid;
     grid-auto-flow: row;
-		gap: map.get($sizes, "sm");
-    @include query(map.get($screens, "sm")){
-      grid-template-columns: repeat(2, 1fr);
-    }
+    gap: map.get($sizes, "sm");
+    margin-bottom: map.get($sizes, "sm");
     .card {
-      display: flex;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
       background-color: map.get($colors, "lightGray");
       border-radius: map.get($rounded, "base");
-      align-items: center;
-      justify-content: space-between;
-      
-      gap: map.get($sizes, "md");
-      padding: map.get($sizes, "sm");
+      &--link {
+        padding: map.get($sizes, "sm");
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: map.get($sizes, "md");
+
+      }
       &--line {
         width: map.get($sizes, "full");
         opacity: 0.5;
+        @include query(map.get($screens, "sm")){
+          display: none;
+        }
       }
       &--section {
         display: flex;
         flex-direction: column;
         &-flex {
-          &:nth-child(1){
-            align-items: flex-start;
-          }
           display: flex;
           justify-content: space-between;
-          align-items: flex-end;
+          align-items: initial;
           width: map.get($sizes, "full");
           height: map.get($sizes, "full");
           flex-direction: column;
           gap: map.get($sizes, "sm");
+          @include query(map.get($screens, "sm")){
+            flex-direction: row !important;
+            align-items: center;
+          }
         }
         &-two {
           height: map.get($sizes, "full");
@@ -43,6 +48,14 @@
         color: map.get($colors, "darkGray");
         &--link {
           text-decoration: underline;
+        }
+      }
+      &--flex {
+        @include query(map.get($screens, "xl")){
+          display: flex;
+          align-items: center;
+          gap: map.get($sizes, "sm");
+
         }
       }
       &--price {
@@ -57,6 +70,10 @@
         font-weight: 500;
         border-radius: map.get($rounded, "sm");
         font-size: map.get($sizes, "md");
+        padding: map.get($sizes, "xs") map.get($sizes, "sm");
+        @include query(map.get($screens, "lg")){
+          width: 200px;
+        }
         @include gradient(200deg, (map.get($colors, "orange"), map.get($colors, "yellow")))
       }
       &--review {
@@ -69,21 +86,38 @@
         padding: 5px 10px;
       }
       &--logo {
-        width: 7rem;
-        height: map.get($sizes, "2xl");
+        width: 8.5rem;
+        height: map.get($sizes, "4xl");
         background-color: map.get($colors, "green");
         border-radius: map.get($rounded, "xl");
+        margin-right: auto;
+        margin-left: auto;
       }
       &--bonus {
         font-weight: 300;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-left: 0;
+        @include query(map.get($screens, "sm")){
+          margin-left: auto !important;
+        }
         &--value {
           font-weight: 700;
           color: map.get($colors, "orange");
         }
       }
     }
-	}
+  }
+  /* &--view {
+    display: none;
+    @include query(map.get($screens, "sm")){
+      display: flex;
+      justify-content: flex-end;
+    }
+    gap: map.get($sizes, "md");
+    .active {
+      color: map.get($colors, "black") !important;
+    }
+  } */
 }

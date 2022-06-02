@@ -1,18 +1,34 @@
+// Use Rules
 @use "sass:map";
+@use "sass:color";
+
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+// Base Variables & Mixins
 @import "variables";
 @import "mixins";
+
+// Base Components
 @import "components/breadcrumb";
 @import "components/buttons";
-@import "components/pagination";
-@import "components/cards/cards-list";
-@import "components/cards/cards-grid";
-@import "components/info";
-@import "components/related-pages";
 @import "components/faq";
 @import "components/comment";
 @import "components/reviews";
-@import "components/filters";
+
+// Frontpage Components
+@import "components/frontpage/pagination";
+@import "components/frontpage/cards/cards-list";
+@import "components/frontpage/cards/cards-grid";
+@import "components/frontpage/info";
+@import "components/frontpage/related-pages";
+@import "components/frontpage/filters";
+
+// Casino Imports
+@import "components/casino/review";
+@import "components/casino/article";
+@import "components/casino/related-offers";
+@import "components/casino/details";
 @import "reset";
 
 body {
@@ -29,6 +45,9 @@ body {
   padding: map.get($sizes, "sm") 5%;
   @include query(map.get($screens, "md")){
     padding: map.get($sizes, "sm") 15% !important;
+  }
+  &--header {
+    font-size: map.get($sizes, "xl");
   }
 }
 
