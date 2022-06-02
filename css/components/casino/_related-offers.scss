@@ -1,8 +1,13 @@
 .grid--related-offers {
   &--grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    @include query(map.get($screens, "md")){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      flex-direction: unset;
+    }
     gap: map.get($sizes, "base");
     margin-top: map.get($sizes, "base");
   }

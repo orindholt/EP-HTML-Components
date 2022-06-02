@@ -5,6 +5,12 @@
   @include query(map.get($screens, "md")){
     grid-template-columns: 2fr 1fr;
   }
+  section:last-child {
+    grid-column: 1/3;
+    @include query(map.get($screens, "md")){
+      grid-column: unset;
+    }
+  }
 }
 
 .grid--review {
@@ -13,11 +19,23 @@
   color: map.get($colors, "white");
   padding: map.get($sizes, "sm") map.get($sizes, "base");
   border-radius: map.get($rounded, "base");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: map.get($sizes, "xs");
+  @include query(map.get($screens, "md")){
+    gap: unset;
+    text-align: left;
+  }
   &--header {
     margin-bottom: map.get($sizes, "xs");
   }
   &--rating {
     display: flex;
+    justify-content: center;
+    @include query(map.get($screens, "md")){
+      justify-content: start;
+    }
     gap: map.get($sizes, "sm");
     color: map.get($colors, "yellow");
     font-size: map.get($sizes, "sm");
@@ -36,9 +54,12 @@
     justify-content: space-between;
     align-items: center;
     gap: map.get($sizes, "sm");
+    flex-direction: column;
+    @include query(map.get($screens, "lg")){
+      flex-direction: row;
+    }
   }
   &--logo {
-    flex: 1;
     min-width: 7.5rem;
     max-width: 8.5rem;
     width: 100%;
@@ -53,13 +74,12 @@
   }
   &--offer {
     font-weight: 500;
-    flex: 1;
+    max-width: 12rem;
     h3 {
       font-weight: inherit;
     }
   }
   &--bonus {
-    flex: 1;
     min-width: fit-content;
     font-weight: 300;
     display: flex;
@@ -113,11 +133,5 @@
       grid-area: 3/1/4/3;
     }
     grid-area: 4/1/5/2;
-    .grid--review--bonus {
-      flex: initial;
-    }
-    .grid--review--offer {
-      flex: initial;
-    }
   }
 }
