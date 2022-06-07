@@ -92,7 +92,6 @@
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
-  /* There is still an issue with max height animation */
 }
 .section-faq--header {
   margin: 1.25rem 0;
@@ -102,14 +101,7 @@
   border-top: 1px solid #999999;
 }
 .section-faq--paragraph {
-  max-height: 0px;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.5s, opacity 0.5s;
-}
-.section-faq .active [data-id=readmore-paragraph] {
-  max-height: 100px;
-  opacity: 1;
+  display: none;
 }
 .section-faq .active [data-id=readmore-chevron] {
   transform: rotate(0deg) !important;
