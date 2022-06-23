@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EP - HTML Components</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="./js/filter.js"></script>
+		<script src="./js/readmore.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="main">
+				<!-- Breadcrumb -->
+				<section class="section">
+					<p class="breadcrumb">
+						home > blog > news >
+						<span class="breadcrumb--current">introduction to baccarat</span>
+					</p>
+				</section>
+				<!-- Breadcrumb End -->
+				<section class="section">
+					<h1 class="main--header">The Best Online Casinos For 2022</h1>
+					<h2 class="main--subheader">
+						Our experts reviewed over 4000 online casinos sites and picked the
+						best ones.
+					</h2>
+				</section>
+				<section class="section section-filters">
+					<!-- More filters button -->
+					<button class="button button-filter" data-id="menu-toggle">
+						Filters
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="32px"
+							height="32px"
+							viewBox="0 0 32 32"
+							id="Outlined"
+						>
+							<title />
+							<g id="Fill">
+								<path
+									d="M8,12.14V2H6V12.14a4,4,0,0,0,0,7.72V30H8V19.86a4,4,0,0,0,0-7.72ZM7,18a2,2,0,1,1,2-2A2,2,0,0,1,7,18Z"
+								/>
+								<path
+									d="M17,20.14V2H15V20.14a4,4,0,0,0,0,7.72V30h2V27.86a4,4,0,0,0,0-7.72ZM16,26a2,2,0,1,1,2-2A2,2,0,0,1,16,26Z"
+								/>
+								<path
+									d="M29,8a4,4,0,0,0-3-3.86V2H24V4.14a4,4,0,0,0,0,7.72V30h2V11.86A4,4,0,0,0,29,8Zm-4,2a2,2,0,1,1,2-2A2,2,0,0,1,25,10Z"
+								/>
+							</g>
+						</svg>
+					</button>
+					<!-- Filter section -->
+					<div class="section-filters-menu" data-id="menu">
+						<!-- Clear Filters Button -->
+						<button
+							type="button"
+							class="button button-filters-exit"
+							data-id="menu-exit"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24px"
+								height="24px"
+								viewBox="0 0 32 32"
+								id="Outlined"
+							>
+								<title />
+								<g id="Fill" fill="currentColor">
+									<polygon
+										points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"
+									/>
+								</g>
+							</svg>
+						</button>
+						<button class="button button-filters-clear">
+							Clear all filters
+						</button>
+					</div>
+				</section>
+				<!-- Product Card Section -->
+				<section class="section section-cards">
+					<!-- Product View Toggle -->
+					<!-- <div class="section-cards--view">
+						<button
+							type="button"
+							class="button-view"
+							data-id="view-button"
+							data-type="grid"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="32px"
+								height="32px"
+								viewBox="0 0 32 32"
+								fill="currentColor"
+							>
+								<title />
+								<g data-name="67-menu" id="_67-menu">
+									<rect class="cls-1" height="12" width="12" x="1" y="1" />
+									<rect class="cls-1" height="12" width="12" x="1" y="19" />
+									<rect class="cls-1" height="12" width="12" x="19" y="19" />
+									<rect class="cls-1" height="12" width="12" x="19" y="1" />
+								</g>
+							</svg>
+						</button>
+						<button
+							type="button"
+							class="button-view active"
+							data-id="view-button"
+							data-type="list"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="36px"
+								height="36px"
+								viewBox="0 0 512 512"
+								fill="currentColor"
+							>
+								<path
+									d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+								/>
+							</svg>
+						</button>
+					</div> -->
+					<!-- Product View Toggle End -->
+					<ul class="section-cards--list" data-id="card-grid">
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play" href="#">Play now</button>
+										<button class="card--review" href="#">
+											Read full review
+										</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play" href="#">Play now</button>
+										<button class="card--review" href="#">
+											Read full review
+										</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+					</ul>
+					<ul class="section-cards--grid" data-id="card-grid">
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play">Play now</button>
+										<button class="card--review">Read full review</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play">Play now</button>
+										<button class="card--review">Read full review</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+					</ul>
+					<!-- Card Pagination -->
+					<div class="pagination">
+						<button type="button" class="button button-pagination">
+							Show more casinos ( +10 )
+							<svg
+								style="transform: rotate(180deg)"
+								xmlns="http://www.w3.org/2000/svg"
+								width="30px"
+								height="30px"
+								viewBox="0 0 21 21"
+							>
+								<path
+									d="m.5 4.5 4-4 4 4"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									transform="translate(6 8)"
+								/>
+							</svg>
+						</button>
+						<div class="pagination--nav">
+							<div class="pagination--section">
+								<a href="#" class="active pagination--link">1</a>
+								<a href="#" class="pagination--link">2</a>
+								<a href="#" class="pagination--link">3</a>
+								<a href="#" class="pagination--link">4</a>
+							</div>
+							<p class="pagination--paragraph">...</p>
+							<div class="pagination--section">
+								<a href="#" class="pagination--link">19</a>
+								<a href="#" class="pagination--link">20</a>
+								<a href="#" class="pagination--link">21</a>
+								<a href="#" class="pagination--link">22</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section section-info">
+					<h2 class="section-info--header">
+						Find the Best Quality Casinos in the World, Choose your Favourite
+						One and Play to Win
+					</h2>
+					<p class="section-info--paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+						porttitor porta erat ac blandit. Phasellus eu vehicula leo, lobortis
+						finibus lacus. Nullam ac neque accumsan mi mollis ornare vel eu
+						enim. Cras neque enim, finibus quis dolor in, eleifend iaculis
+						justo. Mauris vulputate arcu a lectus fringilla, in ultricies elit
+						iaculis. Mauris rutrum, mauris non luctus tincidunt, odio enim
+						facilisis massa, in dapibus nulla justo eget ante. Morbi at gravida
+						orci, sit amet fermentum tortor. Etiam dolor sem, ultrices sit amet
+						ipsum non, commodo euismod risus. Nam ac nisl ut urna vulputate
+						pretium. Sed venenatis placerat enim, id efficitur nunc congue nec.
+					</p>
+					<h2 class="section-info--header">
+						List of the Top Online Casinos to Try in May 2022
+					</h2>
+					<p class="section-info--paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+						porttitor porta erat ac blandit. Phasellus eu vehicula leo, lobortis
+						finibus lacus. Nullam ac neque accumsan mi mollis ornare vel eu
+						enim. Cras neque enim, finibus quis dolor in, eleifend iaculis
+						justo. Mauris vulputate arcu a lectus fringilla, in ultricies elit
+						iaculis. Mauris rutrum, mauris non luctus tincidunt, odio enim
+						facilisis massa, in dapibus nulla justo eget ante. Morbi at gravida
+						orci, sit amet fermentum tortor. Etiam dolor sem, ultrices sit amet
+						ipsum non, commodo euismod risus. Nam ac nisl ut urna vulputate
+						pretium. Sed venenatis placerat enim, id efficitur nunc congue nec.
+					</p>
+					<h2 class="section-info--header">
+						How We Rated this Month's Quality Online Casinos
+					</h2>
+					<p class="section-info--paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+						porttitor porta erat ac blandit. Phasellus eu vehicula leo, lobortis
+						finibus lacus. Nullam ac neque accumsan mi mollis ornare vel eu
+						enim. Cras neque enim, finibus quis dolor in, eleifend iaculis
+						justo. Mauris vulputate arcu a lectus fringilla, in ultricies elit
+						iaculis. Mauris rutrum, mauris non luctus tincidunt, odio enim
+						facilisis massa, in dapibus nulla justo eget ante. Morbi at gravida
+						orci, sit amet fermentum tortor. Etiam dolor sem, ultrices sit amet
+						ipsum non, commodo euismod risus. Nam ac nisl ut urna vulputate
+						pretium. Sed venenatis placerat enim, id efficitur nunc congue nec.
+					</p>
+				</section>
+				<section class="section section-related">
+					<h2>Related Pages</h2>
+					<div class="section-related--cards">
+						<article class="section-related--card">
+							<h3>Top New Online Casinos</h3>
+							<a class="button-related" href="#">Read more</a>
+						</article>
+						<article class="section-related--card">
+							<h3>Top New Online Casinos</h3>
+							<a class="button-related" href="#">Read more</a>
+						</article>
+						<article class="section-related--card">
+							<h3>Top New Online Casinos</h3>
+							<a class="button-related" href="#">Read more</a>
+						</article>
+					</div>
+				</section>
+				<!-- FAQ -->
+				<section class="section section-faq">
+					<h2 class="section-faq--header">FAQ</h2>
+					<!-- FAQ Item -->
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
+							What is the Welcome Bonus at Oreels Casino?
+							<svg
+								class="button-faq--icon"
+								data-id="readmore-chevron"
+								style="transform: rotate(180deg)"
+								xmlns="http://www.w3.org/2000/svg"
+								width="30px"
+								height="30px"
+								viewBox="0 0 21 21"
+							>
+								<path
+									d="m.5 4.5 4-4 4 4"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									transform="translate(6 8)"
+								/>
+							</svg>
+						</button>
+						<p class="section-faq--paragraph" data-id="readmore-content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
+							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
+							vel eu enim.
+						</p>
+					</div>
+					<!-- FAQ Item End -->
+					<!-- FAQ Item -->
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
+							What is the Welcome Bonus at Oreels Casino?
+							<svg
+								class="button-faq--icon"
+								data-id="readmore-chevron"
+								style="transform: rotate(180deg)"
+								xmlns="http://www.w3.org/2000/svg"
+								width="30px"
+								height="30px"
+								viewBox="0 0 21 21"
+							>
+								<path
+									d="m.5 4.5 4-4 4 4"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									transform="translate(6 8)"
+								/>
+							</svg>
+						</button>
+						<p class="section-faq--paragraph" data-id="readmore-content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
+							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
+							vel eu enim.
+						</p>
+					</div>
+					<!-- FAQ Item End -->
+					<!-- FAQ Item -->
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
+							What is the Welcome Bonus at Oreels Casino?
+							<svg
+								class="button-faq--icon"
+								data-id="readmore-chevron"
+								style="transform: rotate(180deg)"
+								xmlns="http://www.w3.org/2000/svg"
+								width="30px"
+								height="30px"
+								viewBox="0 0 21 21"
+							>
+								<path
+									d="m.5 4.5 4-4 4 4"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									transform="translate(6 8)"
+								/>
+							</svg>
+						</button>
+						<p class="section-faq--paragraph" data-id="readmore-content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
+							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
+							vel eu enim.
+						</p>
+					</div>
+					<!-- FAQ Item End -->
+					<!-- FAQ Item -->
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
+							What is the Welcome Bonus at Oreels Casino?
+							<svg
+								class="button-faq--icon"
+								data-id="readmore-chevron"
+								style="transform: rotate(180deg)"
+								xmlns="http://www.w3.org/2000/svg"
+								width="30px"
+								height="30px"
+								viewBox="0 0 21 21"
+							>
+								<path
+									d="m.5 4.5 4-4 4 4"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									transform="translate(6 8)"
+								/>
+							</svg>
+						</button>
+						<p class="section-faq--paragraph" data-id="readmore-content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
+							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
+							vel eu enim.
+						</p>
+					</div>
+					<!-- FAQ Item End -->
+				</section>
+				<section class="section section-comment">
+					<h2 class="section-comment--header">Post a comment</h2>
+					<form action="#" class="section-comment--form">
+						<div class="section-comment--form--stars">
+							<svg
+								id="Group_280"
+								data-name="Group 280"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="20"
+								height="20"
+								viewBox="0 0 13.632 13.632"
+							>
+								<g
+									id="Group_235"
+									data-name="Group 235"
+									transform="translate(0 0)"
+									fill="currentColor"
+								>
+									<path
+										id="Path_68"
+										data-name="Path 68"
+										d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+										transform="translate(0 0)"
+									/>
+									<path
+										id="Path_69"
+										data-name="Path 69"
+										d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+										transform="translate(-4.725 -3.077)"
+									/>
+									<path
+										id="Path_70"
+										data-name="Path 70"
+										d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+										transform="translate(-0.66 -0.651)"
+									/>
+								</g>
+							</svg>
+							<svg
+								id="Group_280"
+								data-name="Group 280"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="20"
+								height="20"
+								viewBox="0 0 13.632 13.632"
+							>
+								<g
+									id="Group_235"
+									data-name="Group 235"
+									transform="translate(0 0)"
+									fill="currentColor"
+								>
+									<path
+										id="Path_68"
+										data-name="Path 68"
+										d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+										transform="translate(0 0)"
+									/>
+									<path
+										id="Path_69"
+										data-name="Path 69"
+										d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+										transform="translate(-4.725 -3.077)"
+									/>
+									<path
+										id="Path_70"
+										data-name="Path 70"
+										d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+										transform="translate(-0.66 -0.651)"
+									/>
+								</g>
+							</svg>
+							<svg
+								id="Group_280"
+								data-name="Group 280"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="20"
+								height="20"
+								viewBox="0 0 13.632 13.632"
+							>
+								<g
+									id="Group_235"
+									data-name="Group 235"
+									transform="translate(0 0)"
+									fill="currentColor"
+								>
+									<path
+										id="Path_68"
+										data-name="Path 68"
+										d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+										transform="translate(0 0)"
+									/>
+									<path
+										id="Path_69"
+										data-name="Path 69"
+										d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+										transform="translate(-4.725 -3.077)"
+									/>
+									<path
+										id="Path_70"
+										data-name="Path 70"
+										d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+										transform="translate(-0.66 -0.651)"
+									/>
+								</g>
+							</svg>
+							<svg
+								id="Group_280"
+								data-name="Group 280"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="20"
+								height="20"
+								viewBox="0 0 13.632 13.632"
+							>
+								<g
+									id="Group_235"
+									data-name="Group 235"
+									transform="translate(0 0)"
+									fill="currentColor"
+								>
+									<path
+										id="Path_68"
+										data-name="Path 68"
+										d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+										transform="translate(0 0)"
+									/>
+									<path
+										id="Path_69"
+										data-name="Path 69"
+										d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+										transform="translate(-4.725 -3.077)"
+									/>
+									<path
+										id="Path_70"
+										data-name="Path 70"
+										d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+										transform="translate(-0.66 -0.651)"
+									/>
+								</g>
+							</svg>
+							<svg
+								id="Group_280"
+								data-name="Group 280"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="20"
+								height="20"
+								viewBox="0 0 13.632 13.632"
+							>
+								<g
+									id="Group_235"
+									data-name="Group 235"
+									transform="translate(0 0)"
+									fill="currentColor"
+								>
+									<path
+										id="Path_68"
+										data-name="Path 68"
+										d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+										transform="translate(0 0)"
+									/>
+									<path
+										id="Path_69"
+										data-name="Path 69"
+										d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+										transform="translate(-4.725 -3.077)"
+									/>
+									<path
+										id="Path_70"
+										data-name="Path 70"
+										d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+										transform="translate(-0.66 -0.651)"
+									/>
+								</g>
+							</svg>
+						</div>
+						<textarea
+							class="section-comment--form--textarea"
+							name="review"
+							id="review"
+							placeholder="Write a review here"
+						></textarea>
+						<button type="submit" class="button button-submit">Submit</button>
+					</form>
+				</section>
+				<hr class="main--line" />
+				<section class="section section-reviews">
+					<!-- User Reviews -->
+					<h2 class="section-reviews--header">User Reviews</h2>
+					<div class="section-reviews--content">
+						<!-- User Review -->
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
+							</div>
+							<div class="review--user--content">
+								<div class="review--user--rating">
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+								</div>
+								<p class="review--user--comment">Good new casino. Bravo!</p>
+							</div>
+						</article>
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
+							</div>
+							<div class="review--user--content">
+								<div class="review--user--rating">
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+									<svg
+										id="Group_280"
+										data-name="Group 280"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20"
+										height="20"
+										viewBox="0 0 13.632 13.632"
+									>
+										<g
+											id="Group_235"
+											data-name="Group 235"
+											transform="translate(0 0)"
+											fill="currentColor"
+										>
+											<path
+												id="Path_68"
+												data-name="Path 68"
+												d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+												transform="translate(0 0)"
+											/>
+											<path
+												id="Path_69"
+												data-name="Path 69"
+												d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+												transform="translate(-4.725 -3.077)"
+											/>
+											<path
+												id="Path_70"
+												data-name="Path 70"
+												d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+												transform="translate(-0.66 -0.651)"
+											/>
+										</g>
+									</svg>
+								</div>
+								<p class="review--user--comment">Good new casino. Bravo!</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
