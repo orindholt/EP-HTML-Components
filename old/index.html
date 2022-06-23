@@ -20,27 +20,22 @@
 			<main class="main">
 				<!-- Breadcrumb -->
 				<section class="section">
-					<p class="text-xs font-semibold text-darkGray">
+					<p class="breadcrumb">
 						home > blog > news >
-						<span class="text-orange">introduction to baccarat</span>
+						<span class="breadcrumb--current">introduction to baccarat</span>
 					</p>
 				</section>
 				<!-- Breadcrumb End -->
 				<section class="section">
-					<h1 class="mt-8 text-[2rem] font-bold">
-						The Best Online Casinos For 2022
-					</h1>
-					<h2 class="text-base font-bold">
+					<h1 class="main--header">The Best Online Casinos For 2022</h1>
+					<h2 class="main--subheader">
 						Our experts reviewed over 4000 online casinos sites and picked the
 						best ones.
 					</h2>
 				</section>
-				<section class="section flex gap-8 my-8">
+				<section class="section section-filters">
 					<!-- More filters button -->
-					<button
-						class="rounded-base w-full h-14 flex justify-between items-center border-3 border-solid border-black text-2xl px-3"
-						data-id="menu-toggle"
-					>
+					<button class="button button-filter" data-id="menu-toggle">
 						Filters
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -64,14 +59,11 @@
 						</svg>
 					</button>
 					<!-- Filter section -->
-					<div
-						class="flex flex-col fixed -translate-x-full transition-transform left-0 top-0 bottom-0 justify-center items-end z-50 bg-black p-3 w-[375px] duration-500 overlay"
-						data-id="menu"
-					>
+					<div class="section-filters-menu" data-id="menu">
 						<!-- Clear Filters Button -->
 						<button
 							type="button"
-							class="px-3 ml-auto text-white"
+							class="button button-filters-exit"
 							data-id="menu-exit"
 						>
 							<svg
@@ -89,226 +81,192 @@
 								</g>
 							</svg>
 						</button>
-						<button
-							class="p-3 bg-white relative font-semibold text-xl w-full mt-auto rounded-base"
-						>
+						<button class="button button-filters-clear">
 							Clear all filters
 						</button>
 					</div>
 				</section>
 				<!-- Product Card Section -->
 				<section class="section section-cards">
-					<ul class="grid grid-flow-row gap-3 mb-3" data-id="card-grid">
-						<!-- Product Card -->
-						<li class="shadow-base rounded-base">
-							<a
-								class="p-3 flex items-center justify-between gap-5"
-								href="casino.html"
-							>
-								<div
-									class="flex justify-between items-start w-full h-full flex-col gap-3 sm:flex-row sm:items-center"
-								>
-									<div class="flex flex-col">
-										<p class="text-darkGray">
-											Welcome offer
-											<span href="#" class="underline">T&C</span>
-										</p>
-										<div class="xl:flex xl:items-center xl:gap-3">
-											<h3 class="text-[2rem] font-bold">€300</h3>
-											<h4 class="font-bold">
-												120% up to €300 + 120 free spins
-											</h4>
-										</div>
-									</div>
-									<hr class="w-full opacity-50 sm:hidden" />
-									<h4
-										class="ml-0 sm:ml-auto font-light flex flex-col justify-center"
-									>
-										EP Bonus<br /><span class="font-bold text-orange">N/A</span>
-									</h4>
-								</div>
-								<div
-									class="flex justify-between items-start w-full h-full flex-col gap-3 sm:flex-row sm:items-center"
-								>
-									<div
-										class="w-[8.5rem] h-14 bg-green rounded-2xl mx-auto"
-									></div>
-									<div class="flex flex-col h-full gap-2 w-full sm:w-auto">
-										<button
-											class="lg:w-52 h-full grid place-content-center text-center text-white font-medium rounded-base text-xl px-3 py-2 bg-gradient-to-bl from-orange to-yellow"
-											href="#"
-										>
-											Play now
-										</button>
-										<button
-											class="text-center font-medium text-xs text-white bg-darkGray rounded-[0.2rem] py-[5px] px-[10px]"
-											href="#"
-										>
-											Read full review
-										</button>
-									</div>
-								</div>
-							</a>
-						</li>
-						<!-- Product Card End -->
-						<!-- Product Card -->
-						<li class="shadow-base rounded-base">
-							<a
-								class="p-3 flex items-center justify-between gap-5"
-								href="casino.html"
-							>
-								<div
-									class="flex justify-between items-start w-full h-full flex-col gap-3 sm:flex-row sm:items-center"
-								>
-									<div class="flex flex-col">
-										<p class="text-darkGray">
-											Welcome offer
-											<span href="#" class="underline">T&C</span>
-										</p>
-										<div class="xl:flex xl:items-center xl:gap-3">
-											<h3 class="text-[2rem] font-bold">€300</h3>
-											<h4 class="font-bold">
-												120% up to €300 + 120 free spins
-											</h4>
-										</div>
-									</div>
-									<hr class="w-full opacity-50 sm:hidden" />
-									<h4
-										class="ml-0 sm:ml-auto font-light flex flex-col justify-center"
-									>
-										EP Bonus<br /><span class="font-bold text-orange">N/A</span>
-									</h4>
-								</div>
-								<div
-									class="flex justify-between items-start w-full h-full flex-col gap-3 sm:flex-row sm:items-center"
-								>
-									<div
-										class="w-[8.5rem] h-14 bg-green rounded-2xl mx-auto"
-									></div>
-									<div class="flex flex-col h-full gap-2 w-full sm:w-auto">
-										<button
-											class="lg:w-52 h-full grid place-content-center text-center text-white font-medium rounded-base text-xl px-3 py-2 bg-gradient-to-bl from-orange to-yellow"
-											href="#"
-										>
-											Play now
-										</button>
-										<button
-											class="text-center font-medium text-xs text-white bg-darkGray rounded-[0.2rem] py-[5px] px-[10px]"
-											href="#"
-										>
-											Read full review
-										</button>
-									</div>
-								</div>
-							</a>
-						</li>
-						<!-- Product Card End -->
-					</ul>
-					<!-- Product Grid -->
-					<ul
-						class="grid grid-flow-row gap-3 mb-3 sm:grid-cols-2"
-						data-id="card-grid"
-					>
-						<!-- Product Card -->
-						<li class="shadow-base rounded-base">
-							<a
-								class="w-full h-full flex items-center justify-center p-5 gap-3 sm:gap-5"
-								href="casino.html"
-							>
-								<div
-									class="items-start flex justify-between w-full h-full flex-col gap-3"
-								>
-									<div class="justify-around h-full flex flex-col">
-										<p class="text-darkGray">
-											Welcome offer
-											<span href="#" class="underline">T&C</span>
-										</p>
-										<div>
-											<h3 class="text-[2rem] font-bold">€300</h3>
-											<h4 class="font-bold">
-												120% up to €300 + 120 free spins
-											</h4>
-										</div>
-									</div>
-									<hr class="w-full opacity-50" />
-									<h4 class="font-light flex justify-center flex-col">
-										EP Bonus<br /><span class="font-bold text-orange">N/A</span>
-									</h4>
-								</div>
-								<div
-									class="flex justify-between items-end w-full h-full flex-col gap-3"
-								>
-									<div
-										class="max-w-[8rem] w-full h-[4.5rem] bg-green rounded-xl mx-auto"
-									></div>
-									<div class="w-full h-full gap-2 flex flex-col">
-										<button
-											class="h-full grid place-content-center text-center text-white font-medium rounded-[0.2rem] text-xl w-full bg-gradient-to-bl from-orange to-yellow"
-										>
-											Play now
-										</button>
-										<button
-											class="text-center font-medium text-xs bg-darkGray text-white rounded-[0.2rem] px-[5px] py-[10px]"
-										>
-											Read full review
-										</button>
-									</div>
-								</div>
-							</a>
-						</li>
-						<!-- Product Card End -->
-						<!-- Product Card -->
-						<li class="shadow-base rounded-base">
-							<a
-								class="w-full h-full flex items-center justify-center p-5 gap-3 sm:gap-5"
-								href="casino.html"
-							>
-								<div
-									class="items-start flex justify-between w-full h-full flex-col gap-3"
-								>
-									<div class="justify-around h-full flex flex-col">
-										<div>
-											<h3 class="text-[2rem] font-bold">€300</h3>
-											<h4 class="font-bold">
-												120% up to €300 + 120 free spins
-											</h4>
-										</div>
-									</div>
-									<hr class="w-full opacity-50" />
-									<h4 class="font-light flex justify-center flex-col">
-										EP Bonus<br /><span class="font-bold text-orange">N/A</span>
-									</h4>
-								</div>
-								<div
-									class="flex justify-between items-end w-full h-full flex-col gap-3"
-								>
-									<div
-										class="max-w-[8rem] w-full h-[4.5rem] bg-green rounded-xl mx-auto"
-									></div>
-									<div class="w-full h-full gap-2 flex flex-col">
-										<button
-											class="h-full grid place-content-center text-center text-white font-medium rounded-[0.2rem] text-xl w-full bg-gradient-to-bl from-orange to-yellow"
-										>
-											Play now
-										</button>
-										<button
-											class="text-center font-medium text-xs bg-darkGray text-white rounded-[0.2rem] px-[5px] py-[10px]"
-										>
-											Read full review
-										</button>
-									</div>
-								</div>
-							</a>
-						</li>
-						<!-- Product Card End -->
-					</ul>
-					<!-- Product Grid End -->
-					<!-- Card Pagination -->
-					<div class="sm:flex-row flex gap-4 w-full flex-col-reverse">
+					<!-- Product View Toggle -->
+					<!-- <div class="section-cards--view">
 						<button
 							type="button"
-							class="flex justify-between items-center px-2 text-base font-medium w-full text-white bg-black rounded-base"
+							class="button-view"
+							data-id="view-button"
+							data-type="grid"
 						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="32px"
+								height="32px"
+								viewBox="0 0 32 32"
+								fill="currentColor"
+							>
+								<title />
+								<g data-name="67-menu" id="_67-menu">
+									<rect class="cls-1" height="12" width="12" x="1" y="1" />
+									<rect class="cls-1" height="12" width="12" x="1" y="19" />
+									<rect class="cls-1" height="12" width="12" x="19" y="19" />
+									<rect class="cls-1" height="12" width="12" x="19" y="1" />
+								</g>
+							</svg>
+						</button>
+						<button
+							type="button"
+							class="button-view active"
+							data-id="view-button"
+							data-type="list"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="36px"
+								height="36px"
+								viewBox="0 0 512 512"
+								fill="currentColor"
+							>
+								<path
+									d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+								/>
+							</svg>
+						</button>
+					</div> -->
+					<!-- Product View Toggle End -->
+					<ul class="section-cards--list" data-id="card-grid">
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play" href="#">Play now</button>
+										<button class="card--review" href="#">
+											Read full review
+										</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play" href="#">Play now</button>
+										<button class="card--review" href="#">
+											Read full review
+										</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+					</ul>
+					<ul class="section-cards--grid" data-id="card-grid">
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play">Play now</button>
+										<button class="card--review">Read full review</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+						<!-- Product Card -->
+						<li class="section-cards--item card">
+							<a class="card--link" href="casino.html">
+								<div class="card--section-flex">
+									<div class="card--section card--section-one">
+										<div class="card--flex">
+											<h3 class="card--price">€300</h3>
+											<h4 class="card--offer">
+												120% up to €300 + 120 free spins
+											</h4>
+										</div>
+										<p class="card--type">
+											Welcome offer
+											<span href="#" class="card--type--link">T&C</span>
+										</p>
+									</div>
+									<hr class="card--line" />
+									<h4 class="card--bonus">
+										EP Bonus<br /><span class="card--bonus--value">N/A</span>
+									</h4>
+								</div>
+								<div class="card--section-flex">
+									<div class="card--logo"></div>
+									<div class="card--section card--section-two">
+										<button class="card--play">Play now</button>
+										<button class="card--review">Read full review</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<!-- Product Card End -->
+					</ul>
+					<!-- Card Pagination -->
+					<div class="pagination">
+						<button type="button" class="button button-pagination">
 							Show more casinos ( +10 )
 							<svg
 								style="transform: rotate(180deg)"
@@ -327,61 +285,29 @@
 								/>
 							</svg>
 						</button>
-						<div class="flex justify-between items-center w-full">
-							<div class="flex h-full">
-								<a
-									href="#"
-									class="active pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>1</a
-								>
-								<a
-									href="#"
-									class="pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>2</a
-								>
-								<a
-									href="#"
-									class="pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>3</a
-								>
-								<a
-									href="#"
-									class="pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>4</a
-								>
+						<div class="pagination--nav">
+							<div class="pagination--section">
+								<a href="#" class="active pagination--link">1</a>
+								<a href="#" class="pagination--link">2</a>
+								<a href="#" class="pagination--link">3</a>
+								<a href="#" class="pagination--link">4</a>
 							</div>
-							<p class="flex h-full items-end">...</p>
-							<div class="flex h-full">
-								<a
-									href="#"
-									class="pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>19</a
-								>
-								<a
-									href="#"
-									class="pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>20</a
-								>
-								<a
-									href="#"
-									class="pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>21</a
-								>
-								<a
-									href="#"
-									class="pagination flex items-center px-3 py-2 rounded-base h-full font-medium"
-									>22</a
-								>
+							<p class="pagination--paragraph">...</p>
+							<div class="pagination--section">
+								<a href="#" class="pagination--link">19</a>
+								<a href="#" class="pagination--link">20</a>
+								<a href="#" class="pagination--link">21</a>
+								<a href="#" class="pagination--link">22</a>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="section mt-[4.5rem]">
-					<h2 class="my-6 font-bold text-2xl">
+				<section class="section section-info">
+					<h2 class="section-info--header">
 						Find the Best Quality Casinos in the World, Choose your Favourite
 						One and Play to Win
 					</h2>
-					<p class="mt-3 font-medium leading-5">
+					<p class="section-info--paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 						porttitor porta erat ac blandit. Phasellus eu vehicula leo, lobortis
 						finibus lacus. Nullam ac neque accumsan mi mollis ornare vel eu
@@ -393,10 +319,10 @@
 						ipsum non, commodo euismod risus. Nam ac nisl ut urna vulputate
 						pretium. Sed venenatis placerat enim, id efficitur nunc congue nec.
 					</p>
-					<h2 class="my-6 font-bold text-2xl">
+					<h2 class="section-info--header">
 						List of the Top Online Casinos to Try in May 2022
 					</h2>
-					<p class="mt-3 font-medium leading-5">
+					<p class="section-info--paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 						porttitor porta erat ac blandit. Phasellus eu vehicula leo, lobortis
 						finibus lacus. Nullam ac neque accumsan mi mollis ornare vel eu
@@ -408,10 +334,10 @@
 						ipsum non, commodo euismod risus. Nam ac nisl ut urna vulputate
 						pretium. Sed venenatis placerat enim, id efficitur nunc congue nec.
 					</p>
-					<h2 class="my-6 font-bold">
+					<h2 class="section-info--header">
 						How We Rated this Month's Quality Online Casinos
 					</h2>
-					<p class="mt-3 font-medium leading-5">
+					<p class="section-info--paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 						porttitor porta erat ac blandit. Phasellus eu vehicula leo, lobortis
 						finibus lacus. Nullam ac neque accumsan mi mollis ornare vel eu
@@ -424,57 +350,32 @@
 						pretium. Sed venenatis placerat enim, id efficitur nunc congue nec.
 					</p>
 				</section>
-				<section class="section mt-10">
-					<h2 class="text-2xl font-bold">Related Pages</h2>
-					<div class="flex flex-col gap-3 my-4 sm:grid sm:grid-cols-3">
-						<article
-							class="bg-black text-white gap-10 flex flex-col justify-between p-4 rounded-base"
-						>
-							<h3 class="font-bold">Top New Online Casinos</h3>
-							<a
-								class="w-full h-14 text-white text-xl font-semibold flex items-center rounded-base px-3 bg-gradient-to-bl from-orange to-yellow"
-								href="#"
-								>Read more</a
-							>
+				<section class="section section-related">
+					<h2>Related Pages</h2>
+					<div class="section-related--cards">
+						<article class="section-related--card">
+							<h3>Top New Online Casinos</h3>
+							<a class="button-related" href="#">Read more</a>
 						</article>
-						<article
-							class="bg-black text-white gap-10 flex flex-col justify-between p-4 rounded-base"
-						>
-							<h3 class="font-bold">Top New Online Casinos</h3>
-							<a
-								class="w-full h-14 text-white text-xl font-semibold flex items-center rounded-base px-3 bg-gradient-to-bl from-orange to-yellow"
-								href="#"
-								>Read more</a
-							>
+						<article class="section-related--card">
+							<h3>Top New Online Casinos</h3>
+							<a class="button-related" href="#">Read more</a>
 						</article>
-						<article
-							class="bg-black text-white gap-10 flex flex-col justify-between p-4 rounded-base"
-						>
-							<h3 class="font-bold">Top New Online Casinos</h3>
-							<a
-								class="w-full h-14 text-white text-xl font-semibold flex items-center rounded-base px-3 bg-gradient-to-bl from-orange to-yellow"
-								href="#"
-								>Read more</a
-							>
+						<article class="section-related--card">
+							<h3>Top New Online Casinos</h3>
+							<a class="button-related" href="#">Read more</a>
 						</article>
 					</div>
 				</section>
 				<!-- FAQ -->
-				<section class="section bg-gray flex flex-col">
-					<h2 class="my-5 font-bold text-2xl">FAQ</h2>
+				<section class="section section-faq">
+					<h2 class="section-faq--header">FAQ</h2>
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -492,7 +393,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -501,18 +402,11 @@
 					</div>
 					<!-- FAQ Item End -->
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -530,7 +424,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -539,18 +433,11 @@
 					</div>
 					<!-- FAQ Item End -->
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -568,7 +455,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -577,18 +464,11 @@
 					</div>
 					<!-- FAQ Item End -->
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -606,7 +486,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -615,11 +495,10 @@
 					</div>
 					<!-- FAQ Item End -->
 				</section>
-				<!-- FAQ END -->
-				<section class="section">
-					<h2 class="text-2xl font-bold">Post a comment</h2>
-					<form action="#" class="flex flex-col">
-						<div class="text-gray flex gap-1">
+				<section class="section section-comment">
+					<h2 class="section-comment--header">Post a comment</h2>
+					<form action="#" class="section-comment--form">
+						<div class="section-comment--form--stars">
 							<svg
 								id="Group_280"
 								data-name="Group 280"
@@ -797,36 +676,27 @@
 							</svg>
 						</div>
 						<textarea
-							class="bg-gray w-full h-40 p-6 mb-4 text-base rounded-base resize-none mt-1"
+							class="section-comment--form--textarea"
 							name="review"
 							id="review"
 							placeholder="Write a review here"
 						></textarea>
-						<button
-							type="submit"
-							class="text-xl font-medium text-white bg-gradient-to-br from-orange to-yellow max-w-[10rem] w-full p-3 rounded-base"
-						>
-							Submit
-						</button>
+						<button type="submit" class="button button-submit">Submit</button>
 					</form>
 				</section>
-				<hr class="opacity-25 my-4" />
-				<section class="section">
+				<hr class="main--line" />
+				<section class="section section-reviews">
 					<!-- User Reviews -->
-					<h2 class="mb-3 font-bold text-2xl">User Reviews</h2>
-					<div class="flex flex-col gap-2">
+					<h2 class="section-reviews--header">User Reviews</h2>
+					<div class="section-reviews--content">
 						<!-- User Review -->
-						<article
-							class="bg-gray flex sm:items-center flex-col gap-5 py-6 px-3 sm:flex-row"
-						>
-							<div class="flex items-center gap-5">
-								<div
-									class="rounded-full min-h-[50px] min-w-[50px] max-w-[50px] max-h-[50px] bg-darkGray"
-								></div>
-								<h3 class="font-bold text-lg">piperka_suva44</h3>
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
 							</div>
-							<div class="h-full flex flex-col justify-between">
-								<div class="flex gap-1 text-orange">
+							<div class="review--user--content">
+								<div class="review--user--rating">
 									<svg
 										id="Group_280"
 										data-name="Group 280"
@@ -1003,22 +873,16 @@
 										</g>
 									</svg>
 								</div>
-								<p>Good new casino. Bravo!</p>
+								<p class="review--user--comment">Good new casino. Bravo!</p>
 							</div>
 						</article>
-						<!-- User Review End -->
-						<!-- User Review -->
-						<article
-							class="bg-gray flex sm:items-center flex-col gap-5 py-6 px-3 sm:flex-row"
-						>
-							<div class="flex items-center gap-5">
-								<div
-									class="rounded-full min-h-[50px] min-w-[50px] max-w-[50px] max-h-[50px] bg-darkGray"
-								></div>
-								<h3 class="font-bold text-lg">piperka_suva44</h3>
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
 							</div>
-							<div class="h-full flex flex-col justify-between">
-								<div class="flex gap-1 text-orange">
+							<div class="review--user--content">
+								<div class="review--user--rating">
 									<svg
 										id="Group_280"
 										data-name="Group 280"
@@ -1195,10 +1059,9 @@
 										</g>
 									</svg>
 								</div>
-								<p>Good new casino. Bravo!</p>
+								<p class="review--user--comment">Good new casino. Bravo!</p>
 							</div>
 						</article>
-						<!-- User Review End -->
 					</div>
 				</section>
 			</main>

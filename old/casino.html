@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>EP - HTML Components</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./style.css" />
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -19,25 +19,19 @@
 		<div class="wrapper">
 			<!-- Breadcrumb -->
 			<section class="section">
-				<p class="text-xs font-semibold text-darkGray">
+				<p class="breadcrumb">
 					home > blog > news >
-					<span class="text-orange">introduction to baccarat</span>
+					<span class="breadcrumb--current">introduction to baccarat</span>
 				</p>
 			</section>
 			<!-- Breadcrumb End -->
 			<main class="main">
 				<!-- Main Content -->
-				<section
-					class="section grid gap-x-5 grid-cols-1 md:grid-cols-[2fr_1fr]"
-				>
-					<article
-						class="bg-black text-white py-3 px-4 rounded-base flex flex-col text-center gap-2 md:gap-0 md:text-left row-start-1 col-start-1 row-end-2 col-end-2"
-					>
-						<h2 class="text-2xl font-bold mb-2">Oreels Casino Review 2022</h2>
-						<div
-							class="flex justify-center gap-3 text-yellow text-xs md:justify-start"
-						>
-							<div class="flex gap-1 text-yellow">
+				<section class="section section-review-grid">
+					<article class="grid--review">
+						<h2 class="grid--review--header">Oreels Casino Review 2022</h2>
+						<div class="grid--review--rating">
+							<div class="grid--review--rating--stars">
 								<svg
 									id="Group_280"
 									data-name="Group 280"
@@ -202,40 +196,28 @@
 									</g>
 								</svg>
 							</div>
-							<p>Amazing!</p>
-							<p class="min-w-fit text-white">5 / 5</p>
+							<p class="grid--review--rating--caption">Amazing!</p>
+							<p class="grid--review--rating--amount">5 / 5</p>
 						</div>
-						<div
-							class="flex justify-between items-center gap-3 flex-col lg:flex-row"
-						>
-							<div class="max-w-[12rem] font-medium">
-								<a class="text-darkGray underline text-xs font-inherit" href="#"
-									>T&C</a
-								>
-								<h3 class="font-inherit">
-									100 Free Spins + up to 100 Free Spins
-								</h3>
+						<div class="grid--review--flex">
+							<div class="grid--review--offer">
+								<a class="grid--review--tc" href="#">T&C</a>
+								<h3>100 Free Spins + up to 100 Free Spins</h3>
 							</div>
-							<div class="min-w-fit font-light flex flex-col items-center">
-								<h4 class="font-inherit">
-									EP Bonus<br /><span class="text-yellow font-medium">N/A</span>
+							<div class="grid--review--bonus">
+								<h4>
+									EP Bonus<br /><span class="grid--review--bonus--value"
+										>N/A</span
+									>
 								</h4>
 							</div>
-							<div
-								class="min-w-[7.5rem] max-w-[8.5rem] w-full h-14 bg-green rounded-2xl"
-							></div>
+							<div class="grid--review--logo"></div>
 						</div>
-						<ul class="flex flex-col mt-3">
-							<li
-								class="py-2 flex items-center justify-between border-t border-solid border-gray border-opacity-30 font-medium"
-							>
+						<ul class="grid--review--info">
+							<li class="grid--review--info--item">
 								<p>
 									Players from
-									<span
-										class="text-greenBright underline decoration-2 decoration decoration-green"
-										>Germany</span
-									>
-									accepted
+									<span class="grid--review--info--span">Germany</span> accepted
 								</p>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -252,15 +234,10 @@
 									/>
 								</svg>
 							</li>
-							<li
-								class="py-2 flex items-center justify-between border-t border-solid border-gray border-opacity-30 font-medium"
-							>
+							<li class="grid--review--info--item">
 								<p>
 									Site available in
-									<span
-										class="text-greenBright underline decoration-2 decoration decoration-green"
-										>German</span
-									>
+									<span class="grid--review--info--span">German</span>
 								</p>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -277,15 +254,10 @@
 									/>
 								</svg>
 							</li>
-							<li
-								class="py-2 flex items-center justify-between border-t border-solid border-gray border-opacity-30 font-medium"
-							>
+							<li class="grid--review--info--item">
 								<p>
-									<span
-										class="text-greenBright underline decoration-2 decoration decoration-green"
-										>iPhone</span
-									>
-									device is supported
+									<span class="grid--review--info--span">iPhone</span> device is
+									supported
 								</p>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -302,9 +274,7 @@
 									/>
 								</svg>
 							</li>
-							<li
-								class="py-2 flex items-center justify-between border-t border-solid border-gray border-opacity-30 font-medium"
-							>
+							<li class="grid--review--info--item">
 								<p>Bitcoin, Litecoin, Neteller, Visa...</p>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -323,35 +293,10 @@
 							</li>
 						</ul>
 					</article>
-					<article
-						class="mt-10 flex flex-col gap-10 row-start-3 col-start-1 row-end-4 col-end-2 md:row-start-2 md:row-end-3"
-					>
-						<section class="flex flex-col gap-4">
-							<h2 class="font-bold text-2xl">OReels Casino Summary</h2>
-							<p class="font-medium leading-5">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
-								sint quam laudantium molestias alias libero laborum, tempora
-								corrupti in odio voluptates numquam veritatis et explicabo
-								doloribus, consequatur magni a eligendi ipsum? Cum accusantium
-								error minus necessitatibus a itaque rerum. Eaque?
-							</p>
-							<p class="font-medium leading-5">
-								Tempora corrupti in odio voluptates numquam veritatis et
-								explicabo doloribus, consequatur magni a eligendi ipsum? Cum
-								accusantium error minus necessitatibus a itaque rerum. Eaque?
-							</p>
-							<p class="font-medium leading-5">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
-								sint quam laudantium molestias alias libero laborum, tempora
-								corrupti in odio voluptates numquam veritatis et explicabo
-								doloribus.
-							</p>
-						</section>
-						<section class="flex flex-col gap-4">
-							<h2 class="font-bold text-2xl">
-								Welcome Bonus and Promotions at Oreels Casino
-							</h2>
-							<p class="font-medium leading-5">
+					<article class="grid--article">
+						<section class="grid--article--section">
+							<h2>OReels Casino Summary</h2>
+							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
 								sint quam laudantium molestias alias libero laborum, tempora
 								corrupti in odio voluptates numquam veritatis et explicabo
@@ -363,17 +308,36 @@
 								explicabo doloribus, consequatur magni a eligendi ipsum? Cum
 								accusantium error minus necessitatibus a itaque rerum. Eaque?
 							</p>
-							<p class="font-medium leading-5">
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
+								sint quam laudantium molestias alias libero laborum, tempora
+								corrupti in odio voluptates numquam veritatis et explicabo
+								doloribus.
+							</p>
+						</section>
+						<section class="grid--article--section">
+							<h2>Welcome Bonus and Promotions at Oreels Casino</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
+								sint quam laudantium molestias alias libero laborum, tempora
+								corrupti in odio voluptates numquam veritatis et explicabo
+								doloribus, consequatur magni a eligendi ipsum? Cum accusantium
+								error minus necessitatibus a itaque rerum. Eaque?
+							</p>
+							<p>
+								Tempora corrupti in odio voluptates numquam veritatis et
+								explicabo doloribus, consequatur magni a eligendi ipsum? Cum
+								accusantium error minus necessitatibus a itaque rerum. Eaque?
+							</p>
+							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
 								sint quam.
 							</p>
 							<p>Lorem ipsum dolor sit amet consectetur.</p>
 						</section>
-						<section class="flex flex-col gap-4">
-							<h2 class="font-bold text-2xl">
-								Welcome Bonus and Promotions at Oreels Casino
-							</h2>
-							<p class="font-medium leading-5">
+						<section class="grid--article--section">
+							<h2>Welcome Bonus and Promotions at Oreels Casino</h2>
+							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
 								sint quam laudantium molestias alias libero laborum, tempora
 								corrupti in odio voluptates numquam veritatis et explicabo
@@ -391,20 +355,16 @@
 							</p>
 						</section>
 						<!-- Related Offers -->
-						<section>
-							<h2 class="text-[2rem] font-bold">Related Casino Offers</h2>
-							<div
-								class="flex flex-col gap-4 mt-4 md:grid md:grid-cols-2 md:grid-rows-2"
-							>
-								<article
-									class="bg-black rounded-base text-white p-3 flex flex-col gap-2"
-								>
-									<div class="grid grid-cols-2 items-center gap-2">
+						<section class="grid--related-offers">
+							<h2 class="section--header">Related Casino Offers</h2>
+							<div class="grid--related-offers--grid">
+								<article class="grid--related-offers--item">
+									<div class="grid--related-offers--flex">
 										<div>
-											<h3 class="font-semibold text-[1.17rem]">
+											<h3 class="grid--related-offers--header">
 												Slotwolf Casino Review 2022
 											</h3>
-											<div class="text-yellow mt-1 flex gap-1">
+											<div class="grid--related-offers--stars">
 												<svg
 													id="Group_280"
 													data-name="Group 280"
@@ -582,33 +542,25 @@
 												</svg>
 											</div>
 										</div>
-										<div class="w-full h-12 bg-[#0e1934] rounded-base"></div>
+										<div class="grid--related-offers--img"></div>
 									</div>
-									<div class="grid grid-cols-2 items-center gap-2">
-										<div>
-											<a class="text-darkGray underline text-xs" href="#"
-												>T&C</a
-											>
-											<h4 class="font-medium">
+									<div class="grid--related-offers--flex">
+										<div class="grid--related-offers--offer">
+											<a class="grid--related-offers--tc" href="#">T&C</a>
+											<h4 class="grid--related-offers--bonus">
 												250 Free Spins + up to 50 Free Spins
 											</h4>
 										</div>
-										<a
-											class="w-full h-16 grid place-content-center font-medium text-xl rounded-base bg-gradient-to-bl from-orange to-yellow"
-											href="#"
-											>Play now</a
-										>
+										<a class="grid--related-offers--play" href="#">Play now</a>
 									</div>
 								</article>
-								<article
-									class="bg-black rounded-base text-white p-3 flex flex-col gap-2"
-								>
-									<div class="grid grid-cols-2 items-center gap-2">
+								<article class="grid--related-offers--item">
+									<div class="grid--related-offers--flex">
 										<div>
-											<h3 class="font-semibold text-[1.17rem]">
+											<h3 class="grid--related-offers--header">
 												Slotwolf Casino Review 2022
 											</h3>
-											<div class="text-yellow mt-1 flex gap-1">
+											<div class="grid--related-offers--stars">
 												<svg
 													id="Group_280"
 													data-name="Group 280"
@@ -786,33 +738,25 @@
 												</svg>
 											</div>
 										</div>
-										<div class="w-full h-12 bg-[#0e1934] rounded-base"></div>
+										<div class="grid--related-offers--img"></div>
 									</div>
-									<div class="grid grid-cols-2 items-center gap-2">
-										<div>
-											<a class="text-darkGray underline text-xs" href="#"
-												>T&C</a
-											>
-											<h4 class="font-medium">
+									<div class="grid--related-offers--flex">
+										<div class="grid--related-offers--offer">
+											<a class="grid--related-offers--tc" href="#">T&C</a>
+											<h4 class="grid--related-offers--bonus">
 												250 Free Spins + up to 50 Free Spins
 											</h4>
 										</div>
-										<a
-											class="w-full h-16 grid place-content-center font-medium text-xl rounded-base bg-gradient-to-bl from-orange to-yellow"
-											href="#"
-											>Play now</a
-										>
+										<a class="grid--related-offers--play" href="#">Play now</a>
 									</div>
 								</article>
-								<article
-									class="bg-black rounded-base text-white p-3 flex flex-col gap-2"
-								>
-									<div class="grid grid-cols-2 items-center gap-2">
+								<article class="grid--related-offers--item">
+									<div class="grid--related-offers--flex">
 										<div>
-											<h3 class="font-semibold text-[1.17rem]">
+											<h3 class="grid--related-offers--header">
 												Slotwolf Casino Review 2022
 											</h3>
-											<div class="text-yellow mt-1 flex gap-1">
+											<div class="grid--related-offers--stars">
 												<svg
 													id="Group_280"
 													data-name="Group 280"
@@ -990,33 +934,25 @@
 												</svg>
 											</div>
 										</div>
-										<div class="w-full h-12 bg-[#0e1934] rounded-base"></div>
+										<div class="grid--related-offers--img"></div>
 									</div>
-									<div class="grid grid-cols-2 items-center gap-2">
-										<div>
-											<a class="text-darkGray underline text-xs" href="#"
-												>T&C</a
-											>
-											<h4 class="font-medium">
+									<div class="grid--related-offers--flex">
+										<div class="grid--related-offers--offer">
+											<a class="grid--related-offers--tc" href="#">T&C</a>
+											<h4 class="grid--related-offers--bonus">
 												250 Free Spins + up to 50 Free Spins
 											</h4>
 										</div>
-										<a
-											class="w-full h-16 grid place-content-center font-medium text-xl rounded-base bg-gradient-to-bl from-orange to-yellow"
-											href="#"
-											>Play now</a
-										>
+										<a class="grid--related-offers--play" href="#">Play now</a>
 									</div>
 								</article>
-								<article
-									class="bg-black rounded-base text-white p-3 flex flex-col gap-2"
-								>
-									<div class="grid grid-cols-2 items-center gap-2">
+								<article class="grid--related-offers--item">
+									<div class="grid--related-offers--flex">
 										<div>
-											<h3 class="font-semibold text-[1.17rem]">
+											<h3 class="grid--related-offers--header">
 												Slotwolf Casino Review 2022
 											</h3>
-											<div class="text-yellow mt-1 flex gap-1">
+											<div class="grid--related-offers--stars">
 												<svg
 													id="Group_280"
 													data-name="Group 280"
@@ -1194,65 +1130,57 @@
 												</svg>
 											</div>
 										</div>
-										<div class="w-full h-12 bg-[#0e1934] rounded-base"></div>
+										<div class="grid--related-offers--img"></div>
 									</div>
-									<div class="grid grid-cols-2 items-center gap-2">
-										<div>
-											<a class="text-darkGray underline text-xs" href="#"
-												>T&C</a
-											>
-											<h4 class="font-medium">
+									<div class="grid--related-offers--flex">
+										<div class="grid--related-offers--offer">
+											<a class="grid--related-offers--tc" href="#">T&C</a>
+											<h4 class="grid--related-offers--bonus">
 												250 Free Spins + up to 50 Free Spins
 											</h4>
 										</div>
-										<a
-											class="w-full h-16 grid place-content-center font-medium text-xl rounded-base bg-gradient-to-bl from-orange to-yellow"
-											href="#"
-											>Play now</a
-										>
+										<a class="grid--related-offers--play" href="#">Play now</a>
 									</div>
 								</article>
 							</div>
 						</section>
 						<!-- Related Offers End -->
-						<section class="flex flex-col gap-4">
-							<h2 class="text-2xl font-bold">
-								Welcome Bonus and Promotions at Oreels Casino
-							</h2>
-							<p class="font-medium leading-5">
+						<section class="grid--article--section">
+							<h2>Welcome Bonus and Promotions at Oreels Casino</h2>
+							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
 								sint quam laudantium molestias alias libero laborum, tempora
 								corrupti in odio voluptates numquam veritatis et explicabo
 								doloribus, consequatur magni a eligendi ipsum? Cum accusantium
 								error minus necessitatibus a itaque rerum. Eaque?
 							</p>
-							<p class="font-medium leading-5">
+							<p>
 								Tempora corrupti in odio voluptates numquam veritatis et
 								explicabo doloribus, consequatur magni a eligendi ipsum? Cum
 								accusantium error minus necessitatibus a itaque rerum. Eaque?
 							</p>
-							<p class="font-medium leading-5">
+							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
 								sint quam laudantium molestias alias libero laborum, tempora
 								corrupti in odio voluptates numquam veritatis et explicabo
 								doloribus.
 							</p>
 						</section>
-						<section class="flex flex-col gap-4">
-							<h2 class="text-2xl font-bold">Game Libary at O'Reels Casino</h2>
-							<p class="font-medium leading-5">
+						<section class="grid--article--section">
+							<h2>Game Libary at O'Reels Casino</h2>
+							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
 								sint quam laudantium molestias alias libero laborum, tempora
 								corrupti in odio voluptates numquam veritatis et explicabo
 								doloribus, consequatur magni a eligendi ipsum? Cum accusantium
 								error minus necessitatibus a itaque rerum. Eaque?
 							</p>
-							<p class="font-medium leading-5">
+							<p>
 								Tempora corrupti in odio voluptates numquam veritatis et
 								explicabo doloribus, consequatur magni a eligendi ipsum? Cum
 								accusantium error minus necessitatibus a itaque rerum. Eaque?
 							</p>
-							<p class="font-medium leading-5">
+							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
 								sint quam laudantium molestias alias libero laborum, tempora
 								corrupti in odio voluptates numquam veritatis et explicabo
@@ -1260,19 +1188,11 @@
 							</p>
 						</section>
 					</article>
-					<article
-						class="flex flex-col gap-3 row-start-2 col-start-1 row-end-3 col-end-2 md:row-start-1 md:col-start-2 md:row-end-3 sm:grid sm:grid-cols-2 md:flex"
-					>
-						<a
-							class="col-start-1 col-end-3 mt-3 font-medium text-white w-full h-16 text-xl rounded-base grid place-content-center bg-gradient-to-l from-orange to-yellow md:mt-0 md:col-auto"
-							href="#"
-							>Play now</a
-						>
+					<article class="grid--details">
+						<a class="grid--details--play" href="#">Play now</a>
 						<section>
-							<div
-								class="flex justify-between items-center px-4 h-12 rounded-base w-full gap-3 text-white bg-black font-light"
-							>
-								<h3 class="font-medium text-[1.17rem]">Casino Details</h3>
+							<div class="grid--details--header">
+								<h3>Casino Details</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1292,34 +1212,30 @@
 									/>
 								</svg>
 							</div>
-							<div
-								class="px-4 py-2 flex flex-col gap-5 bg-[#fff] mt-3 rounded-base"
-							>
-								<table class="border-spacing-y-2 border-separate">
-									<tr class="text-left">
-										<td class="font-bold">1036</td>
-										<th class="font-normal pl-4">Casino Games</th>
+							<div class="grid--details--content">
+								<table>
+									<tr>
+										<td>1036</td>
+										<th>Casino Games</th>
 									</tr>
-									<tr class="text-left">
-										<td class="font-bold">50</td>
-										<th class="font-normal pl-4">Slot Jackpots</th>
+									<tr>
+										<td>50</td>
+										<th>Slot Jackpots</th>
 									</tr>
-									<tr class="text-left">
-										<td class="font-bold">25</td>
-										<th class="font-normal pl-4">Live Competitions</th>
+									<tr>
+										<td>25</td>
+										<th>Live Competitions</th>
 									</tr>
-									<tr class="text-left">
-										<td class="font-bold">96%</td>
-										<th class="font-normal pl-4">Payout</th>
+									<tr>
+										<td>96%</td>
+										<th>Payout</th>
 									</tr>
 								</table>
 							</div>
 						</section>
 						<section>
-							<div
-								class="flex justify-between items-center px-4 h-12 rounded-base w-full gap-3 text-white bg-black font-light"
-							>
-								<h3 class="font-medium text-[1.17rem]">Payment Method</h3>
+							<div class="grid--details--header">
+								<h3>Payment Method</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1339,65 +1255,60 @@
 									/>
 								</svg>
 							</div>
-							<div class="p-4 flex flex-col gap-5 bg-[#fff] mt-3 rounded-base">
+							<div class="grid--details--content">
 								<div data-id="readmore">
-									<div class="flex items-center mb-2">
-										<h4 class="font-bold">Deposit options</h4>
+									<div class="grid--details--header-sub">
+										<h4>Deposit options</h4>
 										<button
-											class="text-darkGray underline text-xs ml-auto"
+											class="grid--details--header-sub--link"
 											href="#"
 											data-id="readmore-button"
 										>
 											See all
 										</button>
 									</div>
-									<ul class="grid grid-cols-3 auto-rows-auto gap-1">
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
+									<ul class="grid--details--payments">
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
 										<li
 											data-id="readmore-content"
-											class="bg-darkGray rounded-[0.2rem] w-full h-6"
+											class="grid--details--payments--item"
 										></li>
 										<li
 											data-id="readmore-content"
-											class="bg-darkGray rounded-[0.2rem] w-full h-6"
+											class="grid--details--payments--item"
 										></li>
 										<li
 											data-id="readmore-content"
-											class="bg-darkGray rounded-[0.2rem] w-full h-6"
+											class="grid--details--payments--item"
 										></li>
 									</ul>
 								</div>
 								<div>
-									<div class="flex items-center mb-2">
-										<h4 class="font-bold">Widthdrawal options</h4>
-										<button
-											class="text-darkGray underline text-xs ml-auto"
-											href="#"
-										>
+									<div class="grid--details--header-sub">
+										<h4>Widthdrawal options</h4>
+										<button class="grid--details--header-sub--link" href="#">
 											See all
 										</button>
 									</div>
-									<ul class="grid grid-cols-3 auto-rows-auto gap-1">
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
+									<ul class="grid--details--payments">
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<div
-								class="flex justify-between items-center px-4 h-12 rounded-base w-full gap-3 text-white bg-black font-light"
-							>
-								<h3 class="font-medium text-[1.17rem]">Language & Locations</h3>
+							<div class="grid--details--header">
+								<h3>Language & Locations</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1412,40 +1323,34 @@
 									/>
 								</svg>
 							</div>
-							<div class="p-4 flex flex-col gap-5 bg-[#fff] mt-3 rounded-base">
+							<div class="grid--details--content">
 								<div>
-									<div class="flex items-center mb-2">
-										<h4 class="font-bold">Site languages</h4>
-										<button
-											class="text-darkGray underline text-xs ml-auto"
-											href="#"
-										>
+									<div class="grid--details--header-sub">
+										<h4>Site languages</h4>
+										<button class="grid--details--header-sub--link" href="#">
 											See all
 										</button>
 									</div>
-									<p class="font-medium">
+									<p class="grid--details--paragraph">
 										English, Finnish, German, Norwegian...
 									</p>
 								</div>
 								<div>
-									<div class="flex items-center mb-2">
-										<h4 class="font-bold">Playable locations</h4>
-										<button
-											class="text-darkGray underline text-xs ml-auto"
-											href="#"
-										>
+									<div class="grid--details--header-sub">
+										<h4>Playable locations</h4>
+										<button class="grid--details--header-sub--link" href="#">
 											See all
 										</button>
 									</div>
-									<p class="font-medium">Germany, France, Denmark, Sweden...</p>
+									<p class="grid--details--paragraph">
+										Germany, France, Denmark, Sweden...
+									</p>
 								</div>
 							</div>
 						</section>
 						<section>
-							<div
-								class="flex justify-between items-center px-4 h-12 rounded-base w-full gap-3 text-white bg-black font-light"
-							>
-								<h3 class="font-medium text-[1.17rem]">Supported Platforms</h3>
+							<div class="grid--details--header">
+								<h3>Supported Platforms</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1465,21 +1370,16 @@
 									/>
 								</svg>
 							</div>
-							<div class="p-4 flex flex-col gap-5 bg-[#fff] mt-3 rounded-base">
+							<div class="grid--details--content">
 								<div>
-									<div class="flex items-center mb-2">
-										<h4 class="font-bold">Supported devices</h4>
-										<button
-											class="text-darkGray underline text-xs ml-auto"
-											href="#"
-										>
+									<div class="grid--details--header-sub">
+										<h4>Supported devices</h4>
+										<button class="grid--details--header-sub--link" href="#">
 											See all
 										</button>
 									</div>
-									<ul class="flex flex-col gap-3 mt-3">
-										<li
-											class="flex items-center gap-3 border-b border-solid border-gray pb-2"
-										>
+									<ul class="grid--details--platforms">
+										<li class="grid--details--platforms--item">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="24"
@@ -1494,9 +1394,7 @@
 											</svg>
 											Windows
 										</li>
-										<li
-											class="flex items-center gap-3 border-b border-solid border-gray pb-2"
-										>
+										<li class="grid--details--platforms--item">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="24px"
@@ -1509,9 +1407,7 @@
 											</svg>
 											Andriod
 										</li>
-										<li
-											class="flex items-center gap-3 border-b border-solid border-gray pb-2"
-										>
+										<li class="grid--details--platforms--item">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="24px"
@@ -1530,10 +1426,8 @@
 							</div>
 						</section>
 						<section>
-							<div
-								class="flex justify-between items-center px-4 h-12 rounded-base w-full gap-3 text-white bg-black font-light"
-							>
-								<h3 class="font-medium text-[1.17rem]">Game Providers</h3>
+							<div class="grid--details--header">
+								<h3>Game Providers</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="30px"
@@ -1546,32 +1440,27 @@
 									/>
 								</svg>
 							</div>
-							<div class="p-4 flex flex-col gap-5 bg-[#fff] mt-3 rounded-base">
+							<div class="grid--details--content">
 								<div>
-									<div class="flex items-center mb-2">
-										<button
-											class="text-darkGray underline text-xs ml-auto"
-											href="#"
-										>
+									<div class="grid--details--header-sub">
+										<button class="grid--details--header-sub--link" href="#">
 											See all
 										</button>
 									</div>
-									<ul class="grid grid-cols-3 auto-rows-auto gap-1">
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
-										<li class="bg-darkGray rounded-[0.2rem] w-full h-6"></li>
+									<ul class="grid--details--payments">
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
+										<li class="grid--details--payments--item"></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<div
-								class="flex justify-between items-center px-4 h-12 rounded-base w-full gap-3 text-white bg-black font-light"
-							>
-								<h3 class="font-medium text-[1.17rem]">Currencies</h3>
+							<div class="grid--details--header">
+								<h3>Currencies</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="30px"
@@ -1585,18 +1474,15 @@
 									/>
 								</svg>
 							</div>
-							<div class="p-4 flex flex-col gap-5 bg-[#fff] mt-3 rounded-base">
+							<div class="grid--details--content">
 								<div>
-									<div class="flex items-center mb-2">
-										<h4 class="font-bold">Acceptable currencies</h4>
-										<button
-											class="text-darkGray underline text-xs ml-auto"
-											href="#"
-										>
+									<div class="grid--details--header-sub">
+										<h4>Acceptable currencies</h4>
+										<button class="grid--details--header-sub--link" href="#">
 											See all
 										</button>
 									</div>
-									<p class="font-medium">
+									<p class="grid--details--paragraph">
 										Euros, Norwegian kroner, US dollars, Canadian dollars,
 										Russian rubles, Australian dollars, Canadian dollars,
 										Chinese yuan, Euros, Norwegian kroner, US dollars,
@@ -1606,10 +1492,8 @@
 							</div>
 						</section>
 						<section>
-							<div
-								class="flex justify-between items-center px-4 h-12 rounded-base w-full gap-3 text-white bg-black font-light"
-							>
-								<h3 class="font-medium text-[1.17rem]">Pros & Cons</h3>
+							<div class="grid--details--header">
+								<h3>Pros & Cons</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="24px"
@@ -1624,63 +1508,33 @@
 									/>
 								</svg>
 							</div>
-							<div class="p-4 flex flex-col gap-5 bg-[#fff] mt-3 rounded-base">
-								<section class="text-greenBright">
-									<h4 class="font-bold text-inherit">Pros</h4>
-									<ul class="text-black">
-										<li
-											class="list-disc list-inside text-sm marker:text-greenBright"
-										>
-											Two types of bonuses in the game
-										</li>
-										<li
-											class="list-disc list-inside text-sm marker:text-greenBright"
-										>
-											Bonus buy-in feature
-										</li>
-										<li
-											class="list-disc list-inside text-sm marker:text-greenBright"
-										>
-											Variable betting range
-										</li>
-										<li
-											class="list-disc list-inside text-sm marker:text-greenBright"
-										>
-											Excellent music and attractive
-										</li>
+							<div class="grid--details--content">
+								<section class="grid--details--list-pros">
+									<h4>Pros</h4>
+									<ul>
+										<li>Two types of bonuses in the game</li>
+										<li>Bonus buy-in feature</li>
+										<li>Variable betting range</li>
+										<li>Excellent music and attractive</li>
 									</ul>
 								</section>
-								<section class="col-start-1 col-end-3 md:col-auto text-red">
-									<h4 class="font-bold">Cons</h4>
-									<ul class="text-black">
-										<li class="list-disc list-inside text-sm marker:text-red">
-											No information about RTP and volatility
-										</li>
-										<li class="list-disc list-inside text-sm marker:text-red">
-											Bonus game does not trigger easily
-										</li>
-										<li class="list-disc list-inside text-sm marker:text-red">
-											No gamble feature
-										</li>
+								<section class="grid--details--list-cons">
+									<h4>Cons</h4>
+									<ul>
+										<li>No information about RTP and volatility</li>
+										<li>Bonus game does not trigger easily</li>
+										<li>No gamble feature</li>
 									</ul>
 								</section>
 							</div>
 						</section>
 					</article>
-					<article
-						class="bg-black text-white py-3 px-4 rounded-base flex flex-col gap-2 text-center mt-8 row-start-4 col-start-1 row-end-5 col-end-2 md:row-start-3 md:row-end-4 md:col-end-3 md:text-left md:gap-0"
-					>
-						<div
-							class="flex justify-between items-center gap-3 flex-col lg:flex-row"
-						>
+					<article class="grid--review grid--review-sm">
+						<div class="grid--review--flex">
 							<div>
-								<h2 class="mb-2 text-2xl font-bold">
-									Oreels Casino Review 2022
-								</h2>
-								<div
-									class="flex justify-center gap-3 text-yellow text-xs md:justify-start"
-								>
-									<div class="flex gap-1 text-yellow">
+								<h2 class="grid--review--header">Oreels Casino Review 2022</h2>
+								<div class="grid--review--rating">
+									<div class="grid--review--rating--stars">
 										<svg
 											id="Group_280"
 											data-name="Group 280"
@@ -1857,57 +1711,40 @@
 											</g>
 										</svg>
 									</div>
-									<p>Amazing!</p>
-									<p class="min-w-fit text-white">5 / 5</p>
+									<p class="grid--review--rating--caption">Amazing!</p>
+									<p class="grid--review--rating--amount">5 / 5</p>
 								</div>
 							</div>
-							<div
-								class="flex justify-between items-center gap-3 flex-col lg:flex-row"
-							>
-								<div class="font-medium max-w-[12rem]">
-									<a class="text-darkGray underline text-xs" href="#">T&C</a>
-									<h3 class="font-medium text-[1.17rem]">
-										100 Free Spins + up to 100 Free Spins
-									</h3>
+							<div class="grid--review--flex">
+								<div class="grid--review--offer">
+									<a class="grid--review--tc" href="#">T&C</a>
+									<h3>100 Free Spins + up to 100 Free Spins</h3>
 								</div>
-								<div class="min-w-fit font-light flex flex-col items-center">
-									<h4 class="font-inherit">
-										EP Bonus<br /><span class="text-yellow font-medium"
+								<div class="grid--review--bonus">
+									<h4>
+										EP Bonus<br /><span class="grid--review--bonus--value"
 											>N/A</span
 										>
 									</h4>
 								</div>
 							</div>
-							<div class="flex gap-3">
-								<div
-									class="min-w-[7.5rem] max-w-[8.5rem] w-full h-14 bg-green rounded-2xl"
-								></div>
-								<a
-									class="grid place-content-center font-medium rounded-base w-40 text-xl bg-gradient-to-bl from-orange to-yellow"
-									href="#"
-									>Play now</a
-								>
+							<div class="grid--review--container">
+								<div class="grid--review--logo"></div>
+								<a class="grid--review--play" href="#">Play now</a>
 							</div>
 						</div>
 					</article>
 				</section>
 				<!--Main Content End -->
 				<!-- FAQ -->
-				<section class="section bg-gray flex flex-col">
-					<h2 class="my-5 font-bold text-2xl">FAQ</h2>
+				<section class="section section-faq">
+					<h2 class="section-faq--header">FAQ</h2>
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -1925,7 +1762,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -1934,18 +1771,11 @@
 					</div>
 					<!-- FAQ Item End -->
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -1963,7 +1793,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -1972,18 +1802,11 @@
 					</div>
 					<!-- FAQ Item End -->
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -2001,7 +1824,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -2010,18 +1833,11 @@
 					</div>
 					<!-- FAQ Item End -->
 					<!-- FAQ Item -->
-					<div
-						class="py-3 border-t border-solid border-darkGray"
-						data-id="readmore"
-					>
-						<button
-							type="button"
-							class="flex items-center font-bold w-full justify-between text-base"
-							data-id="readmore-button"
-						>
+					<div class="section-faq--item" data-id="readmore">
+						<button type="button" class="button-faq" data-id="readmore-button">
 							What is the Welcome Bonus at Oreels Casino?
 							<svg
-								class="transition-transform duration-200"
+								class="button-faq--icon"
 								data-id="readmore-chevron"
 								style="transform: rotate(180deg)"
 								xmlns="http://www.w3.org/2000/svg"
@@ -2039,7 +1855,7 @@
 								/>
 							</svg>
 						</button>
-						<p class="hidden" data-id="readmore-content">
+						<p class="section-faq--paragraph" data-id="readmore-content">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							porttitor porta erat ac blandit. Phasellus eu vehicula leo,
 							lobortis finibus lacus. Nullam ac neque accumsan mi mollis ornare
@@ -2048,10 +1864,10 @@
 					</div>
 					<!-- FAQ Item End -->
 				</section>
-				<section class="section">
-					<h2 class="text-2xl font-bold">Post a comment</h2>
-					<form action="#" class="flex flex-col">
-						<div class="text-gray flex gap-1">
+				<section class="section section-comment">
+					<h2 class="section-comment--header">Post a comment</h2>
+					<form action="#" class="section-comment--form">
+						<div class="section-comment--form--stars">
 							<svg
 								id="Group_280"
 								data-name="Group 280"
@@ -2229,36 +2045,27 @@
 							</svg>
 						</div>
 						<textarea
-							class="bg-gray w-full h-40 p-6 mb-4 text-base rounded-base resize-none mt-1"
+							class="section-comment--form--textarea"
 							name="review"
 							id="review"
 							placeholder="Write a review here"
 						></textarea>
-						<button
-							type="submit"
-							class="text-xl font-medium text-white bg-gradient-to-br from-orange to-yellow max-w-[10rem] w-full p-3 rounded-base"
-						>
-							Submit
-						</button>
+						<button type="submit" class="button button-submit">Submit</button>
 					</form>
 				</section>
-				<hr class="opacity-25 my-4" />
-				<section class="section">
+				<hr class="main--line" />
+				<section class="section section-reviews">
 					<!-- User Reviews -->
-					<h2 class="mb-3 font-bold text-2xl">User Reviews</h2>
-					<div class="flex flex-col gap-2">
+					<h2 class="section-reviews--header">User Reviews</h2>
+					<div class="section-reviews--content">
 						<!-- User Review -->
-						<article
-							class="bg-gray flex sm:items-center flex-col gap-5 py-6 px-3 sm:flex-row"
-						>
-							<div class="flex items-center gap-5">
-								<div
-									class="rounded-full min-h-[50px] min-w-[50px] max-w-[50px] max-h-[50px] bg-darkGray"
-								></div>
-								<h3 class="font-bold text-lg">piperka_suva44</h3>
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
 							</div>
-							<div class="h-full flex flex-col justify-between">
-								<div class="flex gap-1 text-orange">
+							<div class="review--user--content">
+								<div class="review--user--rating">
 									<svg
 										id="Group_280"
 										data-name="Group 280"
@@ -2435,22 +2242,16 @@
 										</g>
 									</svg>
 								</div>
-								<p>Good new casino. Bravo!</p>
+								<p class="review--user--comment">Good new casino. Bravo!</p>
 							</div>
 						</article>
-						<!-- User Review End -->
-						<!-- User Review -->
-						<article
-							class="bg-gray flex sm:items-center flex-col gap-5 py-6 px-3 sm:flex-row"
-						>
-							<div class="flex items-center gap-5">
-								<div
-									class="rounded-full min-h-[50px] min-w-[50px] max-w-[50px] max-h-[50px] bg-darkGray"
-								></div>
-								<h3 class="font-bold text-lg">piperka_suva44</h3>
+						<article class="section-reviews--item review">
+							<div class="review--flex">
+								<div class="review--user--icon"></div>
+								<h3 class="review--user--name">piperka_suva44</h3>
 							</div>
-							<div class="h-full flex flex-col justify-between">
-								<div class="flex gap-1 text-orange">
+							<div class="review--user--content">
+								<div class="review--user--rating">
 									<svg
 										id="Group_280"
 										data-name="Group 280"
@@ -2627,10 +2428,9 @@
 										</g>
 									</svg>
 								</div>
-								<p>Good new casino. Bravo!</p>
+								<p class="review--user--comment">Good new casino. Bravo!</p>
 							</div>
 						</article>
-						<!-- User Review End -->
 					</div>
 				</section>
 			</main>
