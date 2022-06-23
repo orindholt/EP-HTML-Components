@@ -39,6 +39,9 @@ module.exports = {
 			boxShadow: {
 				base: "0px 4px 20px rgb(0 0 0 / 8%)",
 			},
+			fontWeight: {
+				inherit: "inherit",
+			},
 		},
 	},
 	plugins: [],

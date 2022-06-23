@@ -9,12 +9,12 @@
   body {
     @apply font-montserrat text-black bg-lightGray;
   }
-  section {
-    @apply py-3 px-[5%] md:px-[15%];
-  }
 }
 
 @layer components {
+  .section {
+    @apply py-3 px-[5%] md:px-[15%];
+  }
   .overlay.active {
     @apply !translate-x-0
   }
