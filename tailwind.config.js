@@ -42,6 +42,15 @@ module.exports = {
 			fontWeight: {
 				inherit: "inherit",
 			},
+			animation: {
+				fadeIn: "fadeIn 1s ease forwards",
+			},
+			keyframes: {
+				fadeIn: {
+					"0%": { opacity: 0 },
+					"100%": { opacity: 1 },
+				},
+			},
 		},
 	},
 	plugins: [],
