@@ -28,7 +28,8 @@ module.exports = {
 				darkGray: "#999999",
 			},
 			fontFamily: {
-				montserrat: "'Montserrat', sans-serif",
+				sofia: "'sofia-pro', 'Montserrat', sans-serif",
+				montserrat: "'Montserrat', 'sofia-pro', sans-serif",
 			},
 			borderRadius: {
 				base: "0.3rem",
