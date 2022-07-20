@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EP - HTML Components</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="./js/filter.js"></script>
+		<script src="./js/readmore.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="main">
+				<!-- Breadcrumb -->
+				<section class="section">
+					<p class="text-xs font-semibold text-darkGray">
+						home > blog > news >
+						<span class="text-orange">introduction to baccarat</span>
+					</p>
+				</section>
+				<!-- Breadcrumb End -->
+				<section class="section">
+					<!-- 'Today Trending' Section -->
+					<h1 class="mt-8 text-6xl font-bold mb-10">Today trending</h1>
+					<div
+						class="grid grid-cols-1 sm:grid-cols-2 gap-x-2.5 lg:gap-x-5 gap-y-5 md:gap-y-8"
+					>
+						<a href="#">
+							<!-- Article -->
+							<article class="flex flex-col">
+								<img
+									src="./assets/news/demo-01.jpg"
+									alt="Demo 01"
+									class="mb-4 rounded-md"
+								/>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Wolverhampton strikes shirt sponsorship with AstroPay
+								</h3>
+								<div class="hidden md:flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+							<!-- Article End -->
+						</a>
+						<a href="#">
+							<!-- Article -->
+							<article class="flex flex-col">
+								<img
+									src="./assets/news/demo-02.jpg"
+									alt="Demo 01"
+									class="mb-4 rounded-md"
+								/>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<div class="hidden md:flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+							<!-- Article End -->
+						</a>
+					</div>
+					<!-- Compact Article Section -->
+					<section class="grid grid-cols-1 lg:grid-cols-3 py-10 gap-3">
+						<a href="#">
+							<article class="flex items-center gap-3">
+								<img
+									src="./assets/news/compact/demo-compact-01.jpg"
+									alt="Demo Compact 01"
+									class="w-[110px] h-[120px] rounded-md"
+								/>
+								<div class="flex flex-col gap-1">
+									<h3 class="font-bold text-xl lg:text-base xl:text-xl">
+										Crypto in Chaos, but Blockchain-powered Pay and Stablecoins
+									</h3>
+									<div class="flex gap-1 pt-3">
+										<div
+											class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+										>
+											<p class="font-medium uppercase text-xs">Finance</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</a>
+						<a href="#">
+							<article class="flex items-center gap-3">
+								<img
+									src="./assets/news/compact/demo-compact-01.jpg"
+									alt="Demo Compact 01"
+									class="w-[110px] h-[120px] rounded-md"
+								/>
+								<div class="flex flex-col gap-1">
+									<h3 class="font-bold text-xl lg:text-base xl:text-xl">
+										Crypto in Chaos, but Blockchain-powered Pay and Stablecoins
+									</h3>
+									<div class="flex gap-1 pt-3">
+										<div
+											class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+										>
+											<p class="font-medium uppercase text-xs">Finance</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</a>
+						<a href="#">
+							<article class="flex items-center gap-3">
+								<img
+									src="./assets/news/compact/demo-compact-01.jpg"
+									alt="Demo Compact 01"
+									class="w-[110px] h-[120px] rounded-md"
+								/>
+								<div class="flex flex-col gap-1">
+									<h3 class="font-bold text-xl lg:text-base xl:text-xl">
+										Crypto in Chaos, but Blockchain-powered Pay and Stablecoins
+									</h3>
+									<div class="flex gap-1 pt-3">
+										<div
+											class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+										>
+											<p class="font-medium uppercase text-xs">Finance</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</a>
+					</section>
+					<!-- Compact Article Section End -->
+					<a
+						href="#"
+						class="bg-gradient-to-r from-yellow to-orange px-3 h-8 flex items-center pb-0.5 text-white max-w-fit rounded-md shadow-md font-medium"
+						>Read all trending news</a
+					>
+				</section>
+				<!-- 'Today Trending' Section End -->
+				<hr class="border-2 bg-darkGray opacity-10 my-6" />
+				<!-- 'Latest' Section -->
+				<section class="section">
+					<h2 class="text-5xl font-bold mb-6">Latest</h2>
+					<div
+						class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-2.5 md:gap-x-5 gap-y-6 md:gap-y-12"
+					>
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-03.jpg"
+									alt="Demo 03"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									1 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-04.jpg"
+									alt="Demo 04"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									2 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-05.jpg"
+									alt="Demo 05"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									4 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-06.jpg"
+									alt="Demo 06"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									8 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-07.jpg"
+									alt="Demo 07"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									12 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-08.jpg"
+									alt="Demo 08"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									1 day ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+					</div>
+				</section>
+				<!-- 'Latest' Section End -->
+				<!-- 'Recommended By Experts' Section -->
+				<section class="py-6 px-[5%] md:px-[7.5%] my-10 bg-lightBlue">
+					<h2 class="text-[27px] font-bold text-center">
+						Casinos recommended by experts
+					</h2>
+					<ul class="grid grid-flow-row lg:grid-flow-col gap-10 pt-6">
+						<li class="rounded-md bg-[#F4F7FC] border-2 border-greenBright">
+							<a
+								class="p-3 flex items-center justify-between gap-5"
+								href="casino.html"
+							>
+								<div
+									class="flex justify-between items-start w-full h-full flex-col gap-3 sm:flex-row sm:items-center"
+								>
+									<div class="flex flex-col">
+										<p class="text-darkGray">
+											Welcome offer
+											<span href="#" class="underline">T&amp;C</span>
+										</p>
+										<div class="flex flex-col">
+											<h3 class="text-[2rem] text-greenBright font-bold">
+												€300
+											</h3>
+											<h4 class="font-medium text-xl">120% up to €300 + 120</h4>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-col gap-2 min-w-[30%]">
+									<img
+										src="./assets/casino/casino_okeels.jpg"
+										alt="Okeels"
+										class="w-full h-12 object-cover rounded-md"
+									/>
+									<div class="flex flex-col h-full gap-2 w-full">
+										<button
+											class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5"
+											href="#"
+										>
+											Play now
+										</button>
+										<button
+											class="w-full text-white bg-gradient-to-r from-greenBright to-green rounded-md font-medium pb-0.5"
+											href="#"
+										>
+											Read full review
+										</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="rounded-md bg-[#F4F7FC] border-2 border-greenBright">
+							<a
+								class="p-3 flex items-center justify-between gap-5"
+								href="casino.html"
+							>
+								<div
+									class="flex justify-between items-start w-full h-full flex-col gap-3 sm:flex-row sm:items-center"
+								>
+									<div class="flex flex-col">
+										<p class="text-darkGray">
+											Welcome offer
+											<span href="#" class="underline">T&amp;C</span>
+										</p>
+										<div class="flex flex-col">
+											<h3 class="text-[2rem] text-greenBright font-bold">
+												€300
+											</h3>
+											<h4 class="font-medium text-xl">120% up to €300 + 120</h4>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-col gap-2 min-w-[30%]">
+									<img
+										src="./assets/casino/casino_okeels.jpg"
+										alt="Okeels"
+										class="w-full h-12 object-cover rounded-md"
+									/>
+									<div class="flex flex-col h-full gap-2 w-full">
+										<button
+											class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5"
+											href="#"
+										>
+											Play now
+										</button>
+										<button
+											class="w-full text-white bg-gradient-to-r from-greenBright to-green rounded-md font-medium pb-0.5"
+											href="#"
+										>
+											Read full review
+										</button>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<!-- 'Recommended By Experts' Section End -->
+				<section class="section">
+					<h2 class="text-5xl font-bold mb-6">Recommended for you</h2>
+					<div
+						class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-2.5 md:gap-x-5 gap-y-6 md:gap-y-12"
+					>
+						<!-- Latest Article -->
+						<a href="#"
+							><article>
+								<img
+									src="./assets/news/demo-09.jpg"
+									alt="Demo 09"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									1 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article></a
+						>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-10.jpg"
+									alt="Demo 10"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									2 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#"
+							><article>
+								<img
+									src="./assets/news/demo-11.jpg"
+									alt="Demo 11"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									4 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article></a
+						>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-03.jpg"
+									alt="Demo 12"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									8 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#">
+							<article>
+								<img
+									src="./assets/news/demo-12.jpg"
+									alt="Demo 13"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									12 hour ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+						<!-- Latest Article -->
+						<a href="#"
+							><article>
+								<img
+									src="./assets/news/demo-04.jpg"
+									alt="Demo 14"
+									class="rounded-md"
+								/>
+								<p class="text-base lg:text-lg text-orange font-medium">
+									1 day ago
+								</p>
+								<h3 class="text-[22px] sm:text-xl lg:text-2xl font-bold">
+									Kindred Group makes long-anticipated Dutch rollout
+								</h3>
+								<p class="text-sm xl:text-base text-darkGray">
+									Join our free spin competitions, spin and win real money +
+									earn EkstraPoints - Come back every day to get new free spins!
+								</p>
+								<div class="flex gap-1 pt-3">
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Finance</p>
+									</div>
+									<div
+										class="bg-black text-white rounded-[5px] shadow-sm px-2 h-6 flex items-center pb-0.5"
+									>
+										<p class="font-medium uppercase text-xs">Crypto</p>
+									</div>
+								</div>
+							</article>
+						</a>
+						<!-- Latest Article End -->
+					</div>
+					<a
+						href="#"
+						class="bg-gradient-to-r from-yellow to-orange px-3 h-8 flex items-center pb-0.5 text-white max-w-fit rounded-md shadow-md font-medium mt-10"
+						>Read all recommended news</a
+					>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
