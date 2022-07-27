@@ -2262,6 +2262,16 @@ body{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px){
@@ -2370,6 +2380,10 @@ body{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:\!grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2460,6 +2474,11 @@ body{
 
   .md\:text-5xl{
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-8xl{
+    font-size: 6rem;
     line-height: 1;
   }
 }

@@ -12,7 +12,6 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-		<script src="./js/filter-variation.js"></script>
 		<script src="./js/slider.js"></script>
 		<script src="./js/readmore-paragraph.js"></script>
 		<!-- Splide (Swiper Lib) -->
@@ -22,37 +21,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css"
 		/>
-		<script>
-			document.addEventListener("DOMContentLoaded", () => {
-				const deviceType = () => {
-					const ua = navigator.userAgent;
-					if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-						return "tablet";
-					} else if (
-						/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-							ua
-						)
-					) {
-						return "mobile";
-					}
-					return "desktop";
-				};
-				console.log(deviceType());
-				// Sliders
-				if (deviceType() === "mobile") {
-					document.querySelectorAll(".splide").forEach(el => {
-						new Splide(el, {
-							type: "loop",
-							perPage: deviceType() === "desktop" ? 2 : 1,
-							arrows: false,
-							pagination: false,
-							gap: "1rem",
-							fixedWidth: deviceType() === "desktop" ? "44%" : "75%",
-						}).mount();
-					});
-				}
-			});
-		</script>
+		<script src="./js/swiper.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -102,7 +71,9 @@
 									data-page="1"
 								>
 									<div>
-										<h2 class="font-bold text-8xl">$42.710</h2>
+										<h2 class="font-bold text-6xl sm:text-7xl md:text-8xl">
+											$42.710
+										</h2>
 										<h3 class="font-bold text-2xl">won in 2022 so far</h3>
 									</div>
 								</div>
@@ -218,32 +189,30 @@
 					</h1>
 					<hr class="border-black border bg-black" />
 				</section>
-				<!-- Filters -->
+				<!-- Related Pages Anchors -->
 				<section class="section">
-					<ul class="filters flex flex-wrap py-4 gap-2 font-medium text-sm">
-						<button
-							type="button"
-							data-id="filter-toggle-button"
+					<ul class="flex flex-wrap py-4 gap-2 font-medium text-sm">
+						<a
+							href="#"
 							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black border-solid rounded-md grid place-content-center"
 						>
 							Biggest winners
-						</button>
-						<button
-							type="button"
-							data-id="filter-toggle-button"
+						</a>
+						<a
+							href="#"
 							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black border-solid rounded-md grid place-content-center"
 						>
 							Recent winners
-						</button>
-						<button
-							type="button"
-							data-id="filter-toggle-button"
+						</a>
+						<a
+							href="#"
 							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black border-solid rounded-md grid place-content-center"
 						>
 							Cash prize winners
-						</button>
+						</a>
 					</ul>
 				</section>
+				<!-- Related Pages Anchors End -->
 				<section class="section bg-lightBlue py-8">
 					<h2 class="font-bold text-5xl mb-8">Biggest winners This month</h2>
 					<!-- Splide slider (Mobile), Grid (Desktop / Tablet) -->
