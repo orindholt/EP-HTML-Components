@@ -14,6 +14,45 @@
 		></script>
 		<script src="./js/filter-variation.js"></script>
 		<script src="./js/slider.js"></script>
+		<script src="./js/readmore-paragraph.js"></script>
+		<!-- Splide (Swiper Lib) -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+		<!-- Splide CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css"
+		/>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const deviceType = () => {
+					const ua = navigator.userAgent;
+					if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+						return "tablet";
+					} else if (
+						/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+							ua
+						)
+					) {
+						return "mobile";
+					}
+					return "desktop";
+				};
+				console.log(deviceType());
+				// Sliders
+				if (deviceType() === "mobile") {
+					document.querySelectorAll(".splide").forEach(el => {
+						new Splide(el, {
+							type: "loop",
+							perPage: deviceType() === "desktop" ? 2 : 1,
+							arrows: false,
+							pagination: false,
+							gap: "1rem",
+							fixedWidth: deviceType() === "desktop" ? "44%" : "75%",
+						}).mount();
+					});
+				}
+			});
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -205,8 +244,1857 @@
 						</button>
 					</ul>
 				</section>
+				<section class="section bg-lightBlue py-8">
+					<h2 class="font-bold text-5xl mb-8">Biggest winners This month</h2>
+					<!-- Splide slider (Mobile), Grid (Desktop / Tablet) -->
+					<div class="splide md:!visible">
+						<div class="splide__track">
+							<ul
+								class="splide__list md:!grid md:!grid-cols-2 lg:!grid-cols-3 md:!gap-4 md:!h-auto"
+							>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/samurai.jpg"
+												alt="Samurai Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Samurai</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/argo.jpg"
+												alt="Argo Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Argo</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/moonstone.jpg"
+												alt="Moonstone Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Moonstone</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/argo.jpg"
+												alt="Argo Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Argo</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/moonstone.jpg"
+												alt="Moonstone Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Moonstone</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/samurai.jpg"
+												alt="Samurai Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Samurai</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a
+						href="game.html"
+						class="bg-gradient-to-bl from-orange to-yellow pb-1 px-5 h-[26px] font-medium text-sm rounded-md text-white flex items-center max-w-fit shadow-md my-6"
+						>See all winners</a
+					>
+				</section>
+				<hr class="border-darkGray opacity-30" />
+				<section class="section bg-lightBlue py-8">
+					<h2 class="font-bold text-5xl mb-8">Latest winners</h2>
+					<!-- Splide slider (Mobile), Grid (Desktop / Tablet) -->
+					<div class="splide md:!visible">
+						<div class="splide__track">
+							<ul
+								class="splide__list md:!grid md:!grid-cols-2 lg:!grid-cols-3 md:!gap-4 md:!h-auto"
+							>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/samurai.jpg"
+												alt="Samurai Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Samurai</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/argo.jpg"
+												alt="Argo Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Argo</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/moonstone.jpg"
+												alt="Moonstone Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Moonstone</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/argo.jpg"
+												alt="Argo Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Argo</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/moonstone.jpg"
+												alt="Moonstone Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Moonstone</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/samurai.jpg"
+												alt="Samurai Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Samurai</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a
+						href="game.html"
+						class="bg-gradient-to-bl from-orange to-yellow pb-1 px-5 h-[26px] font-medium text-sm rounded-md text-white flex items-center max-w-fit shadow-md my-6"
+						>See all winners</a
+					>
+				</section>
+				<hr class="border-darkGray opacity-30" />
+				<section class="section bg-lightBlue py-8">
+					<h2 class="font-bold text-5xl mb-8">Cash price winners</h2>
+					<!-- Splide slider (Mobile), Grid (Desktop / Tablet) -->
+					<div class="splide md:!visible">
+						<div class="splide__track">
+							<ul
+								class="splide__list md:!grid md:!grid-cols-2 lg:!grid-cols-3 md:!gap-4 md:!h-auto"
+							>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/samurai.jpg"
+												alt="Samurai Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Samurai</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/argo.jpg"
+												alt="Argo Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Argo</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/moonstone.jpg"
+												alt="Moonstone Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Moonstone</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/argo.jpg"
+												alt="Argo Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Argo</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/moonstone.jpg"
+												alt="Moonstone Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Moonstone</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+								<li class="splide__slide">
+									<!-- Game Winner -->
+									<article class="bg-[#111317] rounded-lg overflow-hidden">
+										<figure class="relative">
+											<img
+												src="./assets/game/variation/samurai.jpg"
+												alt="Samurai Game"
+											/>
+											<figcaption
+												class="text-white absolute bottom-0 left-0 px-4 py-1"
+											>
+												<h4 class="text-xs">Feb. 9th. 2022</h4>
+												<h3 class="text-xl font-bold">Samurai</h3>
+											</figcaption>
+											<a
+												href="game.html"
+												class="bg-gradient-to-bl from-orange to-yellow pb-1 px-3 h-[26px] font-medium text-sm rounded-md text-white flex items-center absolute top-3 left-3 shadow-sm"
+												>Play Now</a
+											>
+										</figure>
+										<div class="flex gap-2 p-1.5 items-end">
+											<!-- 2nd Position -->
+											<section
+												class="text-[#C2C8D8] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">2nd</p>
+												<div
+													class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10412test
+												</h4>
+											</section>
+											<!-- 1st Position -->
+											<section
+												class="text-orange flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-center"
+											>
+												<p class="font-bold text-xs pb-1">1st</p>
+												<div
+													class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username10
+												</h4>
+											</section>
+											<!-- 3rd Position -->
+											<section
+												class="text-[#846B4D] flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-center"
+											>
+												<p class="font-bold text-xs pb-1">3rd</p>
+												<div
+													class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
+												></div>
+												<p
+													class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
+												>
+													$25
+												</p>
+												<p
+													class="text-orange text-[8px] font-bold leading-tight"
+												>
+													20.000 EP
+												</p>
+												<h4
+													class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												>
+													username112
+												</h4>
+											</section>
+										</div>
+									</article>
+									<!-- Game Winner End -->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a
+						href="game.html"
+						class="bg-gradient-to-bl from-orange to-yellow pb-1 px-5 h-[26px] font-medium text-sm rounded-md text-white flex items-center max-w-fit shadow-md my-6"
+						>See all winners</a
+					>
+				</section>
+				<hr class="border-darkGray opacity-30" />
 				<section class="section">
-					<h2 class="font-bold text-5xl">Biggest winners This month</h2>
+					<div
+						data-id="readmore-paragraph"
+						class="py-7 flex flex-col justify-center"
+					>
+						<h3 class="text-3xl font-bold pb-3">
+							Play free casino competitions, spin and win real money!
+						</h3>
+						<div class="relative">
+							<p
+								data-id="readmore-content"
+								class="overflow-hidden max-h-44 transition-[max-height] duration-300"
+							>
+								Our free spin to win slots are guaranteed to give users a fun
+								casino experience. Ekstrapoint rewards user loyalty by giving
+								free spins for all spin competitions every day! Visit our
+								competitions page and take a spin and win real prizes. It feels
+								good to be on EkstraPoint! It is free to join, you get to play
+								free casino games and join free slot competitions that actually
+								pay out. Spin and win real prizes! This is a club for loyal
+								players, start your EkstraPoint journey today, earn EkstraPoints
+								as you play and use them on casino bonuses in our loyalty shop.
+								Check it out, it's a win-win situation, it pays off every time
+								you play! Our Winners are here to prove it! Spin and win real
+								prizes! Real money rewards go to first place winners! Play Slot
+								Mountain slot machine competition and increase your chances of
+								winning real money! Spin and win real money! Our free spin to
+								win slots are guaranteed to give users a fun casino experience.
+								Ekstrapoint rewards user loyalty by giving free spins for all
+								spin competitions every day! Visit our competitions page and
+								take a spin and win real prizes. It feels good to be on
+								EkstraPoint! It is free to join, you get to play free casino
+								games and join free slot competitions that actually pay out.
+								Spin and win real prizes! This is a club for loyal players,
+								start your EkstraPoint journey today, earn EkstraPoints as you
+								play and use them on casino bonuses in our loyalty shop. Check
+								it out, it's a win-win situation, it pays off every time you
+								play! Our Winners are here to prove it! Spin and win real
+								prizes! Real money rewards go to first place winners! Play Slot
+								Mountain slot machine competition and increase your chances of
+								winning real money! Spin and win real money!
+							</p>
+							<div
+								data-id="readmore-overlay"
+								class="absolute bg-gradient-to-t from-lightGray via-transparent to-transparent top-0 bottom-0 left-0 right-0"
+							></div>
+						</div>
+						<button type="button" data-id="readmore-button" class="pt-2">
+							Read more +
+						</button>
+					</div>
 				</section>
 			</main>
 		</div>
