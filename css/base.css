@@ -28,6 +28,9 @@
   .filters .active {
     @apply border-orange text-orange;
   }
+  .slider-pagination .active {
+    @apply fill-[none];
+  }
 }
 
 .fullscreen {

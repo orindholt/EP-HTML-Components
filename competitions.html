@@ -20,6 +20,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css"
 		/>
+		<script src="./js/filter-variation.js"></script>
 		<script>
 			document.addEventListener("DOMContentLoaded", () => {
 				const deviceType = () => {
@@ -35,16 +36,6 @@
 					}
 					return "desktop";
 				};
-				console.log(deviceType());
-				// Demo filter toggle
-				document
-					.querySelectorAll("[data-id='filter-toggle-button']")
-					.forEach(btn => {
-						btn.addEventListener("click", e => {
-							let target = e.currentTarget;
-							target.classList.toggle("active");
-						});
-					});
 				// Sliders
 				document.querySelectorAll(".splide").forEach(el => {
 					new Splide(el, {
@@ -72,7 +63,7 @@
 					</section>
 					<!-- Breadcrumb End -->
 					<article
-						class="bg-gradient-to-br from-teal to-blueBright rounded-md p-4 my-4 md:flex max-h-80"
+						class="bg-gradient-to-br from-teal to-blueBright rounded-md p-4 my-4 md:flex md:max-h-80 flex flex-col md:flex-row gap-2 md:gap-0"
 					>
 						<div
 							class="md:flex md:flex-col md:gap-4 md:justify-between md:pr-4"
@@ -254,8 +245,8 @@
 										<p class="text-center pb-2">01:29:51</p>
 										<a
 											href="#"
-											class="bg-gradient-to-tr from-yellow to-orange rounded-md md:rounded-sm w-20 h-8 ont-medium text-base flex justify-center items-center md:gap-2"
-											>Join></a
+											class="bg-gradient-to-tr from-yellow to-orange rounded-md md:rounded-sm w-20 h-8 ont-medium text-base flex justify-center items-center md:gap-2 pb-1"
+											>Join</a
 										>
 									</div>
 								</figcaption>
@@ -271,35 +262,35 @@
 						<button
 							type="button"
 							data-id="filter-toggle-button"
-							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black md:border-mediumGray md:text-mediumGray border-solid rounded-md grid place-content-center"
+							class="px-1 md:px-4 md:pb-1 h-8 border border-black border-solid rounded-md grid place-content-center"
 						>
 							Popular
 						</button>
 						<button
 							type="button"
 							data-id="filter-toggle-button"
-							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black md:border-mediumGray md:text-mediumGray border-solid rounded-md grid place-content-center active"
+							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black border-solid rounded-md grid place-content-center active"
 						>
 							Ending soon
 						</button>
 						<button
 							type="button"
 							data-id="filter-toggle-button"
-							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black md:border-mediumGray md:text-mediumGray border-solid rounded-md grid place-content-center"
+							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black border-solid rounded-md grid place-content-center"
 						>
 							Cash price
 						</button>
 						<button
 							type="button"
 							data-id="filter-toggle-button"
-							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black md:border-mediumGray md:text-mediumGray border-solid rounded-md grid place-content-center"
+							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black border-solid rounded-md grid place-content-center"
 						>
 							Recently new credits
 						</button>
 						<button
 							type="button"
 							data-id="filter-toggle-button"
-							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black md:border-mediumGray md:text-mediumGray border-solid rounded-md grid place-content-center active"
+							class="px-1 md:px-4 md:pb-1 h-8 border-2 border-black border-solid rounded-md grid place-content-center active"
 						>
 							Just In
 						</button>
@@ -2766,10 +2757,7 @@
 						<article class="mb-10">
 							<div class="bg-[#111317] rounded-lg overflow-hidden">
 								<figure class="relative">
-									<img
-										src="./assets/game-winners/samurai.jpg"
-										alt="Samurai Game"
-									/>
+									<img src="./assets/game/samurai.jpg" alt="Samurai Game" />
 									<figcaption
 										class="text-white absolute bottom-0 left-0 px-4 py-1"
 									>
@@ -2840,7 +2828,7 @@
 						<article class="mb-10">
 							<div class="bg-[#111317] rounded-lg overflow-hidden">
 								<figure class="relative">
-									<img src="./assets/game-winners/argo.jpg" alt="Argo Game" />
+									<img src="./assets/game/variation/argo.jpg" alt="Argo Game" />
 									<figcaption
 										class="text-white absolute bottom-0 left-0 px-4 py-1"
 									>
@@ -2912,7 +2900,7 @@
 							<div class="bg-[#111317] rounded-lg overflow-hidden">
 								<figure class="relative">
 									<img
-										src="./assets/game-winners/moonstone.jpg"
+										src="./assets/game/variation/moonstone.jpg"
 										alt="Moonstone Game"
 									/>
 									<figcaption
