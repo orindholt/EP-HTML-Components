@@ -28,6 +28,9 @@
   .filters .active {
     @apply border-orange text-orange;
   }
+  .slider-pagination .active {
+    @apply fill-[none];
+  }
   .trophy::before {
     @apply bg-[url('./assets/trophy.svg')] bg-[length:25%] bg-no-repeat bg-left-top absolute left-3 right-0 top-0 bottom-0 content-[""] opacity-70 -z-[1];
   }
