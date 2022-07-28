@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./*.html"],
+	content: ["./*.html", "./js/**/*"],
 	theme: {
 		extend: {
 			colors: {
@@ -26,6 +26,7 @@ module.exports = {
 				gray: "#eeeeee",
 				mediumGray: " #D5D7DB",
 				darkGray: "#999999",
+				darkerGray: "#3D4654",
 			},
 			fontFamily: {
 				sofia: "'sofia-pro', 'Montserrat', sans-serif",
