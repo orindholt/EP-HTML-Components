@@ -28,8 +28,11 @@
   .filters .active {
     @apply border-orange text-orange;
   }
+  .trophy::before {
+    @apply bg-[url('./assets/trophy.svg')] bg-[length:25%] bg-no-repeat bg-left-top absolute left-3 right-0 top-0 bottom-0 content-[""] opacity-70 -z-[1];
+  }
 }
 
-.fullscreen {
+/* .fullscreen {
   @apply fixed top-0 bottom-0 right-0 left-0 z-50 bg-black bg-opacity-50 backdrop-blur-sm px-2;
-}
+} */
