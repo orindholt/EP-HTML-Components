@@ -9,3 +9,4 @@ Components written in HTML, Tailwind, JS, with minimal demo functionality.
 [Demo - News Page](https://orindholt.github.io/EP-HTML-Components/news.html)<br/>
 [Demo - News Subpage](https://orindholt.github.io/EP-HTML-Components/news-subpage.html)<br/>
 [Demo - Game Winners Page](https://orindholt.github.io/EP-HTML-Components/game-winners.html)<br/>
+[Demo - Game Review Page (Mobile only)](https://orindholt.github.io/EP-HTML-Components/game-review.html)<br/>
