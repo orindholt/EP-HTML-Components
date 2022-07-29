@@ -28,12 +28,21 @@
 				</section>
 				<!-- Breadcrumb End -->
 				<section class="section !px-[5%] md:!px-[7.5%] bg-black text-white">
+					<!-- Ad Block 01 Mobile -->
+					<img
+						class="w-full object-cover object-center rounded-md overflow-hidden flex-1 md:hidden"
+						src="assets/leo-vegas-01.jpg"
+						alt="Ad"
+					/>
+					<!-- Ad Block 01 Mobile End -->
 					<h1 class="font-bold text-[40px]">Samurai Casino</h1>
 					<!-- Stats -->
-					<section class="md:flex md:gap-16 md:items-stretch mb-4 md:h-64">
+					<section
+						class="flex md:flex-row flex-col md:gap-16 xl:gap-32 gap-4 md:items-stretch mb-4 md:h-64"
+					>
 						<div class="flex flex-col gap-1 flex-1">
 							<h3
-								class="text-left mb-7 font-medium text-xl leading-5"
+								class="text-left font-medium text-xl leading-5"
 								data-demo="true"
 								data-views="1"
 							>
@@ -48,9 +57,11 @@
 							>
 								<div class="flex gap-1 mb-2">
 									<div
-										class="flex flex-col items-center border-2 border-darkerGray border-solid rounded-md pt-2 pb-3 flex-1"
+										class="flex flex-col items-center border-2 border-darkerGray border-solid rounded-md pt-2 pb-3 flex-1 gap-1"
 									>
-										<h3 class="text-2xl text-orange">33.681</h3>
+										<h3 class="text-2xl text-orange leading-none mb-auto">
+											33.681
+										</h3>
 										<svg
 											data-name="Group 1303"
 											xmlns="http://www.w3.org/2000/svg"
@@ -92,9 +103,11 @@
 										</svg>
 									</div>
 									<div
-										class="flex flex-col items-center border-2 border-darkerGray border-solid rounded-md pt-2 pb-3 flex-1"
+										class="flex flex-col items-center border-2 border-darkerGray border-solid rounded-md pt-2 pb-3 flex-1 gap-1"
 									>
-										<h3 class="text-2xl">
+										<h3
+											class="text-2xl flex gap-1 items-start leading-none mb-auto"
+										>
 											426 <span class="text-sm">/ 18300</span>
 										</h3>
 										<svg
@@ -127,7 +140,7 @@
 										data-demo="true"
 										data-views="1,2,3,4"
 									>
-										<h3 class="text-2xl">&#60;10</h3>
+										<h3 class="text-2xl leading-none mb-auto">&#60;10</h3>
 										<svg
 											data-name="Group 1307"
 											xmlns="http://www.w3.org/2000/svg"
@@ -173,11 +186,11 @@
 										</svg>
 									</div>
 									<div
-										class="flex flex-col items-center border-2 border-darkerGray border-solid rounded-md pt-2 pb-3 flex-1 text-darkerGray"
+										class="flex flex-col items-center border-2 border-darkerGray border-solid rounded-md pt-2 pb-3 flex-1 gap-1 text-darkerGray"
 										data-demo="true"
 										data-views="5,6,7"
 									>
-										<h3 class="text-2xl">0</h3>
+										<h3 class="text-2xl leading-none mb-auto">0</h3>
 										<svg
 											data-name="Group 1307"
 											xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +301,11 @@
 									data-demo="true"
 									data-views="1,2,3,4"
 								/>
-								<div class="flex items-center gap-2 p-1">
+								<div
+									class="flex items-center gap-2 p-1"
+									data-demo="true"
+									data-views="1,2,3,5,6,7"
+								>
 									<svg
 										data-name="Group 1311"
 										xmlns="http://www.w3.org/2000/svg"
@@ -388,25 +405,29 @@
 							<div
 								class="flex items-center justify-between h-14 bg-gradient-to-r from-[#FDBE13] to-[#F88B0B] mt-auto rounded-md px-5 pb-1 font-semibold trophy relative z-[1]"
 							>
-								<h3 class="text-black text-3xl">1st Prize:</h3>
-								<p class="font-bold text-xl">$50 + 150.000 EP</p>
+								<h3 class="text-black text-3xl md:text-2xl lg:text-3xl">
+									1st Prize:
+								</h3>
+								<p class="font-bold text-xl md:text-lg lg:text-xl">
+									$50 + 150.000 EP
+								</p>
 							</div>
 							<div
-								class="flex items-center justify-between h-14 bg-darkerGray text-white rounded-md px-5 mt-2 text-xl"
+								class="flex items-center justify-around h-10 lg:h-14 bg-darkerGray text-white rounded-md px-5 mt-2 text-base lg:text-xl"
 								data-demo="true"
 								data-views="5,6,7"
 							>
 								<p class="pb-1">
 									You placed <span class="text-orange font-bold">426</span>
 								</p>
-								<div class="h-[40%] w-[1px] bg-lightGray"></div>
+								<div class="h-2/5 w-[1px] bg-lightGray"></div>
 								<p class="pb-1">
 									You earned
 									<span class="text-orange font-bold">13.000 EP</span>
 								</p>
 							</div>
 							<a
-								class="text-[10px] font-medium underline text-darkGray"
+								class="text-[10px] xl:text-sm 2xl:text-base font-medium underline text-darkGray"
 								href="#"
 								data-demo="true"
 								data-views="1,2,3,4"
@@ -423,14 +444,14 @@
 						</div>
 						<!-- Ad Block 01 -->
 						<img
-							class="w-full h-60 object-cover object-center rounded-md overflow-hidden flex-1"
+							class="w-full h-64 object-cover object-center rounded-md overflow-hidden flex-1 hidden md:block"
 							src="assets/leo-vegas-01.jpg"
 							alt="Ad"
 						/>
 						<!-- Ad Block 01 End -->
 					</section>
 					<!-- Stats End -->
-					<!-- DEMO BUTTON (remove when implemented) as well as unnessecary data-id's starting with 'demo' - (data-id="demo-element").. -->
+					<!-- DEMO BUTTON (remove when implemented) as well as unnessecary data attrs - (data-demo, data-views, data-id="demo..") -->
 					<button
 						type="button"
 						class="pb-2 pt-1 px-3 text-xl mb-2"
@@ -446,10 +467,10 @@
 						class="rounded-md overflow-hidden"
 					>
 						<div
-							class="md:grid md:grid-cols-[70%_30%] relative"
+							class="md:grid md:grid-cols-[65%_35%] xl:md:grid-cols-[70%_30%] relative"
 							data-id="game-wrapper"
 						>
-							<div class="relative w-full h-full">
+							<div class="relative w-full h-full aspect-video">
 								<!-- placeholder iframe from gurucasinobonus.com -->
 								<iframe
 									class="w-full h-full border-none min-h-[495px]"
@@ -559,7 +580,7 @@
 									class="absolute bg-gradient-to-b from-[#000000bb] to-transparent top-0 left-0 right-0 px-3 py-2 flex justify-between"
 								>
 									<button
-										class="flex gap-2 items-center text-sm"
+										class="flex gap-2 items-center text-sm md:text-base lg:text-lg"
 										type="button"
 										data-id="fullscreen-toggle-button"
 									>
@@ -597,7 +618,7 @@
 										</svg>
 									</button>
 									<button
-										class="flex gap-2 items-center text-sm"
+										class="flex gap-2 items-center text-sm md:text-base lg:text-lg"
 										type="button"
 										data-id="leaderboard-toggle-button"
 									>
@@ -619,11 +640,11 @@
 							</div>
 							<!-- Leaderboard & Prices overlay -->
 							<div
-								class="absolute md:static bg-black bg-opacity-95 py-10 px-5 md:p-0 right-0 left-0 top-0 bottom-0 overflow-y-scroll flex-1"
+								class="absolute md:static bg-black bg-opacity-95 py-2.5 px-2.5 md:p-0 right-0 left-0 top-0 bottom-0 flex-1"
 								data-id="leaderboard-overlay"
 							>
 								<div
-									class="bg-white rounded-md p-2 py-4 relative md:w-full md:h-full w-4/5 mx-auto"
+									class="bg-white rounded-md p-2 py-4 relative md:w-full h-full w-[90%] m-auto flex flex-col"
 								>
 									<button
 										type="button"
@@ -657,7 +678,7 @@
 									<div class="flex items-end gap-1.5">
 										<!-- 2nd Position -->
 										<section
-											class="flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[90%] text-black"
+											class="flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-black text-center"
 										>
 											<h3 class="font-bold text-xs pb-1 text-[#C2C8D8]">2nd</h3>
 											<div
@@ -674,7 +695,7 @@
 										</section>
 										<!-- 1st Position -->
 										<section
-											class="flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-black"
+											class="flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-black text-center"
 										>
 											<h3 class="font-bold text-xs pb-1 text-orange">1st</h3>
 											<div
@@ -691,7 +712,7 @@
 										</section>
 										<!-- 3rd Position -->
 										<section
-											class="flex flex-col items-center bg-gray rounded-md py-2 flex-1 h-[75%] text-black"
+											class="flex flex-col items-center bg-gray rounded-md py-2 flex-1 text-black text-center"
 										>
 											<h3 class="font-bold text-xs pb-1 text-[#846B4D]">3rd</h3>
 											<div
@@ -707,279 +728,247 @@
 											<p class="text-[9px] font-medium">1600700</p>
 										</section>
 									</div>
-									<ul class="mt-1.5 flex flex-col gap-1.5">
-										<li
-											class="bg-gray rounded-md text-blueDarker flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
-												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] text-center"
+									<div class="flex flex-col gap-1.5 h-full">
+										<ul class="mt-1.5 flex flex-col gap-1.5 h-full">
+											<li
+												class="bg-gray rounded-md text-blueDarker flex items-center py-2.5 px-3 gap-3 h-full"
+											>
+												<div class="flex gap-1">
+													<!-- Position -->
+													<p
+														class="font-bold text-[10px] xl:text-sm 2xl:text-base text-inherit min-w-[33px] text-center"
+													>
+														4
+													</p>
+													<!-- User Image -->
+													<div
+														class="min-w-[1rem] min-h-[1rem] w-4 h-4 2xl:w-6 2xl:h-6 bg-white rounded-full"
+													></div>
+												</div>
+												<!-- Username -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit !leading-none"
 												>
-													4
-												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
-											>
-												username10123
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											>
-												5.000 EP
-											</p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												1005000
-											</h4>
-										</li>
-										<li
-											class="bg-gray rounded-md text-blueDarker flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
+													username10123
+												</h4>
+												<!-- EP Prize -->
 												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] text-center"
+													class="text-[10px] xl:text-sm 2xl:text-base text-orange font-semibold ml-auto min-w-fit"
 												>
-													5
+													5.000 EP
 												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												<!-- Points -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-inherit flex justify-end"
+												>
+													1005000
+												</h4>
+											</li>
+											<li
+												class="bg-gray rounded-md text-blueDarker flex items-center py-2.5 px-3 gap-3 h-full"
 											>
-												12symbols888
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											>
-												2.500 EP
-											</p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												1000000
-											</h4>
-										</li>
-										<li
-											class="bg-gray rounded-md text-blueDarker flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
+												<div class="flex gap-1">
+													<!-- Position -->
+													<p
+														class="font-bold text-[10px] xl:text-sm 2xl:text-base text-inherit min-w-[33px] text-center"
+													>
+														5
+													</p>
+													<!-- User Image -->
+													<div
+														class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
+													></div>
+												</div>
+												<!-- Username -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												>
+													12symbols888
+												</h4>
+												<!-- EP Prize -->
 												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] text-center"
+													class="text-[10px] xl:text-sm 2xl:text-base text-orange font-semibold ml-auto min-w-fit"
 												>
-													6
+													2.500 EP
 												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												<!-- Points -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-inherit flex justify-end"
+												>
+													1000000
+												</h4>
+											</li>
+											<li
+												class="bg-gray rounded-md text-blueDarker flex items-center py-2.5 px-3 gap-3 h-full"
 											>
-												Username #6
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											>
-												2.000 EP
-											</p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												980000
-											</h4>
-										</li>
-										<li
-											class="bg-gray rounded-md text-blueDarker flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
+												<div class="flex gap-1">
+													<!-- Position -->
+													<p
+														class="font-bold text-[10px] xl:text-sm 2xl:text-base text-inherit min-w-[33px] text-center"
+													>
+														6
+													</p>
+													<!-- User Image -->
+													<div
+														class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
+													></div>
+												</div>
+												<!-- Username -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												>
+													Username #6
+												</h4>
+												<!-- EP Prize -->
 												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] text-center"
+													class="text-[10px] xl:text-sm 2xl:text-base text-orange font-semibold ml-auto min-w-fit"
 												>
-													7
+													2.000 EP
 												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												<!-- Points -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-inherit flex justify-end"
+												>
+													980000
+												</h4>
+											</li>
+											<li
+												class="bg-gray rounded-md text-blueDarker flex items-center py-2.5 px-3 gap-3 h-full"
 											>
-												Username #7
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											>
-												1.500 EP
-											</p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												930000
-											</h4>
-										</li>
-										<li
-											class="bg-gray rounded-md text-blueDarker flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
+												<div class="flex gap-1">
+													<!-- Position -->
+													<p
+														class="font-bold text-[10px] xl:text-sm 2xl:text-base text-inherit min-w-[33px] text-center"
+													>
+														7
+													</p>
+													<!-- User Image -->
+													<div
+														class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
+													></div>
+												</div>
+												<!-- Username -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												>
+													Username #7
+												</h4>
+												<!-- EP Prize -->
 												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] text-center"
+													class="text-[10px] xl:text-sm 2xl:text-base text-orange font-semibold ml-auto min-w-fit"
 												>
-													8
+													1.500 EP
 												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												<!-- Points -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-inherit flex justify-end"
+												>
+													930000
+												</h4>
+											</li>
+											<li
+												class="bg-gray rounded-md text-blueDarker flex items-center py-2.5 px-3 gap-3 h-full"
 											>
-												Username #8
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											>
-												1.000 EP
-											</p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												900000
-											</h4>
-										</li>
-										<li
-											class="bg-gray rounded-md text-blueDarker flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
+												<div class="flex gap-1">
+													<!-- Position -->
+													<p
+														class="font-bold text-[10px] xl:text-sm 2xl:text-base text-inherit min-w-[33px] text-center"
+													>
+														8
+													</p>
+													<!-- User Image -->
+													<div
+														class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
+													></div>
+												</div>
+												<!-- Username -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												>
+													Username #8
+												</h4>
+												<!-- EP Prize -->
 												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] text-center"
+													class="text-[10px] xl:text-sm 2xl:text-base text-orange font-semibold ml-auto min-w-fit"
 												>
-													9
+													1.000 EP
 												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												<!-- Points -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-inherit flex justify-end"
+												>
+													900000
+												</h4>
+											</li>
+											<li
+												class="bg-gray rounded-md text-blueDarker flex items-center py-2.5 px-3 gap-3 h-full"
 											>
-												Username #9
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											>
-												500 EP
-											</p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												860000
-											</h4>
-										</li>
-										<li
-											class="bg-gray rounded-md text-blueDarker flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
+												<div class="flex gap-1">
+													<!-- Position -->
+													<p
+														class="font-bold text-[10px] xl:text-sm 2xl:text-base text-inherit min-w-[33px] text-center"
+													>
+														9
+													</p>
+													<!-- User Image -->
+													<div
+														class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
+													></div>
+												</div>
+												<!-- Username -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												>
+													Username #9
+												</h4>
+												<!-- EP Prize -->
 												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] text-center"
+													class="text-[10px] xl:text-sm 2xl:text-base text-orange font-semibold ml-auto min-w-fit"
 												>
-													10
+													500 EP
 												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												<!-- Points -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-inherit flex justify-end"
+												>
+													860000
+												</h4>
+											</li>
+											<!-- You -->
+											<li
+												class="bg-blueDarker rounded-md text-white flex py-2.5 px-3 gap-3 h-full items-center"
 											>
-												Username #10
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											>
-												200 EP
-											</p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												800000
-											</h4>
-										</li>
-										<!-- You -->
-										<li
-											class="bg-blueDarker rounded-md text-white flex py-2.5 px-3 gap-3"
-										>
-											<div class="flex gap-1">
-												<!-- Position -->
+												<div class="flex gap-1">
+													<!-- Position -->
+													<p
+														class="font-bold text-[10px] xl:text-sm 2xl:text-base text-inherit min-w-[33px] max-w-[33px] text-center text-ellipsis overflow-hidden"
+													>
+														1180
+													</p>
+													<!-- User Image -->
+													<div
+														class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
+													></div>
+												</div>
+												<!-- Username -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
+												>
+													You
+												</h4>
+												<!-- EP Prize -->
 												<p
-													class="font-bold text-[10px] text-inherit min-w-[22px] max-w-[22px] text-center text-ellipsis overflow-hidden"
+													class="text-[10px] xl:text-sm 2xl:text-base text-orange font-semibold ml-auto min-w-fit"
+												></p>
+												<!-- Points -->
+												<h4
+													class="text-xs xl:text-sm 2xl:text-base text-inherit flex justify-end"
 												>
-													1180
-												</p>
-												<!-- User Image -->
-												<div
-													class="min-w-[1rem] min-h-[1rem] w-4 h-4 bg-white rounded-full"
-												></div>
-											</div>
-											<!-- Username -->
-											<h4
-												class="text-xs text-ellipsis w-full whitespace-nowrap overflow-hidden text-inherit"
-											>
-												You
-											</h4>
-											<!-- EP Prize -->
-											<p
-												class="text-[10px] text-orange font-semibold ml-auto min-w-fit"
-											></p>
-											<!-- Points -->
-											<h4
-												class="text-xs text-inherit min-w-[51px] flex justify-end"
-											>
-												815
-											</h4>
-										</li>
-									</ul>
+													815
+												</h4>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 							<!-- Leaderboard & prices overlay End -->
@@ -988,12 +977,12 @@
 					<!-- Game End -->
 					<!-- Ad Block 02 -->
 					<aside
-						class="rounded-md overflow-hidden bg-gray w-full h-32 mt-4 relative"
+						class="rounded-md overflow-hidden bg-gray w-full mt-4 relative"
 					>
 						<img
 							src="./assets/leo-vegas-02.jpg"
 							alt="Ad Example 02"
-							class="w-full h-full object-cover object-left"
+							class="w-full h-full object-cover object-left min-h-[4rem]"
 						/>
 						<p
 							class="absolute top-0 right-0 left-0 bottom-0 grid place-content-center"
@@ -1584,16 +1573,12 @@
 											<div
 												class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10412test
 											</h4>
@@ -1606,16 +1591,12 @@
 											<div
 												class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10
 											</h4>
@@ -1628,16 +1609,12 @@
 											<div
 												class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username112
 											</h4>
@@ -1675,16 +1652,12 @@
 											<div
 												class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10412test
 											</h4>
@@ -1697,16 +1670,12 @@
 											<div
 												class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10
 											</h4>
@@ -1719,16 +1688,12 @@
 											<div
 												class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username112
 											</h4>
@@ -1766,16 +1731,12 @@
 											<div
 												class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10412test
 											</h4>
@@ -1788,16 +1749,12 @@
 											<div
 												class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10
 											</h4>
@@ -1810,16 +1767,12 @@
 											<div
 												class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username112
 											</h4>
@@ -1857,16 +1810,12 @@
 											<div
 												class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10412test
 											</h4>
@@ -1879,16 +1828,12 @@
 											<div
 												class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10
 											</h4>
@@ -1901,16 +1846,12 @@
 											<div
 												class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username112
 											</h4>
@@ -1948,16 +1889,12 @@
 											<div
 												class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10412test
 											</h4>
@@ -1970,16 +1907,12 @@
 											<div
 												class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10
 											</h4>
@@ -1992,16 +1925,12 @@
 											<div
 												class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username112
 											</h4>
@@ -2039,16 +1968,12 @@
 											<div
 												class="w-8 h-8 rounded-full border border-solid bg-white border-[#C2C8D8]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10412test
 											</h4>
@@ -2061,16 +1986,12 @@
 											<div
 												class="w-10 h-10 rounded-full border border-solid bg-white border-orange"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username10
 											</h4>
@@ -2083,16 +2004,12 @@
 											<div
 												class="w-6 h-6 rounded-full border border-solid bg-white border-[#846B4D]"
 											></div>
-											<p
-												class="text-greenBright text-[8px] font-bold leading-tight pt-0.5"
-											>
+											<p class="text-greenBright text-[8px] font-bold pt-0.5">
 												$25
 											</p>
-											<p class="text-orange text-[8px] font-bold leading-tight">
-												20.000 EP
-											</p>
+											<p class="text-orange text-[8px] font-bold">20.000 EP</p>
 											<h4
-												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden leading-tight pt-0.5"
+												class="text-[9px] text-ellipsis text-black w-16 whitespace-nowrap overflow-hidden pt-0.5"
 											>
 												username112
 											</h4>
