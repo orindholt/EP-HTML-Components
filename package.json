@@ -4,13 +4,11 @@
 	"description": "",
 	"main": "script.js",
 	"scripts": {
-		"build:sass": "sass --watch old_sass/css/base.scss old_sass/style.css",
-		"build:tw": "npx tailwindcss -i css/base.css -o style.css --watch"
+		"build:tw": "npx tailwindcss -i css/base.css -o style.css --watch --minify"
 	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"sass": "^1.53.0",
 		"tailwindcss": "^3.1.6"
 	}
 }
