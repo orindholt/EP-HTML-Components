@@ -25,8 +25,8 @@
   .active [data-id=readmore-chevron]{
     @apply !rotate-0;
   }
-  .filters .active {
-    @apply border-orange text-orange;
+  .filter.active {
+    @apply bg-black text-white border-black;
   }
   .slider-pagination .active {
     @apply fill-[none];
