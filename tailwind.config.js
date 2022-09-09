@@ -62,6 +62,9 @@ module.exports = {
 			content: {
 				empty: "''",
 			},
+			spacing: {
+				13: "3.25rem",
+			},
 			screens: {
 				"sm-max": { max: "640px" },
 				"md-max": { max: "768px" },
