@@ -53,6 +53,32 @@ module.exports = {
 					"100%": { opacity: 1 },
 				},
 			},
+			height: {
+				unset: "unset",
+			},
+			width: {
+				unset: "unset",
+			},
+			content: {
+				empty: "''",
+			},
+			spacing: {
+				13: "3.25rem",
+			},
+			screens: {
+				"sm-max": { max: "640px" },
+				"md-max": { max: "768px" },
+				"lg-max": { max: "1024px" },
+				"xl-max": { max: "1280px" },
+				"2xl-max": { max: "1536px" },
+			},
+			flex: {
+				2: "2 2 0%",
+				3: "3 3 0%",
+				4: "4 4 0%",
+				5: "5 5 0%",
+				6: "6 6 0%",
+			},
 		},
 	},
 	plugins: [],

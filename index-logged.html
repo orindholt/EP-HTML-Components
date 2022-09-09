@@ -18,193 +18,267 @@
 	<body>
 		<div class="wrapper">
 			<main class="main">
-				<section class="section flex flex-col-reverse md:flex-col">
-					<div class="flex flex-col justify-between lg:gap-8 gap-4">
-						<div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-2">
-							<h1 class="text-4xl xl:text-6xl font-bold">
-								Sign up.
-								<span
-									class="bg-gradient-to-r from-orange to-sunset text-gradient"
-									>Play free.</span
-								>
-								Biggest reward site in the world
-							</h1>
-							<aside
-								class="bg-gradient-to-l from-blue to-blueBright text-white px-6 py-3 md:py-4 rounded-lg flex flex-col gap-1 justify-between max-h-[120px] my-auto"
+				<section
+					class="section md:grid md:grid-cols-[2fr_1fr] grid-rows-[64px_auto] md:gap-4"
+				>
+					<!-- Profile -->
+					<div
+						class="bg-[#EDF1F7] flex gap-3 items-center rounded-lg p-1.5 md:col-start-2 md:col-end-3"
+					>
+						<img
+							src="./assets/profile.jpg"
+							alt="Profile Icon"
+							class="w-13 rounded-md"
+						/>
+						<img
+							src="./assets/ep_icon_variation.png"
+							alt="Ep Icon"
+							class="w-13 xl:block md:hidden"
+						/>
+						<div class="flex flex-col justify-between">
+							<p class="text-xs font-bold !leading-none">Lvl. 12</p>
+							<p class="text-base font-light !leading-none">38.430 XP</p>
+							<p class="text-[8px] text-yellow !leading-none">
+								Next lvl at 40.000 XP
+							</p>
+						</div>
+						<a
+							href="#"
+							class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white h-10 w-24 rounded-md grid place-content-center pb-1 ml-auto mr-2"
+							>My profile</a
+						>
+					</div>
+					<!-- Daily Updates -->
+					<div class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
+						<h1 class="text-4xl font-bold md:hidden">Your daily update</h1>
+						<!--  Daily Updates -->
+						<ul class="my-4">
+							<!-- Update Element Start -->
+							<li
+								class="flex items-center gap-3 border-b border-solid border-darkBlue p-4 last:border-none"
 							>
-								<h2 class="text-base font-medium leading-none">
-									Register to collect<br class="hidden md:inline" />
-									your welcome bonus
-								</h2>
 								<div
-									class="flex justify-between items-center gap-16 whitespace-nowrap"
+									class="min-w-[6px] max-w-[6px] min-h-[6px] max-h-[6px] h-ful w-full bg-orange rounded-full"
+								></div>
+								<h3 class="leading-none text-base font-medium">
+									Your daily bonus is here!
+								</h3>
+								<button
+									type="button"
+									class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center ml-auto"
 								>
-									<p class="text-3xl font-bold pb-1">20.000 EP</p>
+									Claim
+								</button>
+							</li>
+							<!-- Update Element End -->
+							<!-- Update Element Start -->
+							<li
+								class="flex items-center gap-3 border-b border-solid border-darkBlue p-4 last:border-none"
+							>
+								<div
+									class="min-w-[6px] max-w-[6px] min-h-[6px] max-h-[6px] h-ful w-full bg-red rounded-full"
+								></div>
+								<h3 class="leading-none text-base font-medium">
+									We just launched
+									<span class="text-red">Sweet Candy!</span> Try it now
+								</h3>
+								<button
+									type="button"
+									class="bg-gradient-to-tr from-red to-purpleBright shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center ml-auto"
+								>
+									Play
+								</button>
+							</li>
+							<!-- Update Element End -->
+							<!-- Update Element Start -->
+							<li
+								class="flex items-center gap-3 border-b border-solid border-darkBlue p-4 last:border-none"
+							>
+								<div
+									class="min-w-[6px] max-w-[6px] min-h-[6px] max-h-[6px] h-ful w-full bg-orange rounded-full"
+								></div>
+								<h3 class="leading-none text-base font-medium">
+									Connect to Google to claim your bonus
+								</h3>
+								<button
+									type="button"
+									class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center ml-auto"
+								>
+									Claim
+								</button>
+							</li>
+							<!-- Update Element End -->
+							<!-- Update Element Start -->
+							<li
+								class="flex items-center gap-3 border-b border-solid border-darkBlue p-4 last:border-none"
+							>
+								<div
+									class="min-w-[6px] max-w-[6px] min-h-[6px] max-h-[6px] h-ful w-full bg-[#BCC6D6] rounded-full"
+								></div>
+								<h3 class="leading-none text-base font-medium">
+									Johnny741 just won 18.000 EP!
+								</h3>
+								<button
+									type="button"
+									class="bg-[#BCC6D6] shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center ml-auto"
+								>
+									Dismiss
+								</button>
+							</li>
+							<!-- Update Element End -->
+							<!-- Update Element Start -->
+							<li
+								class="flex items-center gap-3 border-b border-solid border-darkBlue p-4 last:border-none"
+							>
+								<div
+									class="min-w-[6px] max-w-[6px] min-h-[6px] max-h-[6px] h-ful w-full bg-[#BCC6D6] rounded-full"
+								></div>
+								<h3 class="leading-none text-base font-medium">
+									Daniel44 just won 18.000 EP!
+								</h3>
+								<button
+									type="button"
+									class="bg-[#BCC6D6] shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center ml-auto"
+								>
+									Dismiss
+								</button>
+							</li>
+							<!-- Update Element End -->
+							<!-- Update Element Start -->
+							<li
+								class="flex items-center gap-3 border-b border-solid border-darkBlue p-4 last:border-none"
+							>
+								<div
+									class="min-w-[6px] max-w-[6px] min-h-[6px] max-h-[6px] h-ful w-full bg-orange rounded-full"
+								></div>
+								<h3 class="leading-none text-base font-medium">
+									Connect to Facebook to claim your bonus
+								</h3>
+								<button
+									type="button"
+									class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center ml-auto"
+								>
+									Claim
+								</button>
+							</li>
+							<!-- Update Element End -->
+							<!-- Update Element Start -->
+							<li
+								class="flex items-center gap-3 border-b border-solid border-darkBlue p-4 last:border-none"
+							>
+								<div
+									class="min-w-[6px] max-w-[6px] min-h-[6px] max-h-[6px] h-ful w-full bg-red rounded-full"
+								></div>
+								<h3 class="leading-none text-base font-medium">
+									A new <span class="text-red">Moonstone</span> tournament just
+									started
+								</h3>
+								<button
+									type="button"
+									class="bg-gradient-to-tr from-red to-purpleBright shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center ml-auto"
+								>
+									Join
+								</button>
+							</li>
+							<!-- Update Element End -->
+						</ul>
+						<!-- Daily Updates End -->
+					</div>
+					<!-- Content -->
+					<div
+						class="md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:flex md:flex-col md:gap-4"
+					>
+						<div
+							class="bg-gradient-to-bl from-cyan to-purple rounded-lg shadow-md p-3 flex justify-between items-center gap-4"
+						>
+							<div class="flex flex-col gap-2">
+								<h2 class="text-xl font-bold !leading-none">
+									You're almost there!
+								</h2>
+								<p class="text-sm font-medium !leading-tight">
+									Finish your profile setup to collect your reward!
+								</p>
+								<button
+									type="button"
+									class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white h-10 min-w-[5rem] max-w-[5rem] w-full pb-1 rounded-md grid place-content-center mt-auto"
+								>
+									Play
+								</button>
+							</div>
+							<div class="relative aspect-square max-w-[140px] max-h-[140px]">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="140"
+									height="140"
+									viewBox="0 0 140 140"
+									fill="none"
+								>
+									<circle
+										cx="70"
+										cy="70"
+										r="68"
+										stroke="black"
+										stroke-opacity="0.075"
+										stroke-width="4"
+									/>
+								</svg>
+								<div
+									class="text-xl font-bold absolute top-0 left-0 right-0 bottom-0 grid place-content-center"
+								>
+									<p class="pb-1">0%</p>
+								</div>
+							</div>
+						</div>
+						<!-- Example Content -->
+						<div
+							class="rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 md:flex items-stretch justify-between gap-2 hidden"
+						>
+							<div class="w-full h-full flex flex-col justify-between">
+								<p
+									class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
+								>
+									Welcome offer
+								</p>
+								<div class="flex flex-col">
+									<h3 class="text-3xl text-greenBright font-bold">€300</h3>
+									<h4 class="font-medium text-xl">120% up to €300 + 120</h4>
+								</div>
+								<div class="flex gap-6">
+									<a href="#" class="underline text-darkGray">Read more</a>
+									<a href="#" class="underline text-darkGray">T&amp;C</a>
+								</div>
+							</div>
+							<div class="flex flex-col gap-2 min-w-[30%]">
+								<img
+									src="./assets/casino/casino_okeels.jpg"
+									alt="Okeels"
+									class="w-full h-12 object-cover rounded-md"
+								/>
+								<div class="flex flex-col h-full gap-2 w-full">
 									<button
-										class="bg-gradient-to-r from-yellow to-orange w-24 h-10 pb-1 rounded-md shadow-sm"
+										class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5"
+										href="#"
 									>
-										Join
+										Play now
+									</button>
+									<button
+										class="w-full text-white bg-gradient-to-r from-greenBright to-green rounded-md font-medium pb-1.5 pt-1 leading-4"
+										href="#"
+									>
+										Read full review
 									</button>
 								</div>
-							</aside>
+							</div>
 						</div>
-						<ul class="grid grid-cols-3 gap-2">
-							<li
-								class="bg-black text-white rounded-lg py-2 px-1 md:px-4 md:py-3.5 flex flex-col lg:flex-row justify-center items-center text-center gap-2 lg:gap-4"
-							>
-								<svg
-									class="w-1/3 h-1/3 md:w-unset md:h-unset"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-									width="48.706"
-									height="47.796"
-									viewBox="0 0 48.706 47.796"
-								>
-									<defs>
-										<linearGradient
-											id="linear-gradient-green"
-											x1="1.584"
-											y1="-0.506"
-											x2="-0.529"
-											y2="1.395"
-											gradientUnits="objectBoundingBox"
-										>
-											<stop offset="0" stop-color="#00FFB1" />
-											<stop offset="1" stop-color="#2C8652" />
-										</linearGradient>
-									</defs>
-									<path
-										id="Union_10"
-										data-name="Union 10"
-										d="M4.7,46.8a.973.973,0,0,1-.982-.963V35.67H.981A.973.973,0,0,1,0,34.707V12.089a.973.973,0,0,1,.981-.963H4.375a17.294,17.294,0,0,1,6.459-8.06,17.983,17.983,0,0,1,20.088,0,17.3,17.3,0,0,1,6.46,8.06h3.393a.973.973,0,0,1,.981.963V22.438a1.91,1.91,0,0,0,1.756-1.884V6.153a3.143,3.143,0,0,1-2.231-3,3.213,3.213,0,0,1,6.425,0,3.143,3.143,0,0,1-2.231,3v14.4a3.834,3.834,0,0,1-3.72,3.814v10.34a.973.973,0,0,1-.981.963H38.037V45.834a.973.973,0,0,1-.981.963Zm.981-1.925H36.074v-9.2H5.682ZM1.963,33.744h37.83V13.052H25.062a.963.963,0,1,1,0-1.926h10.2a15.84,15.84,0,0,0-28.762,0h10.2a.963.963,0,1,1,0,1.926H1.963ZM43.243,3.151a1.25,1.25,0,1,0,1.25-1.225A1.24,1.24,0,0,0,43.243,3.151ZM10.5,41.233a.963.963,0,1,1,0-1.926H31.26a.963.963,0,1,1,0,1.926ZM4.7,32.022a.974.974,0,0,1-.982-.963V15.737a.973.973,0,0,1,.982-.963H37.056a.973.973,0,0,1,.981.963V31.059a.973.973,0,0,1-.981.963ZM27.252,30.1h8.822V16.7H27.252Zm-10.785,0h8.822V16.7H16.467Zm-10.785,0H14.5V16.7H5.682ZM30.33,27.952a.959.959,0,0,1-.592-1.232l2.2-6.007H29.989a.963.963,0,1,1,0-1.926h3.348a.987.987,0,0,1,.8.409.949.949,0,0,1,.121.88l-2.675,7.3a.982.982,0,0,1-.923.638A1.008,1.008,0,0,1,30.33,27.952Zm-10.786,0a.96.96,0,0,1-.591-1.232l2.2-6.007H19.2a.963.963,0,1,1,0-1.926h3.347a.985.985,0,0,1,.8.409.949.949,0,0,1,.121.88l-2.675,7.3a.983.983,0,0,1-.923.638A1.012,1.012,0,0,1,19.545,27.952Zm-10.785,0a.959.959,0,0,1-.591-1.232l2.2-6.007H8.419a.963.963,0,1,1,0-1.926h3.347a.987.987,0,0,1,.8.409.949.949,0,0,1,.121.88l-2.675,7.3a.983.983,0,0,1-.923.638A1.008,1.008,0,0,1,8.76,27.952ZM20.185,12.77a.947.947,0,0,1,0-1.36.992.992,0,0,1,1.388,0,.948.948,0,0,1,0,1.36.992.992,0,0,1-1.388,0Z"
-										transform="translate(0.5 0.5)"
-										stroke="rgba(0,0,0,0)"
-										stroke-miterlimit="10"
-										stroke-width="1"
-										fill="url(#linear-gradient-green)"
-									/>
-								</svg>
-								<p class="text-xl md:text-base lg:text-xl !leading-none">
-									Premium Casinos:
-								</p>
-								<p
-									class="text-green !leading-none font-extralight whitespace-nowrap text-xl md:text-lg lg:text-xl"
-								>
-									+ 300
-								</p>
-							</li>
-							<li
-								class="bg-black text-white rounded-lg py-2 px-1 md:px-4 md:py-3.5 flex flex-col lg:flex-row justify-center items-center text-center gap-2 lg:gap-4"
-							>
-								<svg
-									class="w-1/3 h-1/3 md:w-unset md:h-unset"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-									width="54.712"
-									height="37.463"
-									viewBox="0 0 54.712 37.463"
-								>
-									<defs>
-										<linearGradient
-											id="linear-gradient-red"
-											x1="1"
-											x2="-0.051"
-											y2="1.128"
-											gradientUnits="objectBoundingBox"
-										>
-											<stop offset="0" stop-color="#FF4262" />
-											<stop offset="1" stop-color="#FF0D79" />
-										</linearGradient>
-									</defs>
-									<path
-										id="Path_37"
-										data-name="Path 37"
-										d="M444.117,312.825a5.42,5.42,0,0,0-5.465,5.362,5.306,5.306,0,0,0,2.048,4.181l.432.34-8.559,6.428-8.135-10.593.436-.237a5.358,5.358,0,0,0,2.818-4.689,5.467,5.467,0,0,0-10.932,0,5.363,5.363,0,0,0,2.76,4.654l.441.248-8.675,10.612-8.019-6.388.428-.33a5.3,5.3,0,0,0,2.106-4.224,5.467,5.467,0,1,0-6.444,5.274l.293.052,2.89,14.825v6.068a1.325,1.325,0,0,0,1.335,1.311h36.7a1.325,1.325,0,0,0,1.335-1.311v-6.071l.008-.04,2.881-14.782.293-.052a5.354,5.354,0,0,0-.977-10.636Zm-24.684.79a2.795,2.795,0,1,1,2.794,2.741A2.771,2.771,0,0,1,419.433,313.615Zm-19.1,7.314a2.742,2.742,0,1,1,2.794-2.742A2.772,2.772,0,0,1,400.337,320.929Zm38.9,22.166H405.213v-3.572h34.028Zm.231-6.192h-34.49l-2.173-11.151L410.646,332a1.354,1.354,0,0,0,1.885-.2l9.664-11.823,9.056,11.792a1.351,1.351,0,0,0,1.879.251l8.546-6.419Zm4.645-15.974a2.742,2.742,0,1,1,2.794-2.742A2.771,2.771,0,0,1,444.117,320.929Z"
-										transform="translate(-394.871 -308.253)"
-										fill="url(#linear-gradient-red)"
-									/>
-								</svg>
-								<p class="text-xl md:text-base lg:text-xl !leading-none">
-									Live tournaments:
-								</p>
-								<p
-									class="text-red !leading-none font-extralight whitespace-nowrap text-xl md:text-lg lg:text-xl"
-								>
-									+ 15
-								</p>
-							</li>
-							<li
-								class="bg-black text-white rounded-lg py-2 px-1 md:px-4 md:py-3.5 flex flex-col lg:flex-row justify-center items-center text-center gap-2 lg:gap-4"
-							>
-								<svg
-									class="w-1/3 h-1/3 md:w-unset md:h-unset"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-									width="47.309"
-									height="46.406"
-									viewBox="0 0 47.309 46.406"
-								>
-									<defs>
-										<linearGradient
-											id="linear-gradient"
-											x1="1.142"
-											y1="-0.232"
-											x2="-0.105"
-											y2="1.081"
-											gradientUnits="objectBoundingBox"
-										>
-											<stop offset="0" stop-color="#1670E5" />
-											<stop offset="1" stop-color="#80BAD0" />
-										</linearGradient>
-										<clipPath id="clip-path">
-											<rect
-												id="Rectangle_44"
-												data-name="Rectangle 44"
-												width="47.309"
-												height="46.406"
-												fill="url(#linear-gradient)"
-											/>
-										</clipPath>
-									</defs>
-									<g
-										id="Group_235"
-										data-name="Group 235"
-										clip-path="url(#clip-path)"
-									>
-										<path
-											id="Path_68"
-											data-name="Path 68"
-											d="M23.655,0A23.433,23.433,0,0,0,0,23.2a23.432,23.432,0,0,0,23.655,23.2A23.429,23.429,0,0,0,47.306,23.2,23.429,23.429,0,0,0,23.655,0m21.17,23.836A21.3,21.3,0,0,1,24.451,43.969c-11.86.386-22.437-9.6-21.8-20.769a20.865,20.865,0,0,1,20.6-21.155A20.909,20.909,0,0,1,44.815,22.251a14.618,14.618,0,0,1,0,1.6"
-											transform="translate(0 0)"
-											fill="url(#linear-gradient)"
-										/>
-										<path
-											id="Path_69"
-											data-name="Path 69"
-											d="M13.28,8.668h0v4.408c2.322,0,3.705.412,4.785-.879a2.608,2.608,0,0,0-.02-2.534c-.91-1.221-2.738-1.006-4.771-1.006"
-											transform="translate(16.39 10.304)"
-											fill="url(#linear-gradient)"
-										/>
-										<path
-											id="Path_70"
-											data-name="Path 70"
-											d="M21.855,1.835a19.413,19.413,0,0,0-20,18.778v.434A19.335,19.335,0,0,0,21.446,40.115,19.328,19.328,0,0,0,40.884,20.9,19.322,19.322,0,0,0,21.846,1.835m-1.26,28.45H7.847V13.661H20.3V16.9H11.574v2.988h8.092v3.328h-8v3.856h8.924Zm15.934-10.77a5.11,5.11,0,0,1-4.834,4.972,44.937,44.937,0,0,1-4.514.042v5.726H23.423v-16.5a75.4,75.4,0,0,1,9.6.092c2.606.333,3.775,2.723,3.5,5.669"
-											transform="translate(2.288 2.182)"
-											fill="url(#linear-gradient)"
-										/>
-									</g>
-								</svg>
-								<p class="text-xl md:text-base lg:text-xl !leading-none">
-									Exclusive prodcts:
-								</p>
-								<p
-									class="text-blue !leading-none font-extralight whitespace-nowrap text-xl md:text-lg lg:text-xl"
-								>
-									+ 20
-								</p>
-							</li>
-						</ul>
+						<!-- Potential Content Here... -->
 					</div>
+				</section>
+				<section class="section bg-white">
+					<h2
+						class="bg-gradient-to-r from-purpleBright to-sunset text-gradient text-4xl font-bold leading-none"
+					>
+						Current<br />Tournaments
+					</h2>
 					<article
 						class="bg-gradient-to-br from-teal to-blueBright rounded-md p-4 my-4 md:flex flex flex-col md:flex-row gap-2 md:gap-0 text-white"
 					>
@@ -400,25 +474,6 @@
 							</div>
 						</figure>
 					</article>
-				</section>
-				<aside>
-					<img
-						src="./assets/trustpilot-mobile.jpg"
-						alt="Trustpilot Mobile"
-						class="md:hidden"
-					/>
-					<img
-						src="./assets/trustpilot-desktop.jpg"
-						alt="Trustpilot Desktop"
-						class="hidden md:block"
-					/>
-				</aside>
-				<section class="section bg-white">
-					<h2
-						class="bg-gradient-to-r from-purpleBright to-sunset text-gradient text-4xl font-bold leading-none"
-					>
-						Current<br />Tournaments
-					</h2>
 					<div class="md:grid md:grid-cols-3 md:gap-4">
 						<!-- Competition Card -->
 						<article class="rounded-b-lg overflow-hidden my-4">
