@@ -17,7 +17,9 @@
 		<div class="wrapper">
 			<main class="main">
 				<section>
-					<div class="section bg-gradient-to-bl from-cyan to-purple pb-20">
+					<div
+						class="section bg-gradient-to-bl from-cyan to-purple pb-20 md:bg-white md:bg-none md:pb-0"
+					>
 						<!-- Section Slider -->
 						<div class="flex gap-2 overflow-hidden py-1">
 							<a
@@ -60,44 +62,145 @@
 					<img
 						src="./assets/profile.jpg"
 						alt="User image"
-						class="w-24 h-24 rounded-md shadow-sm -mt-14 mx-auto"
+						class="w-24 h-24 rounded-lg shadow-sm -mt-14 mx-auto md:hidden"
 					/>
 				</section>
-				<section class="section">
-					<h1 class="text-4xl font-light text-center">
-						<span class="font-bold">Hi,</span> Mark1234
-					</h1>
-					<h2 class="text-center">Welcome! Play and win now.</h2>
-					<div class="flex gap-2">
-						<img
-							src="./assets/ep_icon_variation.png"
-							alt="Ep Icon"
-							class="w-13"
-						/>
-						<div class="flex flex-col py-1">
-							<p class="text-xs font-bold !leading-none">Lvl. 12</p>
-							<p class="text-base font-light !leading-none">38.430 XP</p>
-							<p class="text-[8px] text-orange !leading-none mt-auto">
-								Next lvl at 40.000 XP
-							</p>
+				<section class="section md:bg-white">
+					<div
+						class="md:bg-gradient-to-bl md:from-cyan md:to-purple md:rounded-xl md:p-6"
+					>
+						<h1 class="text-4xl font-light text-center md:text-left">
+							<span class="font-bold">Hi,</span> Mark1234
+						</h1>
+						<h2 class="text-center md:hidden">Welcome! Play and win now.</h2>
+						<div class="md:grid md:grid-cols-3 md:gap-8 md:pt-6">
+							<div
+								class="flex gap-2 md:bg-lightBlue md:rounded-xl md:p-4 md:items-center md:justify-between"
+							>
+								<img
+									src="./assets/profile.jpg"
+									alt="User image"
+									class="w-20 h-20 rounded-lg hidden md:block"
+								/>
+								<img
+									src="./assets/ep_icon_variation.png"
+									alt="Ep Icon"
+									class="w-13 h-13 md:w-20 md:h-20"
+								/>
+								<div class="flex flex-col py-1 md:gap-1">
+									<p class="text-xs md:text-base font-bold !leading-none">
+										Lvl. 12
+									</p>
+									<p class="text-base md:text-[22px] font-light !leading-none">
+										38.430 XP
+									</p>
+									<p
+										class="text-[8px] md:text-xs text-orange !leading-none mt-auto md:mt-0"
+									>
+										Next lvl at 40.000 XP
+									</p>
+								</div>
+							</div>
+							<div
+								class="hidden md:flex flex-col justify-center gap-1 rounded-xl bg-lightBlue p-4"
+							>
+								<div class="flex items-center justify-between">
+									<p
+										class="text-xs md:text-sm font-light text-darkGray text-center"
+									>
+										EkstraPoints avaliable:
+									</p>
+									<div class="flex items-center justify-center gap-4">
+										<p
+											class="text-5xl font-bold bg-gradient-to-tr from-orange to-yellow text-gradient pb-2 !leading-none"
+										>
+											2.950
+										</p>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											width="53.943"
+											height="60.317"
+											viewBox="0 0 53.943 60.317"
+										>
+											<defs>
+												<linearGradient
+													id="linear-gradient"
+													x1="1.731"
+													y1="-0.373"
+													x2="0.084"
+													y2="1.158"
+													gradientUnits="objectBoundingBox"
+												>
+													<stop offset="0" stop-color="#FFC64B" />
+													<stop offset="1" stop-color="#FF9814" />
+												</linearGradient>
+												<clipPath id="clip-path">
+													<rect
+														id="Rectangle_30"
+														data-name="Rectangle 30"
+														width="53.943"
+														height="60.317"
+														fill="url(#linear-gradient)"
+													/>
+												</clipPath>
+											</defs>
+											<g
+												id="Group_126"
+												data-name="Group 126"
+												clip-path="url(#clip-path)"
+											>
+												<path
+													id="Path_40"
+													data-name="Path 40"
+													d="M26.972,4.193A26.972,26.972,0,1,0,53.943,31.165,26.973,26.973,0,0,0,26.972,4.193M51.118,31.9A24.523,24.523,0,0,1,27.893,55.3C14.368,55.752,2.307,44.147,3.035,31.165A24.045,24.045,0,0,1,51.1,30.042c.031.619.031,1.239.015,1.858"
+													transform="translate(0 -0.947)"
+													fill="url(#linear-gradient)"
+												/>
+												<path
+													id="Path_41"
+													data-name="Path 41"
+													d="M43.708,32.678H43.7V37.8c2.648,0,4.227.48,5.458-1.006a3.091,3.091,0,0,0-.023-2.95c-1.037-1.417-3.12-1.169-5.427-1.169"
+													transform="translate(-9.869 -7.376)"
+													fill="url(#linear-gradient)"
+												/>
+												<path
+													id="Path_42"
+													data-name="Path 42"
+													d="M28.907,10.221a22.325,22.325,0,0,0-22.8,21.831c-.008.17-.008.333-.008.5h.008a22.253,22.253,0,1,0,22.8-22.334m-1.44,33.072H12.936V23.971l14.206-.008v3.778H17.186v3.476h9.228v3.871h-9.12V39.57H27.467Zm18.17-12.518a5.888,5.888,0,0,1-5.512,5.791,50.7,50.7,0,0,1-5.148.046V43.27H30.695V24.079a84.684,84.684,0,0,1,10.947.108c2.973.387,4.3,3.166,3.995,6.588"
+													transform="translate(-1.378 -2.307)"
+													fill="url(#linear-gradient)"
+												/>
+											</g>
+										</svg>
+									</div>
+								</div>
+								<a
+									href="#"
+									class="bg-gradient-to-bl from-orange to-yellow font-medium text-lg rounded-md pb-1 w-28 h-9 text-white grid place-content-center shadow-sm mt-1"
+									>Visit shop</a
+								>
+							</div>
+							<div
+								class="bg-gradient-to-bl from-cyan md:from-[#C6EAE8] to-purple md:to-[#FDF4FD] p-3 md:p-4 flex flex-col gap-3 rounded-lg my-4 md:my-0"
+							>
+								<h2
+									class="text-2xl md:text-xl font-medium text-center md:text-left"
+								>
+									Get started with winning EkstraPoints
+									<span class="font-bold">for free!</span>
+								</h2>
+								<a
+									href="#"
+									class="bg-gradient-to-r from-yellow to-orange font-medium h-14 md:h-9 shadow-md rounded-md w-full text-white text-xl md:text-lg grid place-content-center pb-1 md:max-w-fit md:px-4"
+									>Play for free</a
+								>
+							</div>
 						</div>
 					</div>
-					<aside
-						class="bg-gradient-to-bl from-cyan to-purple p-3 flex flex-col gap-3 rounded-lg my-4"
-					>
-						<h2 class="text-2xl font-medium text-center">
-							Get started with winning EkstraPoints
-							<span class="font-bold">for free!</span>
-						</h2>
-						<a
-							href="#"
-							class="bg-gradient-to-r from-yellow to-orange font-medium h-14 shadow-md rounded-md w-full text-white text-xl grid place-content-center pb-1"
-							>Play for free</a
-						>
-					</aside>
 				</section>
 				<section class="section bg-white">
-					<ul class="flex flex-col gap-3">
+					<ul class="grid grid-flow-row md:grid-cols-3 gap-3 md:gap-10">
 						<li class="bg-black rounded-md w-full px-1 py-4 text-center">
 							<h3 class="text-orange font-bold text-lg !leading-none">
 								Biggest win
@@ -161,10 +264,14 @@
 					</ul>
 				</section>
 				<section class="section">
-					<h2 class="text-xl font-bold text-center">Your favourite games</h2>
-					<ul class="flex flex-col gap-2">
+					<h2
+						class="text-xl font-bold text-center md:text-left md:py-6 md:px-10 md:text-5xl"
+					>
+						Your favourite games
+					</h2>
+					<ul class="grid grid-flow-row md:grid-cols-3 gap-2 md:gap-7 md:my-6">
 						<li
-							class="w-full h-20 bg-[url(./assets/magic-garden.jpg)] bg-cover rounded-lg p-2 grid place-content-end"
+							class="w-full h-20 md:h-32 bg-[url(./assets/magic-garden.jpg)] bg-cover rounded-lg p-2 grid place-content-end"
 						>
 							<button
 								class="bg-gradient-to-bl from-orange to-yellow text-white text-base font-medium pb-1.5 w-20 shadow-sm rounded-md"
@@ -173,7 +280,16 @@
 							</button>
 						</li>
 						<li
-							class="w-full h-20 bg-[url(./assets/game/samurai.jpg)] bg-cover rounded-lg p-2 grid place-content-end"
+							class="w-full h-20 md:h-32 bg-[url(./assets/game/samurai.jpg)] bg-cover rounded-lg p-2 grid place-content-end"
+						>
+							<button
+								class="bg-gradient-to-bl from-orange to-yellow text-white text-base font-medium pb-1.5 w-20 shadow-sm rounded-md"
+							>
+								Join
+							</button>
+						</li>
+						<li
+							class="w-full h-20 md:h-32 bg-[url(./assets/magic-garden.jpg)] bg-cover rounded-lg p-2 grid place-content-end"
 						>
 							<button
 								class="bg-gradient-to-bl from-orange to-yellow text-white text-base font-medium pb-1.5 w-20 shadow-sm rounded-md"
@@ -183,7 +299,7 @@
 						</li>
 					</ul>
 				</section>
-				<section class="section bg-white">
+				<section class="section bg-white md:hidden">
 					<div
 						class="flex flex-col justify-center gap-1 rounded-xl m-4 bg-lightGray p-3"
 					>

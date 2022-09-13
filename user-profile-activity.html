@@ -17,7 +17,9 @@
 		<div class="wrapper">
 			<main class="main">
 				<section>
-					<div class="section bg-gradient-to-bl from-cyan to-purple pb-20">
+					<div
+						class="section bg-gradient-to-bl from-cyan to-purple pb-20 md:bg-white md:bg-none md:pb-0"
+					>
 						<!-- Section Slider -->
 						<div class="flex gap-2 overflow-hidden py-1">
 							<a
@@ -60,15 +62,15 @@
 					<img
 						src="./assets/profile.jpg"
 						alt="User image"
-						class="w-24 h-24 rounded-md shadow-sm -mt-14 mx-auto"
+						class="w-24 h-24 rounded-md shadow-sm -mt-14 mx-auto md:hidden"
 					/>
 					<section
-						class="section flex flex-col gap-3 bg-gradient-to-b from-lightGray to-white"
+						class="section flex flex-col md:flex-row-reverse md:items-center gap-3 bg-gradient-to-b from-lightGray to-white"
 					>
 						<div
-							class="bg-gradient-to-r from-yellow to-orange rounded-md shadow-md flex justify-between items-center px-5 py-3"
+							class="bg-gradient-to-r from-yellow to-orange rounded-md shadow-md flex justify-between items-center px-5 py-3 xl:gap-16 md:flex-col xl:flex-row"
 						>
-							<p class="pb-1">EkstraPoints available</p>
+							<p class="pb-1 md:text-center">EkstraPoints available</p>
 							<div class="text-lightGray flex items-center gap-2">
 								<p class="text-3xl font-bold pb-1.5">10.300</p>
 								<svg
@@ -108,9 +110,9 @@
 							</div>
 						</div>
 						<div
-							class="bg-white rounded-md shadow-md flex justify-between items-center px-5 py-3"
+							class="bg-white md:bg-lightGray rounded-md shadow-md flex justify-between items-center px-5 py-3 xl:gap-16 md:flex-col xl:flex-row"
 						>
-							<p class="pb-1">EkstraPoints spent</p>
+							<p class="pb-1 md:text-center">EkstraPoints spent</p>
 							<div class="text-orange flex items-center gap-2">
 								<p class="text-3xl font-bold pb-1.5">10.300</p>
 								<svg
@@ -149,10 +151,14 @@
 								</svg>
 							</div>
 						</div>
+						<h1
+							class="text-4xl lg:text-5xl font-light text-center my-3 md:mr-auto"
+						>
+							Your activity
+						</h1>
 					</section>
 				</section>
 				<section class="bg-white pt-2">
-					<h1 class="text-4xl font-light text-center my-3">Your activity</h1>
 					<ul>
 						<li
 							class="flex gap-4 border-y border-gray border-solid section py-4"
@@ -242,12 +248,14 @@
 							</p>
 						</li>
 					</ul>
-					<button
-						type="button"
-						class="bg-gradient-to-bl from-orange to-yellow text-white rounded-md shadow-md w-36 text-lg font-medium px-1 pb-2 pt-1 ml-9 my-6"
-					>
-						Load more
-					</button>
+					<div class="section">
+						<button
+							type="button"
+							class="bg-gradient-to-bl from-orange to-yellow text-white rounded-md shadow-md w-36 text-lg font-medium px-1 pb-2 pt-1 ml-9 my-6 md:mx-0"
+						>
+							Load more
+						</button>
+					</div>
 				</section>
 			</main>
 		</div>
