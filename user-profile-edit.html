@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EP - HTML Components</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="main">
+				<section>
+					<div
+						class="section bg-gradient-to-bl from-cyan to-purple pb-20 md:pb-0 md:bg-none"
+					>
+						<!-- Section Slider -->
+						<div class="flex gap-2 overflow-hidden py-1">
+							<a
+								href="user-profile.html"
+								type="button"
+								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+							>
+								Overview
+							</a>
+							<a
+								href="user-profile-achievements.html"
+								type="button"
+								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+							>
+								Achievements
+							</a>
+							<a
+								href="user-profile-activity.html"
+								type="button"
+								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+							>
+								Activity
+							</a>
+							<a
+								href="user-profile-edit.html"
+								type="button"
+								class="rounded-md bg-black text-white shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+							>
+								Edit profile
+							</a>
+							<a
+								href="user-profile-purchases.html"
+								type="button"
+								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+							>
+								Purchases
+							</a>
+						</div>
+					</div>
+					<img
+						src="./assets/profile.jpg"
+						alt="User image"
+						class="w-24 h-24 rounded-md shadow-sm -mt-14 mx-auto md:hidden"
+					/>
+				</section>
+				<section class="section bg-gradient-to-b from-lightGray to-white">
+					<h1
+						class="text-4xl md:text-5xl font-light text-center md:text-left mt-6 md:mb-6"
+					>
+						Update your profile
+					</h1>
+					<form class="flex flex-col">
+						<div
+							class="grid grid-flow-row xl:grid-cols-[18rem_18rem_18rem] md:grid-cols-2 md:justify-between gap-6 lg:gap-y-16 py-4"
+						>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="firstname"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Fornavn</label
+								>
+								<input
+									type="text"
+									id="firstname"
+									name="firstname"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="efternavn"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Efternavn</label
+								>
+								<input
+									type="text"
+									id="efternavn"
+									name="efternavn"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="address"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Address</label
+								>
+								<input
+									type="text"
+									id="address"
+									name="address"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="zipcode"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Zip Code</label
+								>
+								<input
+									type="text"
+									id="zipcode"
+									name="zipcode"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="city"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>City</label
+								>
+								<input
+									type="text"
+									id="city"
+									name="city"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="phone"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Phone</label
+								>
+								<input
+									type="text"
+									id="phone"
+									name="phone"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+						</div>
+						<button
+							type="submit"
+							class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white pb-2 pt-1 text-lg rounded-md w-24 mx-auto md:mx-0"
+						>
+							Save
+						</button>
+					</form>
+				</section>
+				<section class="section">
+					<div class="md:flex md:justify-between md:items-center md:gap-8">
+						<div class="text-center md:text-left md:max-w-xs lg:max-w-md">
+							<h2 class="text-xl font-bold">Change Your Username</h2>
+							<p class="text-base font-light px-10 md:px-0">
+								Your username needs to be less than 16 characters long and it
+								can be changed only once.
+							</p>
+						</div>
+						<form class="flex flex-col gap-6 pb-4 pt-8">
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="new-username"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>New username</label
+								>
+								<input
+									type="text"
+									id="new-username"
+									name="new-username"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<button
+								type="submit"
+								class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white pb-2 pt-1 text-lg rounded-md w-24 mx-auto md:mx-0"
+							>
+								Save
+							</button>
+						</form>
+					</div>
+				</section>
+				<section class="section bg-white">
+					<div class="md:flex md:justify-between md:items-center md:gap-8">
+						<div class="text-center md:text-left md:max-w-xs lg:max-w-md">
+							<h2 class="text-xl font-bold">Change Your Password</h2>
+							<p class="text-base font-light px-10 md:px-0">
+								Your password needs to be at least 6 characters long.
+							</p>
+						</div>
+						<form class="flex flex-col gap-6 pb-4 pt-8">
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="current-password"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Current Password</label
+								>
+								<input
+									type="text"
+									id="current-password"
+									name="current-password"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="new-password"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>New password</label
+								>
+								<input
+									type="text"
+									id="new-password"
+									name="new-password"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="con-new-password"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Confirm new password</label
+								>
+								<input
+									type="text"
+									id="con-new-password"
+									name="con-new-password"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<button
+								type="submit"
+								class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white pb-2 pt-1 text-lg rounded-md w-24 mx-auto md:mx-0"
+							>
+								Save
+							</button>
+						</form>
+					</div>
+				</section>
+				<section class="section">
+					<div class="md:flex md:justify-between md:items-center md:gap-8">
+						<div class="text-center md:text-left md:max-w-xs lg:max-w-md">
+							<h2 class="text-xl font-bold">Change Your Email</h2>
+							<p class="text-base font-light px-10 md:px-0">
+								Your current email is test@gmail.com
+							</p>
+						</div>
+						<form class="flex flex-col gap-6 pb-4 pt-8">
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="new-email"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>New email</label
+								>
+								<input
+									type="text"
+									id="new-email"
+									name="new-email"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<div class="flex flex-col px-16 md:px-0 xl:w-72">
+								<label
+									for="password"
+									class="uppercase text-xs font-bold text-mediumGray tracking-widest text-center md:text-left"
+									>Password</label
+								>
+								<input
+									type="text"
+									id="password"
+									name="password"
+									class="bg-transparent border-b border-solid border-b-black border-x-0 border-t-0 text-center md:text-left w-full"
+								/>
+							</div>
+							<button
+								type="submit"
+								class="bg-gradient-to-tr from-yellow to-orange shadow-md text-white pb-2 pt-1 text-lg rounded-md w-24 mx-auto md:mx-0"
+							>
+								Save
+							</button>
+						</form>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>

@@ -54,6 +54,9 @@
   .vignette {
     @apply relative after:bg-gradient-to-t after:from-black after:to-transparent after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:content-empty after:block;
   }
+  .achievement-overlay {
+    @apply relative after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:pointer-events-none after:content-empty after:bg-orange after:bg-opacity-20;
+  }
 }
 
 /* .fullscreen {
