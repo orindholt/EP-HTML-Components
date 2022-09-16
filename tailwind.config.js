@@ -39,6 +39,13 @@ module.exports = {
 			borderWidth: {
 				3: "3px",
 			},
+			screens: {
+				"2xl-max": { max: "1535px" },
+				"xl-max": { max: "1279px" },
+				"lg-max": { max: "1023px" },
+				"md-max": { max: "767px" },
+				"sm-max": { max: "639px" },
+			},
 			boxShadow: {
 				base: "0px 4px 20px rgb(0 0 0 / 8%)",
 			},

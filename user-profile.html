@@ -18,7 +18,7 @@
 			<main class="main">
 				<section>
 					<div
-						class="pl-page py-3 bg-gradient-to-bl from-cyan to-purple pb-20 md:bg-white md:bg-none md:pb-0"
+						class="section !pr-0 bg-gradient-to-bl from-cyan to-purple pb-20 md:bg-white md:bg-none md:pb-0"
 					>
 						<!-- Section Slider -->
 						<div class="flex gap-2 overflow-hidden py-1">
@@ -32,28 +32,28 @@
 							<a
 								href="user-profile-achievements.html"
 								type="button"
-								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
 							>
 								Achievements
 							</a>
 							<a
 								href="user-profile-activity.html"
 								type="button"
-								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
 							>
 								Activity
 							</a>
 							<a
 								href="user-profile-edit.html"
 								type="button"
-								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
 							>
 								Edit profile
 							</a>
 							<a
 								href="user-profile-purchases.html"
 								type="button"
-								class="rounded-md bg-white text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
+								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg md:text-2xl font-medium whitespace-nowrap"
 							>
 								Purchases
 							</a>
@@ -65,7 +65,9 @@
 						class="w-24 h-24 rounded-lg shadow-sm -mt-14 mx-auto md:hidden"
 					/>
 				</section>
-				<section class="section md:bg-white">
+				<section
+					class="section md-max:bg-gradient-to-b md-max:from-lightGray md-max:to-white bg-white flex flex-col gap-3 md:gap-6 lg:gap-10"
+				>
 					<div
 						class="md:bg-gradient-to-bl md:from-cyan md:to-purple md:rounded-xl md:p-6"
 					>
@@ -200,9 +202,10 @@
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="section bg-white">
-					<ul class="grid grid-flow-row md:grid-cols-3 gap-3 md:gap-10">
+
+					<ul
+						class="grid grid-flow-row md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6 lg:gap-10"
+					>
 						<li class="bg-black rounded-md w-full px-1 py-4 text-center">
 							<h3 class="text-orange font-bold text-lg !leading-none">
 								Biggest win
