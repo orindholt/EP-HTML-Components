@@ -63,7 +63,12 @@
   [data-id="slider-demo-item"] {
     @apply md-max:snap-center;
   }
-  
+  .splide {
+    @apply !visible;
+  }
+  .splide__list {
+    @apply md:gap-4;
+  }
 }
 
 @layer utilities {
@@ -77,6 +82,8 @@
     @apply px-[5%] md:px-[15%]
   }
 }
+
+
 
 /* .fullscreen {
   @apply fixed top-0 bottom-0 right-0 left-0 z-50 bg-black bg-opacity-50 backdrop-blur-sm px-2;

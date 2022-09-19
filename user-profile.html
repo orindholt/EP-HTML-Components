@@ -6,12 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>EP - HTML Components</title>
 		<link rel="stylesheet" href="./style.css" />
+		<!-- Splide Script (CDN) -->
 		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
+			src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"
+			defer
 		></script>
+		<!-- Splide CSS (CDN) -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide-core.min.css"
+		/>
+		<!-- Splide Mount Script -->
+		<script src="./js/swiper.js" defer></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -21,42 +27,51 @@
 						class="section !pr-0 bg-gradient-to-bl from-cyan to-purple pb-20 md:bg-white md:bg-none md:pb-0"
 					>
 						<!-- Section Slider -->
-						<div class="flex gap-2 py-1" data-id="slider-demo">
-							<a
-								href="user-profile.html"
-								class="rounded-md bg-black text-white shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
-								data-id="slider-demo-item"
-							>
-								Overview
-							</a>
-							<a
-								href="user-profile-achievements.html"
-								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
-								data-id="slider-demo-item"
-							>
-								Achievements
-							</a>
-							<a
-								href="user-profile-activity.html"
-								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
-								data-id="slider-demo-item"
-							>
-								Activity
-							</a>
-							<a
-								href="user-profile-edit.html"
-								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
-								data-id="slider-demo-item"
-							>
-								Edit profile
-							</a>
-							<a
-								href="user-profile-purchases.html"
-								class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
-								data-id="slider-demo-item"
-							>
-								Purchases
-							</a>
+						<div class="splide">
+							<nav class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<a
+											href="user-profile.html"
+											class="rounded-md bg-black text-white shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
+										>
+											Overview
+										</a>
+									</li>
+									<li class="splide__slide">
+										<a
+											href="user-profile-achievements.html"
+											class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
+										>
+											Achievements
+										</a>
+									</li>
+									<li class="splide__slide">
+										<a
+											href="user-profile-activity.html"
+											class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
+										>
+											Activity
+										</a>
+									</li>
+									<li class="splide__slide">
+										<a
+											href="user-profile-edit.html"
+											class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
+										>
+											Edit profile
+										</a>
+									</li>
+									<li class="splide__slide">
+										<a
+											href="user-profile-purchases.html"
+											class="rounded-md bg-white md:bg-lightGray text-black shadow-sm h-13 flex items-center px-4 pb-1 text-lg lg:text-2xl font-medium whitespace-nowrap"
+										>
+											Purchases
+										</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 					<img
