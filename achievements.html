@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EP - HTML Components</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="js/form-validation.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="main">
+				<section class="section">
+					<ul class="flex flex-col gap-4">
+						<li
+							class="bg-gradient-to-br from-teal to-purple rounded-lg p-3 max-w-[310px] w-full h-52 flex flex-col gap-2"
+						>
+							<div class="flex justify-between gap-10">
+								<h3 class="text-xl font-bold my-auto leading-none">
+									Add Email
+								</h3>
+								<div class="rounded-[4px] overflow-hidden w-24 h-14">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 204 127"
+									>
+										<defs>
+											<clipPath id="c">
+												<path
+													data-name="Rectangle 110"
+													fill="none"
+													d="M0 0h203.969v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="d">
+												<path
+													data-name="Rectangle 109"
+													fill="none"
+													d="M0 0h203.97v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="e">
+												<path
+													data-name="Path 347"
+													d="M27.3 36.625a2.093 2.093 0 0 0-2.184 2.039 2.115 2.115 0 0 0 2.21 2.124h28.722a5.508 5.508 0 0 0 .729-.021 2.076 2.076 0 0 0-.028-4.136 9.045 9.045 0 0 0-.936-.012q-6.971-.007-13.945 0H29.902c-.542 0-1.084-.009-1.626-.009-.325 0-.653 0-.978.014"
+													transform="translate(-25.113 -36.611)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="f">
+												<path
+													data-name="Path 348"
+													d="M26.476 25.874a2.12 2.12 0 0 0-2.376 2.058c-.014 1.264.941 2.1 2.436 2.106 1.91.009 3.817 0 5.727 0 1.944 0 3.889.014 5.828 0a2.144 2.144 0 0 0 2.383-2.06 2.122 2.122 0 0 0-2.336-2.1q-2.917-.01-5.828-.009t-5.831.009"
+													transform="translate(-24.098 -25.865)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="h">
+												<path
+													data-name="Path 349"
+													d="M30.119 30.841A2.1 2.1 0 1 0 30.14 35c1.838.016 3.672 0 5.508 0 1.875 0 3.743.016 5.616 0a2.094 2.094 0 1 0-.025-4.161q-2.778-.01-5.559-.009t-5.561.009"
+													transform="translate(-27.769 -30.832)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="j">
+												<path
+													data-name="Path 350"
+													d="M28.218 15.73a2.083 2.083 0 1 0 0 4.156c1.243.025 2.5 0 3.743 0 1.28 0 2.562.021 3.847 0a2.081 2.081 0 1 0 0-4.156q-1.809-.017-3.623-.016-1.982 0-3.965.016"
+													transform="translate(-25.995 -15.714)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="l">
+												<path
+													data-name="Path 351"
+													d="M25.655 15.722c-1.107 0-2.219-.021-3.321.007a2.079 2.079 0 1 0 0 4.152q3.218.045 6.437 0a2.079 2.079 0 1 0 0-4.152 45.705 45.705 0 0 0-1.282-.014c-.611 0-1.222.007-1.836.007"
+													transform="translate(-20.142 -15.715)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="b"><path d="M0 0h204v127H0z" /></clipPath>
+											<linearGradient
+												id="a"
+												x1="-2.569"
+												y1="1.9"
+												x2="-2.474"
+												y2="1.9"
+												gradientUnits="objectBoundingBox"
+											>
+												<stop offset="0" stop-color="#ff930f" />
+												<stop offset="1" stop-color="#ffd45b" />
+											</linearGradient>
+											<linearGradient
+												id="g"
+												x1="-4.207"
+												y1="4.727"
+												x2="-4.037"
+												y2="4.727"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="i"
+												x1="-4.956"
+												y1="4.087"
+												x2="-4.781"
+												y2="4.087"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="k"
+												x1="-5.601"
+												y1="7.875"
+												x2="-5.387"
+												y2="7.875"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="m"
+												x1="-4.634"
+												y1="8.465"
+												x2="-4.406"
+												y2="8.465"
+												xlink:href="#a"
+											/>
+										</defs>
+										<g
+											data-name="iPhone 13, 12 Pro Max – 2"
+											clip-path="url(#b)"
+										>
+											<path fill="#fff" d="M0 0h204v127H0z" />
+											<g data-name="Group 1840">
+												<g data-name="Group 1841">
+													<g data-name="Group 1826">
+														<g
+															data-name="Group 1825"
+															clip-path="url(#c)"
+															transform="translate(0 .144)"
+														>
+															<g data-name="Group 1824" opacity=".7">
+																<g data-name="Group 1823">
+																	<g data-name="Group 1822" clip-path="url(#d)">
+																		<path
+																			data-name="Path 346"
+																			d="M195.931 0H8.04A8.041 8.041 0 0 0 0 8.04v110.776a8.041 8.041 0 0 0 8.04 8.04h187.89a8.041 8.041 0 0 0 8.04-8.04V8.04A8.041 8.041 0 0 0 195.931 0"
+																			fill="#fff"
+																		/>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+													<g data-name="Group 1828">
+														<g
+															data-name="Group 1827"
+															clip-path="url(#e)"
+															transform="translate(57.922 84.586)"
+														>
+															<path
+																data-name="Rectangle 111"
+																transform="rotate(-51.159 1.614 3.433)"
+																fill="url(#a)"
+																d="M0 0h24.337v28.796H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1830">
+														<g
+															data-name="Group 1829"
+															clip-path="url(#f)"
+															transform="translate(55.581 59.801)"
+														>
+															<path
+																data-name="Rectangle 112"
+																transform="rotate(-51.159 1.624 3.42)"
+																fill="url(#g)"
+																d="M0 0h13.548v15.402H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1832">
+														<g
+															data-name="Group 1831"
+															clip-path="url(#h)"
+															transform="translate(64.048 71.257)"
+														>
+															<path
+																data-name="Rectangle 113"
+																transform="rotate(-51.17 1.625 3.415)"
+																fill="url(#i)"
+																d="M0 0h13.188v14.955H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1834">
+														<g
+															data-name="Group 1833"
+															clip-path="url(#j)"
+															transform="translate(59.957 36.388)"
+														>
+															<path
+																data-name="Rectangle 114"
+																transform="rotate(-51.17 1.632 3.42)"
+																fill="url(#k)"
+																d="M0 0h10.813v12.001H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1836">
+														<g
+															data-name="Group 1835"
+															clip-path="url(#l)"
+															transform="translate(46.456 36.39)"
+														>
+															<path
+																data-name="Rectangle 115"
+																transform="rotate(-51.17 1.61 3.447)"
+																fill="url(#m)"
+																d="M0 0h10.102v11.114H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1838">
+														<g
+															data-name="Group 1837"
+															clip-path="url(#c)"
+															fill="#1a2433"
+															transform="translate(0 .144)"
+														>
+															<path
+																data-name="Path 352"
+																d="M136.546 102.851a6.974 6.974 0 0 1-8.836.318 8.915 8.915 0 0 1-1.448-1.4q-19.835-23.65-39.644-47.324a7.074 7.074 0 0 1 .311-10 6.893 6.893 0 0 1 .614-.514l25.3-21.192.634-.533c.048.272.09.452.113.637q2.027 18.509 4.062 37.019a11.514 11.514 0 0 0 8.737 10.4q17.862 5.252 35.73 10.49c.159.044.314.1.6.189l-.526.441q-12.816 10.741-25.642 21.482"
+															/>
+															<path
+																data-name="Path 353"
+																d="M163.331 76.413c-5.393-1.534-10.764-3.146-16.15-4.721q-9.611-2.82-19.22-5.642a7.17 7.17 0 0 1-5.884-6.989q-2-18.253-3.995-36.5a6.5 6.5 0 0 1 3.45-6.9 6.737 6.737 0 0 1 7.66.524 8.857 8.857 0 0 1 1.539 1.524q9.857 11.746 19.7 23.505 9.922 11.843 19.84 23.688a7.186 7.186 0 0 1 1.836 5.6 6.821 6.821 0 0 1-8.776 5.916"
+															/>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</div>
+							<p class="text-sm">Fill in your email to verify it.</p>
+							<form
+								action="#"
+								class="flex flex-col justify-between h-full"
+								data-id="email-form"
+							>
+								<div class="relative">
+									<input
+										type="text"
+										name="email"
+										id="email"
+										data-id="input"
+										aria-invalid="false"
+										aria-required="true"
+										placeholder="mail@mail.com"
+										class="w-full rounded-md shadow-base px-2 pb-1 bg-gray border-3 border-solid border-gray"
+									/>
+									<p
+										style="display: none"
+										data-id="error"
+										class="absolute bg-red left-0 text-white rounded-md text-xs px-2 pb-2 pt-1 bottom-11 h-20 w-44 grid place-content-center animate-fadeInShort"
+									>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+										reprehenderit, cupiditate eaque consequuntur!
+									</p>
+								</div>
+								<div class="flex justify-between items-center mt-auto">
+									<p class="flex gap-1 items-center">
+										<span class="text-2xl font-bold leading-none -mt-1.5"
+											>5000</span
+										>
+										<svg
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12.53.53a12 12 0 1 0-.004 23.999 12 12 0 0 0 .003-24m10.74 12.327a10.91 10.91 0 0 1-10.336 10.412c-6.017.199-11.383-4.964-11.059-10.741a10.697 10.697 0 1 1 21.39-.491c.014.275.014.55 0 .825"
+												fill="#1A2433"
+											/>
+											<path
+												d="M15.58 10.342v2.279c1.178 0 1.88.213 2.428-.455a1.371 1.371 0 0 0-.011-1.31c-.462-.632-1.39-.521-2.421-.521"
+												fill="#1A2433"
+											/>
+											<path
+												d="M12.776 2.606A9.931 9.931 0 0 0 2.63 12.318v.224a9.902 9.902 0 1 0 10.143-9.936m-.64 14.714H5.67V8.723h6.319V10.4H7.561v1.545h4.105v1.721H7.609v1.994h4.527l-.004 1.66Zm8.084-5.57a2.62 2.62 0 0 1-2.452 2.571 22.37 22.37 0 0 1-2.29.022v2.96h-1.902V8.77a37.52 37.52 0 0 1 4.87.048c1.322.172 1.915 1.408 1.777 2.932"
+												fill="#1A2433"
+											/>
+										</svg>
+									</p>
+									<button
+										type="submit"
+										class="bg-gradient-to-tr from-yellow to-orange text-2xl text-white font-medium h-12 w-32 pb-2 rounded-md shadow-base"
+									>
+										Register
+									</button>
+								</div>
+							</form>
+						</li>
+						<li
+							class="bg-gradient-to-br from-teal to-purple rounded-lg p-3 max-w-[310px] w-full h-52 flex flex-col gap-2"
+						>
+							<div class="flex justify-between gap-10">
+								<h3 class="text-xl font-bold my-auto leading-none">
+									Check Your Mail!
+								</h3>
+								<div class="rounded-[4px] overflow-hidden w-24 h-14">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 204 127"
+									>
+										<defs>
+											<clipPath id="c">
+												<path
+													data-name="Rectangle 110"
+													fill="none"
+													d="M0 0h203.969v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="d">
+												<path
+													data-name="Rectangle 109"
+													fill="none"
+													d="M0 0h203.97v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="e">
+												<path
+													data-name="Path 347"
+													d="M27.3 36.625a2.093 2.093 0 0 0-2.184 2.039 2.115 2.115 0 0 0 2.21 2.124h28.722a5.508 5.508 0 0 0 .729-.021 2.076 2.076 0 0 0-.028-4.136 9.045 9.045 0 0 0-.936-.012q-6.971-.007-13.945 0H29.902c-.542 0-1.084-.009-1.626-.009-.325 0-.653 0-.978.014"
+													transform="translate(-25.113 -36.611)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="f">
+												<path
+													data-name="Path 348"
+													d="M26.476 25.874a2.12 2.12 0 0 0-2.376 2.058c-.014 1.264.941 2.1 2.436 2.106 1.91.009 3.817 0 5.727 0 1.944 0 3.889.014 5.828 0a2.144 2.144 0 0 0 2.383-2.06 2.122 2.122 0 0 0-2.336-2.1q-2.917-.01-5.828-.009t-5.831.009"
+													transform="translate(-24.098 -25.865)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="h">
+												<path
+													data-name="Path 349"
+													d="M30.119 30.841A2.1 2.1 0 1 0 30.14 35c1.838.016 3.672 0 5.508 0 1.875 0 3.743.016 5.616 0a2.094 2.094 0 1 0-.025-4.161q-2.778-.01-5.559-.009t-5.561.009"
+													transform="translate(-27.769 -30.832)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="j">
+												<path
+													data-name="Path 350"
+													d="M28.218 15.73a2.083 2.083 0 1 0 0 4.156c1.243.025 2.5 0 3.743 0 1.28 0 2.562.021 3.847 0a2.081 2.081 0 1 0 0-4.156q-1.809-.017-3.623-.016-1.982 0-3.965.016"
+													transform="translate(-25.995 -15.714)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="l">
+												<path
+													data-name="Path 351"
+													d="M25.655 15.722c-1.107 0-2.219-.021-3.321.007a2.079 2.079 0 1 0 0 4.152q3.218.045 6.437 0a2.079 2.079 0 1 0 0-4.152 45.705 45.705 0 0 0-1.282-.014c-.611 0-1.222.007-1.836.007"
+													transform="translate(-20.142 -15.715)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="b"><path d="M0 0h204v127H0z" /></clipPath>
+											<linearGradient
+												id="a"
+												x1="-2.569"
+												y1="1.9"
+												x2="-2.474"
+												y2="1.9"
+												gradientUnits="objectBoundingBox"
+											>
+												<stop offset="0" stop-color="#ff930f" />
+												<stop offset="1" stop-color="#ffd45b" />
+											</linearGradient>
+											<linearGradient
+												id="g"
+												x1="-4.207"
+												y1="4.727"
+												x2="-4.037"
+												y2="4.727"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="i"
+												x1="-4.956"
+												y1="4.087"
+												x2="-4.781"
+												y2="4.087"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="k"
+												x1="-5.601"
+												y1="7.875"
+												x2="-5.387"
+												y2="7.875"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="m"
+												x1="-4.634"
+												y1="8.465"
+												x2="-4.406"
+												y2="8.465"
+												xlink:href="#a"
+											/>
+										</defs>
+										<g
+											data-name="iPhone 13, 12 Pro Max – 2"
+											clip-path="url(#b)"
+										>
+											<path fill="#fff" d="M0 0h204v127H0z" />
+											<g data-name="Group 1840">
+												<g data-name="Group 1841">
+													<g data-name="Group 1826">
+														<g
+															data-name="Group 1825"
+															clip-path="url(#c)"
+															transform="translate(0 .144)"
+														>
+															<g data-name="Group 1824" opacity=".7">
+																<g data-name="Group 1823">
+																	<g data-name="Group 1822" clip-path="url(#d)">
+																		<path
+																			data-name="Path 346"
+																			d="M195.931 0H8.04A8.041 8.041 0 0 0 0 8.04v110.776a8.041 8.041 0 0 0 8.04 8.04h187.89a8.041 8.041 0 0 0 8.04-8.04V8.04A8.041 8.041 0 0 0 195.931 0"
+																			fill="#fff"
+																		/>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+													<g data-name="Group 1828">
+														<g
+															data-name="Group 1827"
+															clip-path="url(#e)"
+															transform="translate(57.922 84.586)"
+														>
+															<path
+																data-name="Rectangle 111"
+																transform="rotate(-51.159 1.614 3.433)"
+																fill="url(#a)"
+																d="M0 0h24.337v28.796H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1830">
+														<g
+															data-name="Group 1829"
+															clip-path="url(#f)"
+															transform="translate(55.581 59.801)"
+														>
+															<path
+																data-name="Rectangle 112"
+																transform="rotate(-51.159 1.624 3.42)"
+																fill="url(#g)"
+																d="M0 0h13.548v15.402H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1832">
+														<g
+															data-name="Group 1831"
+															clip-path="url(#h)"
+															transform="translate(64.048 71.257)"
+														>
+															<path
+																data-name="Rectangle 113"
+																transform="rotate(-51.17 1.625 3.415)"
+																fill="url(#i)"
+																d="M0 0h13.188v14.955H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1834">
+														<g
+															data-name="Group 1833"
+															clip-path="url(#j)"
+															transform="translate(59.957 36.388)"
+														>
+															<path
+																data-name="Rectangle 114"
+																transform="rotate(-51.17 1.632 3.42)"
+																fill="url(#k)"
+																d="M0 0h10.813v12.001H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1836">
+														<g
+															data-name="Group 1835"
+															clip-path="url(#l)"
+															transform="translate(46.456 36.39)"
+														>
+															<path
+																data-name="Rectangle 115"
+																transform="rotate(-51.17 1.61 3.447)"
+																fill="url(#m)"
+																d="M0 0h10.102v11.114H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1838">
+														<g
+															data-name="Group 1837"
+															clip-path="url(#c)"
+															fill="#1a2433"
+															transform="translate(0 .144)"
+														>
+															<path
+																data-name="Path 352"
+																d="M136.546 102.851a6.974 6.974 0 0 1-8.836.318 8.915 8.915 0 0 1-1.448-1.4q-19.835-23.65-39.644-47.324a7.074 7.074 0 0 1 .311-10 6.893 6.893 0 0 1 .614-.514l25.3-21.192.634-.533c.048.272.09.452.113.637q2.027 18.509 4.062 37.019a11.514 11.514 0 0 0 8.737 10.4q17.862 5.252 35.73 10.49c.159.044.314.1.6.189l-.526.441q-12.816 10.741-25.642 21.482"
+															/>
+															<path
+																data-name="Path 353"
+																d="M163.331 76.413c-5.393-1.534-10.764-3.146-16.15-4.721q-9.611-2.82-19.22-5.642a7.17 7.17 0 0 1-5.884-6.989q-2-18.253-3.995-36.5a6.5 6.5 0 0 1 3.45-6.9 6.737 6.737 0 0 1 7.66.524 8.857 8.857 0 0 1 1.539 1.524q9.857 11.746 19.7 23.505 9.922 11.843 19.84 23.688a7.186 7.186 0 0 1 1.836 5.6 6.821 6.821 0 0 1-8.776 5.916"
+															/>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</div>
+							<p class="text-sm">We just sen you an email to email@email.com</p>
+							<form action="#" class="flex flex-col justify-between h-full">
+								<div class="flex justify-between items-center mt-auto">
+									<p class="flex gap-1 items-center">
+										<span class="text-2xl font-bold leading-none -mt-1.5"
+											>5000</span
+										>
+										<svg
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12.53.53a12 12 0 1 0-.004 23.999 12 12 0 0 0 .003-24m10.74 12.327a10.91 10.91 0 0 1-10.336 10.412c-6.017.199-11.383-4.964-11.059-10.741a10.697 10.697 0 1 1 21.39-.491c.014.275.014.55 0 .825"
+												fill="#1A2433"
+											/>
+											<path
+												d="M15.58 10.342v2.279c1.178 0 1.88.213 2.428-.455a1.371 1.371 0 0 0-.011-1.31c-.462-.632-1.39-.521-2.421-.521"
+												fill="#1A2433"
+											/>
+											<path
+												d="M12.776 2.606A9.931 9.931 0 0 0 2.63 12.318v.224a9.902 9.902 0 1 0 10.143-9.936m-.64 14.714H5.67V8.723h6.319V10.4H7.561v1.545h4.105v1.721H7.609v1.994h4.527l-.004 1.66Zm8.084-5.57a2.62 2.62 0 0 1-2.452 2.571 22.37 22.37 0 0 1-2.29.022v2.96h-1.902V8.77a37.52 37.52 0 0 1 4.87.048c1.322.172 1.915 1.408 1.777 2.932"
+												fill="#1A2433"
+											/>
+										</svg>
+									</p>
+									<button
+										type="submit"
+										class="bg-mediumGray text-2xl text-white font-medium h-12 w-32 pb-2 rounded-md shadow-base"
+									>
+										In process
+									</button>
+								</div>
+							</form>
+						</li>
+						<li
+							class="bg-gradient-to-br from-teal to-purple rounded-lg p-3 max-w-[310px] w-full h-52 flex flex-col gap-2"
+						>
+							<div class="flex justify-between gap-10">
+								<h3 class="text-xl font-bold my-auto leading-none">
+									Email Confirmed!
+								</h3>
+								<div class="rounded-[4px] overflow-hidden w-24 h-14">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 204 127"
+									>
+										<defs>
+											<clipPath id="c">
+												<path
+													data-name="Rectangle 110"
+													fill="none"
+													d="M0 0h203.969v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="d">
+												<path
+													data-name="Rectangle 109"
+													fill="none"
+													d="M0 0h203.97v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="e">
+												<path
+													data-name="Path 347"
+													d="M27.3 36.625a2.093 2.093 0 0 0-2.184 2.039 2.115 2.115 0 0 0 2.21 2.124h28.722a5.508 5.508 0 0 0 .729-.021 2.076 2.076 0 0 0-.028-4.136 9.045 9.045 0 0 0-.936-.012q-6.971-.007-13.945 0H29.902c-.542 0-1.084-.009-1.626-.009-.325 0-.653 0-.978.014"
+													transform="translate(-25.113 -36.611)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="f">
+												<path
+													data-name="Path 348"
+													d="M26.476 25.874a2.12 2.12 0 0 0-2.376 2.058c-.014 1.264.941 2.1 2.436 2.106 1.91.009 3.817 0 5.727 0 1.944 0 3.889.014 5.828 0a2.144 2.144 0 0 0 2.383-2.06 2.122 2.122 0 0 0-2.336-2.1q-2.917-.01-5.828-.009t-5.831.009"
+													transform="translate(-24.098 -25.865)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="h">
+												<path
+													data-name="Path 349"
+													d="M30.119 30.841A2.1 2.1 0 1 0 30.14 35c1.838.016 3.672 0 5.508 0 1.875 0 3.743.016 5.616 0a2.094 2.094 0 1 0-.025-4.161q-2.778-.01-5.559-.009t-5.561.009"
+													transform="translate(-27.769 -30.832)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="j">
+												<path
+													data-name="Path 350"
+													d="M28.218 15.73a2.083 2.083 0 1 0 0 4.156c1.243.025 2.5 0 3.743 0 1.28 0 2.562.021 3.847 0a2.081 2.081 0 1 0 0-4.156q-1.809-.017-3.623-.016-1.982 0-3.965.016"
+													transform="translate(-25.995 -15.714)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="l">
+												<path
+													data-name="Path 351"
+													d="M25.655 15.722c-1.107 0-2.219-.021-3.321.007a2.079 2.079 0 1 0 0 4.152q3.218.045 6.437 0a2.079 2.079 0 1 0 0-4.152 45.705 45.705 0 0 0-1.282-.014c-.611 0-1.222.007-1.836.007"
+													transform="translate(-20.142 -15.715)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="b"><path d="M0 0h204v127H0z" /></clipPath>
+											<linearGradient
+												id="a"
+												x1="-2.569"
+												y1="1.9"
+												x2="-2.474"
+												y2="1.9"
+												gradientUnits="objectBoundingBox"
+											>
+												<stop offset="0" stop-color="#ff930f" />
+												<stop offset="1" stop-color="#ffd45b" />
+											</linearGradient>
+											<linearGradient
+												id="g"
+												x1="-4.207"
+												y1="4.727"
+												x2="-4.037"
+												y2="4.727"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="i"
+												x1="-4.956"
+												y1="4.087"
+												x2="-4.781"
+												y2="4.087"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="k"
+												x1="-5.601"
+												y1="7.875"
+												x2="-5.387"
+												y2="7.875"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="m"
+												x1="-4.634"
+												y1="8.465"
+												x2="-4.406"
+												y2="8.465"
+												xlink:href="#a"
+											/>
+										</defs>
+										<g
+											data-name="iPhone 13, 12 Pro Max – 2"
+											clip-path="url(#b)"
+										>
+											<path fill="#fff" d="M0 0h204v127H0z" />
+											<g data-name="Group 1840">
+												<g data-name="Group 1841">
+													<g data-name="Group 1826">
+														<g
+															data-name="Group 1825"
+															clip-path="url(#c)"
+															transform="translate(0 .144)"
+														>
+															<g data-name="Group 1824" opacity=".7">
+																<g data-name="Group 1823">
+																	<g data-name="Group 1822" clip-path="url(#d)">
+																		<path
+																			data-name="Path 346"
+																			d="M195.931 0H8.04A8.041 8.041 0 0 0 0 8.04v110.776a8.041 8.041 0 0 0 8.04 8.04h187.89a8.041 8.041 0 0 0 8.04-8.04V8.04A8.041 8.041 0 0 0 195.931 0"
+																			fill="#fff"
+																		/>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+													<g data-name="Group 1828">
+														<g
+															data-name="Group 1827"
+															clip-path="url(#e)"
+															transform="translate(57.922 84.586)"
+														>
+															<path
+																data-name="Rectangle 111"
+																transform="rotate(-51.159 1.614 3.433)"
+																fill="url(#a)"
+																d="M0 0h24.337v28.796H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1830">
+														<g
+															data-name="Group 1829"
+															clip-path="url(#f)"
+															transform="translate(55.581 59.801)"
+														>
+															<path
+																data-name="Rectangle 112"
+																transform="rotate(-51.159 1.624 3.42)"
+																fill="url(#g)"
+																d="M0 0h13.548v15.402H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1832">
+														<g
+															data-name="Group 1831"
+															clip-path="url(#h)"
+															transform="translate(64.048 71.257)"
+														>
+															<path
+																data-name="Rectangle 113"
+																transform="rotate(-51.17 1.625 3.415)"
+																fill="url(#i)"
+																d="M0 0h13.188v14.955H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1834">
+														<g
+															data-name="Group 1833"
+															clip-path="url(#j)"
+															transform="translate(59.957 36.388)"
+														>
+															<path
+																data-name="Rectangle 114"
+																transform="rotate(-51.17 1.632 3.42)"
+																fill="url(#k)"
+																d="M0 0h10.813v12.001H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1836">
+														<g
+															data-name="Group 1835"
+															clip-path="url(#l)"
+															transform="translate(46.456 36.39)"
+														>
+															<path
+																data-name="Rectangle 115"
+																transform="rotate(-51.17 1.61 3.447)"
+																fill="url(#m)"
+																d="M0 0h10.102v11.114H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1838">
+														<g
+															data-name="Group 1837"
+															clip-path="url(#c)"
+															fill="#1a2433"
+															transform="translate(0 .144)"
+														>
+															<path
+																data-name="Path 352"
+																d="M136.546 102.851a6.974 6.974 0 0 1-8.836.318 8.915 8.915 0 0 1-1.448-1.4q-19.835-23.65-39.644-47.324a7.074 7.074 0 0 1 .311-10 6.893 6.893 0 0 1 .614-.514l25.3-21.192.634-.533c.048.272.09.452.113.637q2.027 18.509 4.062 37.019a11.514 11.514 0 0 0 8.737 10.4q17.862 5.252 35.73 10.49c.159.044.314.1.6.189l-.526.441q-12.816 10.741-25.642 21.482"
+															/>
+															<path
+																data-name="Path 353"
+																d="M163.331 76.413c-5.393-1.534-10.764-3.146-16.15-4.721q-9.611-2.82-19.22-5.642a7.17 7.17 0 0 1-5.884-6.989q-2-18.253-3.995-36.5a6.5 6.5 0 0 1 3.45-6.9 6.737 6.737 0 0 1 7.66.524 8.857 8.857 0 0 1 1.539 1.524q9.857 11.746 19.7 23.505 9.922 11.843 19.84 23.688a7.186 7.186 0 0 1 1.836 5.6 6.821 6.821 0 0 1-8.776 5.916"
+															/>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</div>
+							<p class="text-sm">Enjoy your reward.</p>
+							<div class="flex flex-col justify-between h-full">
+								<div class="flex justify-between items-center mt-auto">
+									<p class="flex gap-1 items-center">
+										<span class="text-2xl font-bold leading-none -mt-1.5"
+											>5000</span
+										>
+										<svg
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12.53.53a12 12 0 1 0-.004 23.999 12 12 0 0 0 .003-24m10.74 12.327a10.91 10.91 0 0 1-10.336 10.412c-6.017.199-11.383-4.964-11.059-10.741a10.697 10.697 0 1 1 21.39-.491c.014.275.014.55 0 .825"
+												fill="#1A2433"
+											/>
+											<path
+												d="M15.58 10.342v2.279c1.178 0 1.88.213 2.428-.455a1.371 1.371 0 0 0-.011-1.31c-.462-.632-1.39-.521-2.421-.521"
+												fill="#1A2433"
+											/>
+											<path
+												d="M12.776 2.606A9.931 9.931 0 0 0 2.63 12.318v.224a9.902 9.902 0 1 0 10.143-9.936m-.64 14.714H5.67V8.723h6.319V10.4H7.561v1.545h4.105v1.721H7.609v1.994h4.527l-.004 1.66Zm8.084-5.57a2.62 2.62 0 0 1-2.452 2.571 22.37 22.37 0 0 1-2.29.022v2.96h-1.902V8.77a37.52 37.52 0 0 1 4.87.048c1.322.172 1.915 1.408 1.777 2.932"
+												fill="#1A2433"
+											/>
+										</svg>
+									</p>
+									<button
+										type="submit"
+										class="bg-gradient-to-tr from-yellow to-orange text-2xl text-white font-medium h-12 w-32 pb-2 rounded-md shadow-base"
+									>
+										Collect
+									</button>
+								</div>
+							</div>
+						</li>
+						<li
+							class="bg-gradient-to-br from-teal to-purple rounded-lg p-3 max-w-[310px] w-full h-52 flex flex-col gap-2"
+						>
+							<div class="flex justify-between gap-10">
+								<h3 class="text-xl font-bold my-auto leading-none">
+									You're All Done
+								</h3>
+								<div class="rounded-[4px] overflow-hidden w-24 h-14">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 204 127"
+									>
+										<defs>
+											<clipPath id="c">
+												<path
+													data-name="Rectangle 110"
+													fill="none"
+													d="M0 0h203.969v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="d">
+												<path
+													data-name="Rectangle 109"
+													fill="none"
+													d="M0 0h203.97v126.856H0z"
+												/>
+											</clipPath>
+											<clipPath id="e">
+												<path
+													data-name="Path 347"
+													d="M27.3 36.625a2.093 2.093 0 0 0-2.184 2.039 2.115 2.115 0 0 0 2.21 2.124h28.722a5.508 5.508 0 0 0 .729-.021 2.076 2.076 0 0 0-.028-4.136 9.045 9.045 0 0 0-.936-.012q-6.971-.007-13.945 0H29.902c-.542 0-1.084-.009-1.626-.009-.325 0-.653 0-.978.014"
+													transform="translate(-25.113 -36.611)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="f">
+												<path
+													data-name="Path 348"
+													d="M26.476 25.874a2.12 2.12 0 0 0-2.376 2.058c-.014 1.264.941 2.1 2.436 2.106 1.91.009 3.817 0 5.727 0 1.944 0 3.889.014 5.828 0a2.144 2.144 0 0 0 2.383-2.06 2.122 2.122 0 0 0-2.336-2.1q-2.917-.01-5.828-.009t-5.831.009"
+													transform="translate(-24.098 -25.865)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="h">
+												<path
+													data-name="Path 349"
+													d="M30.119 30.841A2.1 2.1 0 1 0 30.14 35c1.838.016 3.672 0 5.508 0 1.875 0 3.743.016 5.616 0a2.094 2.094 0 1 0-.025-4.161q-2.778-.01-5.559-.009t-5.561.009"
+													transform="translate(-27.769 -30.832)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="j">
+												<path
+													data-name="Path 350"
+													d="M28.218 15.73a2.083 2.083 0 1 0 0 4.156c1.243.025 2.5 0 3.743 0 1.28 0 2.562.021 3.847 0a2.081 2.081 0 1 0 0-4.156q-1.809-.017-3.623-.016-1.982 0-3.965.016"
+													transform="translate(-25.995 -15.714)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="l">
+												<path
+													data-name="Path 351"
+													d="M25.655 15.722c-1.107 0-2.219-.021-3.321.007a2.079 2.079 0 1 0 0 4.152q3.218.045 6.437 0a2.079 2.079 0 1 0 0-4.152 45.705 45.705 0 0 0-1.282-.014c-.611 0-1.222.007-1.836.007"
+													transform="translate(-20.142 -15.715)"
+													fill="none"
+												/>
+											</clipPath>
+											<clipPath id="b"><path d="M0 0h204v127H0z" /></clipPath>
+											<linearGradient
+												id="a"
+												x1="-2.569"
+												y1="1.9"
+												x2="-2.474"
+												y2="1.9"
+												gradientUnits="objectBoundingBox"
+											>
+												<stop offset="0" stop-color="#ff930f" />
+												<stop offset="1" stop-color="#ffd45b" />
+											</linearGradient>
+											<linearGradient
+												id="g"
+												x1="-4.207"
+												y1="4.727"
+												x2="-4.037"
+												y2="4.727"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="i"
+												x1="-4.956"
+												y1="4.087"
+												x2="-4.781"
+												y2="4.087"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="k"
+												x1="-5.601"
+												y1="7.875"
+												x2="-5.387"
+												y2="7.875"
+												xlink:href="#a"
+											/>
+											<linearGradient
+												id="m"
+												x1="-4.634"
+												y1="8.465"
+												x2="-4.406"
+												y2="8.465"
+												xlink:href="#a"
+											/>
+										</defs>
+										<g
+											data-name="iPhone 13, 12 Pro Max – 2"
+											clip-path="url(#b)"
+										>
+											<path fill="#fff" d="M0 0h204v127H0z" />
+											<g data-name="Group 1840">
+												<g data-name="Group 1841">
+													<g data-name="Group 1826">
+														<g
+															data-name="Group 1825"
+															clip-path="url(#c)"
+															transform="translate(0 .144)"
+														>
+															<g data-name="Group 1824" opacity=".7">
+																<g data-name="Group 1823">
+																	<g data-name="Group 1822" clip-path="url(#d)">
+																		<path
+																			data-name="Path 346"
+																			d="M195.931 0H8.04A8.041 8.041 0 0 0 0 8.04v110.776a8.041 8.041 0 0 0 8.04 8.04h187.89a8.041 8.041 0 0 0 8.04-8.04V8.04A8.041 8.041 0 0 0 195.931 0"
+																			fill="#fff"
+																		/>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+													<g data-name="Group 1828">
+														<g
+															data-name="Group 1827"
+															clip-path="url(#e)"
+															transform="translate(57.922 84.586)"
+														>
+															<path
+																data-name="Rectangle 111"
+																transform="rotate(-51.159 1.614 3.433)"
+																fill="url(#a)"
+																d="M0 0h24.337v28.796H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1830">
+														<g
+															data-name="Group 1829"
+															clip-path="url(#f)"
+															transform="translate(55.581 59.801)"
+														>
+															<path
+																data-name="Rectangle 112"
+																transform="rotate(-51.159 1.624 3.42)"
+																fill="url(#g)"
+																d="M0 0h13.548v15.402H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1832">
+														<g
+															data-name="Group 1831"
+															clip-path="url(#h)"
+															transform="translate(64.048 71.257)"
+														>
+															<path
+																data-name="Rectangle 113"
+																transform="rotate(-51.17 1.625 3.415)"
+																fill="url(#i)"
+																d="M0 0h13.188v14.955H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1834">
+														<g
+															data-name="Group 1833"
+															clip-path="url(#j)"
+															transform="translate(59.957 36.388)"
+														>
+															<path
+																data-name="Rectangle 114"
+																transform="rotate(-51.17 1.632 3.42)"
+																fill="url(#k)"
+																d="M0 0h10.813v12.001H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1836">
+														<g
+															data-name="Group 1835"
+															clip-path="url(#l)"
+															transform="translate(46.456 36.39)"
+														>
+															<path
+																data-name="Rectangle 115"
+																transform="rotate(-51.17 1.61 3.447)"
+																fill="url(#m)"
+																d="M0 0h10.102v11.114H0z"
+															/>
+														</g>
+													</g>
+													<g data-name="Group 1838">
+														<g
+															data-name="Group 1837"
+															clip-path="url(#c)"
+															fill="#1a2433"
+															transform="translate(0 .144)"
+														>
+															<path
+																data-name="Path 352"
+																d="M136.546 102.851a6.974 6.974 0 0 1-8.836.318 8.915 8.915 0 0 1-1.448-1.4q-19.835-23.65-39.644-47.324a7.074 7.074 0 0 1 .311-10 6.893 6.893 0 0 1 .614-.514l25.3-21.192.634-.533c.048.272.09.452.113.637q2.027 18.509 4.062 37.019a11.514 11.514 0 0 0 8.737 10.4q17.862 5.252 35.73 10.49c.159.044.314.1.6.189l-.526.441q-12.816 10.741-25.642 21.482"
+															/>
+															<path
+																data-name="Path 353"
+																d="M163.331 76.413c-5.393-1.534-10.764-3.146-16.15-4.721q-9.611-2.82-19.22-5.642a7.17 7.17 0 0 1-5.884-6.989q-2-18.253-3.995-36.5a6.5 6.5 0 0 1 3.45-6.9 6.737 6.737 0 0 1 7.66.524 8.857 8.857 0 0 1 1.539 1.524q9.857 11.746 19.7 23.505 9.922 11.843 19.84 23.688a7.186 7.186 0 0 1 1.836 5.6 6.821 6.821 0 0 1-8.776 5.916"
+															/>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</div>
+							<p class="text-sm">
+								Thanks for confirming your email. Go explore our current
+								tournaments!
+							</p>
+							<p class="flex items-center gap-4 mt-auto">
+								<span class="text-sm text-orange drop-shadow-sm">claimed</span
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="70"
+									height="67"
+									viewBox="0 0 48.898 45.541"
+								>
+									<defs>
+										<linearGradient
+											id="orange"
+											x1=".943"
+											y1=".083"
+											x2="-.116"
+											y2=".725"
+											gradientUnits="objectBoundingBox"
+										>
+											<stop offset="0" stop-color="#FFA321" />
+											<stop offset="1" stop-color="#FFC64B" />
+										</linearGradient>
+										<clipPath id="clip-claim">
+											<path
+												data-name="Path 296"
+												d="M16.685 0a2.5 2.5 0 0 0-.271.016 3.681 3.681 0 0 0-1.464.6c-.456.274-.865.62-1.341.868a.767.767 0 0 1-.793-.008c-.475-.249-.883-.595-1.339-.87A3.317 3.317 0 0 0 9.739 0a2.741 2.741 0 0 0-.473.056 2.458 2.458 0 0 0-1.576 1.45c-.277.555-.442 1.152-.664 1.729a.823.823 0 0 1-.828.623c-.194 0-.392.033-.59.031a9.263 9.263 0 0 0-1.465.1A2.185 2.185 0 0 0 2.16 6.617a12.438 12.438 0 0 0 .37 1.55c.313 1.21.382 1.043-.611 1.834A9.507 9.507 0 0 0 .6 11.156a2.18 2.18 0 0 0 0 3.018 6.433 6.433 0 0 0 .707.678A13.838 13.838 0 0 1 2.6 15.917a.4.4 0 0 1 .116.369 6.662 6.662 0 0 1-.229 1 8.86 8.86 0 0 0-.346 1.476 2.134 2.134 0 0 0 1.574 2.469 5.076 5.076 0 0 0 1.165.186c.233.013.466.016.7.014a5.213 5.213 0 0 1 1 .1.318.318 0 0 1 .236.173 5.108 5.108 0 0 1 .412.941 6.129 6.129 0 0 0 .818 1.768 2.037 2.037 0 0 0 1.962.894 2.931 2.931 0 0 0 1.222-.453 24.32 24.32 0 0 0 1.312-.864 1 1 0 0 1 1.316-.02c.123.094.259.17.385.259a8.054 8.054 0 0 0 1.5.9 2.4 2.4 0 0 0 .914.2h.02a2.066 2.066 0 0 0 .5-.065 2.475 2.475 0 0 0 1.593-1.5c.256-.527.415-1.089.622-1.635a.842.842 0 0 1 .854-.661c.093 0 .187-.007.281-.014s.189-.016.283-.014a8.078 8.078 0 0 0 1.491-.107 2.174 2.174 0 0 0 1.934-1.612 2.94 2.94 0 0 0 0-1.278 13.528 13.528 0 0 0-.455-1.687.961.961 0 0 1 .413-1.189 9.432 9.432 0 0 0 1.592-1.347 2.32 2.32 0 0 0 .644-1.533 2.519 2.519 0 0 0-.917-1.861c-.385-.371-.836-.662-1.238-1.01-.723-.624-.649-.435-.444-1.394.11-.518.309-1.016.405-1.54a2.317 2.317 0 0 0-.6-2.283 2.158 2.158 0 0 0-.211-.172 3.217 3.217 0 0 0-1.489-.484c-.607-.079-1.22-.014-1.828-.1A.674.674 0 0 1 19.5 3.4c-.092-.24-.2-.472-.286-.717A6.349 6.349 0 0 0 18.4.918 2.044 2.044 0 0 0 16.7 0Z"
+												fill="url(#orange)"
+											/>
+										</clipPath>
+									</defs>
+									<g data-name="Group 1618">
+										<g
+											data-name="Group 1400"
+											transform="translate(11.336 9.466)"
+											clip-path="url(#clip-claim)"
+										>
+											<path
+												data-name="Rectangle 90"
+												transform="rotate(-22.945 4.851 24.896)"
+												fill="url(#orange)"
+												d="M0 0h34.441v33.781H0z"
+											/>
+										</g>
+										<g data-name="Group 1401">
+											<path
+												data-name="Path 295"
+												d="M29.605 19.448a.96.96 0 0 1-.288.746q-2.677 2.68-5.36 5.355a1.039 1.039 0 0 1-1.516-.048c-.646-.634-1.282-1.279-1.923-1.919-.229-.229-.463-.454-.686-.688a1.06 1.06 0 1 1 1.5-1.5q.875.852 1.726 1.728c.131.134.2.148.343 0q2.176-2.194 4.368-4.372a1.062 1.062 0 0 1 1.76.285.943.943 0 0 1 .079.409"
+												fill="#F6F6F7"
+											/>
+										</g>
+										<path
+											data-name="Path 299"
+											d="m46.186 19.62-.063.064c-.671-.628-1.467-1.125-2.184-1.725-.763-.641-1.057-.789-1.064-1.226a8.178 8.178 0 0 1 .25-1.246c.2-.9.549-1.748.716-2.635a6.252 6.252 0 0 0 .119-1.162 3.4 3.4 0 0 0-1.148-2.666 3.687 3.687 0 0 0-.364-.287 5.722 5.722 0 0 0-2.589-.813c-1.059-.134-2.141-.022-3.231-.167a1.282 1.282 0 0 1-1.171-.809c-.161-.407-.357-.8-.506-1.231a10.639 10.639 0 0 0-1.426-3.007 3.549 3.549 0 0 0-2.934-1.533 4.415 4.415 0 0 0-.486.023 6.535 6.535 0 0 0-2.55 1.019c-.8.464-1.521 1.057-2.374 1.489a1.584 1.584 0 0 1-.726.192 1.656 1.656 0 0 1-.761-.207c-.851-.433-1.574-1.026-2.37-1.492A5.893 5.893 0 0 0 18.3 1.179V1.09l.009.088a4.954 4.954 0 0 0-.821.093 4.2 4.2 0 0 0-2.725 2.437c-.485.939-.775 1.96-1.17 2.952a1.54 1.54 0 0 1-1.548 1.123c-.323 0-.662.053-1.01.053h-.176a16.718 16.718 0 0 0-2.431.175c-2.222.335-3.468 1.7-3.473 3.723a5.287 5.287 0 0 0 .044.672 20.651 20.651 0 0 0 .652 2.642 8.125 8.125 0 0 1 .367 1.6c-.007.579-.418.806-1.479 1.628a16.569 16.569 0 0 0-2.311 1.967 3.564 3.564 0 0 0 .007 5.05 11.138 11.138 0 0 0 1.239 1.151 24.209 24.209 0 0 1 2.293 1.83.769.769 0 0 1 .241.55.963.963 0 0 1-.013.156 11.209 11.209 0 0 1-.407 1.73 14.664 14.664 0 0 0-.607 2.513 4.514 4.514 0 0 0-.045.63 3.536 3.536 0 0 0 2.761 3.5 9.131 9.131 0 0 0 2.037.315c.351.019.7.025 1.055.025h.2a9.61 9.61 0 0 1 1.758.175.654.654 0 0 1 .479.339 8.687 8.687 0 0 1 .735 1.628 10.266 10.266 0 0 0 1.433 3 3.542 3.542 0 0 0 2.92 1.52 4.42 4.42 0 0 0 .462-.025 5.192 5.192 0 0 0 2.121-.763c.786-.468 1.56-.96 2.313-1.476a2.262 2.262 0 0 1 1.273-.455 1.924 1.924 0 0 1 1.161.423c.21.156.449.285.677.441a14.239 14.239 0 0 0 2.635 1.528 4.244 4.244 0 0 0 1.6.331 3.654 3.654 0 0 0 .884-.108 4.23 4.23 0 0 0 2.756-2.525c.447-.892.728-1.853 1.1-2.791a1.573 1.573 0 0 1 1.56-1.189h.063c.3 0 .615-.05.938-.05h.243a14.215 14.215 0 0 0 2.4-.182 3.72 3.72 0 0 0 3.344-2.695 3.621 3.621 0 0 0 .123-.966 6.709 6.709 0 0 0-.123-1.183 22.55 22.55 0 0 0-.8-2.878 2.232 2.232 0 0 1-.118-.681 1.748 1.748 0 0 1 .88-1.452 16.457 16.457 0 0 0 2.8-2.293 3.822 3.822 0 0 0 1.116-2.567v-.03a4.193 4.193 0 0 0-1.592-3.092l.063-.064.064-.064a4.366 4.366 0 0 1 1.643 3.226v.032a4 4 0 0 1-1.161 2.682 16.613 16.613 0 0 1-2.828 2.319 1.572 1.572 0 0 0-.806 1.309 2.06 2.06 0 0 0 .11.628 22.683 22.683 0 0 1 .807 2.9 6.872 6.872 0 0 1 .126 1.214 3.8 3.8 0 0 1-.129 1.011 3.9 3.9 0 0 1-3.489 2.824 14.407 14.407 0 0 1-2.432.185h-.249c-.3 0-.618.05-.938.05h-.063A1.388 1.388 0 0 0 35.456 39c-.364.928-.646 1.895-1.1 2.806a4.409 4.409 0 0 1-2.875 2.619 3.85 3.85 0 0 1-.929.114 4.433 4.433 0 0 1-1.668-.345 14.414 14.414 0 0 1-2.67-1.547c-.218-.149-.458-.279-.683-.445a1.737 1.737 0 0 0-1.049-.386 2.078 2.078 0 0 0-1.168.422 43.891 43.891 0 0 1-2.323 1.482 5.376 5.376 0 0 1-2.2.789 4.6 4.6 0 0 1-.482.026 3.73 3.73 0 0 1-3.067-1.592 10.423 10.423 0 0 1-1.459-3.052 8.521 8.521 0 0 0-.72-1.6.467.467 0 0 0-.354-.253 9.418 9.418 0 0 0-1.724-.172h-.2c-.354 0-.71-.005-1.066-.025a9.326 9.326 0 0 1-2.079-.322 3.717 3.717 0 0 1-2.892-3.671A4.68 4.68 0 0 1 4.8 33.2a14.842 14.842 0 0 1 .614-2.542 11.018 11.018 0 0 0 .4-1.7.789.789 0 0 0 .011-.128.593.593 0 0 0-.193-.431 24.374 24.374 0 0 0-2.277-1.815A11.318 11.318 0 0 1 2.1 25.413a3.736 3.736 0 0 1-.01-5.283 16.694 16.694 0 0 1 2.335-1.99c1.086-.835 1.417-1.037 1.41-1.49a8.18 8.18 0 0 0-.361-1.559 20.745 20.745 0 0 1-.657-2.664 5.481 5.481 0 0 1-.046-.693A3.816 3.816 0 0 1 8.4 7.836a16.926 16.926 0 0 1 2.458-.177h.176c.329 0 .667-.053 1.01-.053A1.355 1.355 0 0 0 13.422 6.6c.391-.981.682-2.008 1.177-2.967A4.384 4.384 0 0 1 17.442 1.1a5.059 5.059 0 0 1 .85-.1h.008a6.073 6.073 0 0 1 3.118 1.052c.812.476 1.533 1.066 2.361 1.487a1.468 1.468 0 0 0 .676.186 1.4 1.4 0 0 0 .641-.172c.829-.419 1.55-1.009 2.364-1.483a6.707 6.707 0 0 1 2.624-1.041A4.612 4.612 0 0 1 30.591 1a3.736 3.736 0 0 1 3.082 1.607 10.8 10.8 0 0 1 1.452 3.054c.144.413.339.809.5 1.224a1.1 1.1 0 0 0 1.026.7c1.06.142 2.142.031 3.229.166a5.9 5.9 0 0 1 2.672.844 3.9 3.9 0 0 1 .382.3 3.581 3.581 0 0 1 1.206 2.8 6.429 6.429 0 0 1-.122 1.194c-.173.909-.526 1.762-.717 2.64a8.4 8.4 0 0 0-.246 1.209c-.007.312.211.434 1 1.092.7.59 1.5 1.088 2.192 1.732Z"
+											fill="#FFB031"
+											stroke="#FFB031"
+											stroke-width="2"
+										/>
+									</g>
+								</svg>
+							</p>
+						</li>
+					</ul>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
