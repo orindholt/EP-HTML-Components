@@ -17,12 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (deviceType() === "mobile") {
 		document.querySelectorAll(".splide").forEach(el => {
 			new Splide(el, {
-				type: "loop",
-				perPage: deviceType() === "desktop" ? 2 : 1,
+				/* type: "loop",
+				perPage: deviceType() === "desktop" ? 2 : 1, */
 				arrows: false,
 				pagination: false,
 				gap: "1rem",
-				fixedWidth: deviceType() === "desktop" ? "44%" : "75%",
+				autoWidth: true,
+				/* fixedWidth: deviceType() === "desktop" ? "44%" : "75%", */
 			}).mount();
 		});
 	}

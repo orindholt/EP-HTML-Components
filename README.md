@@ -17,3 +17,4 @@ Components written in HTML, Tailwind, JS, with minimal demo functionality.
 [Demo - User Profile (Activity)](https://orindholt.github.io/EP-HTML-Components/user-profile-activity.html)<br/>
 [Demo - User Profile (Edit)](https://orindholt.github.io/EP-HTML-Components/user-profile-edit.html)<br/>
 [Demo - User Profile (Purchases)](https://orindholt.github.io/EP-HTML-Components/user-profile-purchases.html)<br/>
+[Demo - Achievements](https://orindholt.github.io/EP-HTML-Components/achievements.html)<br/>
