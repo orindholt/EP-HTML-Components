@@ -76,6 +76,8 @@ module.exports = {
 				13: "3.25rem",
 			},
 			screens: {
+				xs: "480px",
+				"xs-max": { max: "480px" },
 				"sm-max": { max: "640px" },
 				"md-max": { max: "768px" },
 				"lg-max": { max: "1024px" },

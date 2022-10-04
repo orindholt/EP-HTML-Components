@@ -14,6 +14,14 @@
 		></script>
 		<script src="./js/filter.js"></script>
 		<script src="./js/readmore.js"></script>
+		<!-- Splide (Swiper Lib) -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+		<!-- Splide CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css"
+		/>
+		<script src="./js/swiper.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -918,207 +926,438 @@
 						Go to all our tournaments
 					</button>
 				</section>
-				<section class="section">
+				<section class="pl-page md:pr-page py-page">
 					<h2
 						class="bg-gradient-to-r from-greenBright to-green text-gradient text-4xl font-bold leading-none"
 					>
 						Exclusive<br />Welcome Offers
 					</h2>
-					<ul
-						class="grid grid-flow-row md:grid-cols-2 xl:grid-cols-none xl:grid-flow-col gap-5 py-5"
-					>
-						<li
-							class="rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2"
-						>
-							<div class="w-full h-full flex flex-col justify-between">
-								<p
-									class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
+					<div class="splide py-5">
+						<div class="splide__track">
+							<ul
+								class="splide__list md:!grid md:grid-cols-2 xl:grid-cols-3 gap-5"
+							>
+								<li
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm"
 								>
-									Welcome offer
-								</p>
-								<div class="flex flex-col">
-									<h3 class="text-3xl text-greenBright font-bold">€300</h3>
-									<h4 class="font-medium text-xl">120% up to €300 + 120</h4>
-								</div>
-								<div class="flex gap-6">
-									<a href="#" class="underline text-darkGray">Read more</a>
-									<a href="#" class="underline text-darkGray">T&amp;C</a>
-								</div>
-							</div>
-							<div class="flex flex-col gap-2 min-w-[30%]">
-								<img
-									src="./assets/casino/casino_okeels.jpg"
-									alt="Okeels"
-									class="w-full h-12 object-cover rounded-md"
-								/>
-								<div class="flex flex-col h-full gap-2 w-full">
-									<button
-										class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5"
-										href="#"
-									>
-										Play now
-									</button>
-									<button
-										class="w-full text-white bg-gradient-to-r from-greenBright to-green rounded-md font-medium pb-1.5 pt-1 leading-4"
-										href="#"
-									>
-										Read full review
-									</button>
-								</div>
-							</div>
-						</li>
-						<li
-							class="rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2"
-						>
-							<div class="w-full h-full flex flex-col justify-between">
-								<p
-									class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
+									<div class="flex-2 h-full flex flex-col justify-between">
+										<p
+											class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
+										>
+											Welcome offer
+										</p>
+										<div class="flex flex-col">
+											<h3 class="text-3xl text-greenBright font-bold">€300</h3>
+											<h4 class="font-medium text-xl">
+												120% up to €300 + 120 Free spins
+											</h4>
+										</div>
+										<div class="flex gap-6">
+											<a href="#" class="underline text-darkGray">Read more</a>
+											<a href="#" class="underline text-darkGray">T&amp;C</a>
+										</div>
+									</div>
+									<div class="flex flex-col justify-center gap-2 flex-1">
+										<img
+											src="./assets/casino/casino_okeels.jpg"
+											alt="Okeels"
+											class="w-full h-12 object-cover rounded-md"
+										/>
+										<div class="flex flex-col gap-2">
+											<button
+												class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-xl h-10 w-full pb-1.5 px-1 whitespace-nowrap"
+												href="#"
+											>
+												Play now
+											</button>
+											<button
+												class="w-full text-white bg-gradient-to-r from-greenBright to-green rounded-md font-medium pb-1.5 pt-1 leading-4"
+												href="#"
+											>
+												Read full review
+											</button>
+										</div>
+									</div>
+								</li>
+								<li
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm"
 								>
-									Welcome offer
-								</p>
-								<div class="flex flex-col">
-									<h3 class="text-3xl text-greenBright font-bold">€300</h3>
-									<h4 class="font-medium text-xl">120% up to €300 + 120</h4>
-								</div>
-								<div class="flex gap-6">
-									<a href="#" class="underline text-darkGray">Read more</a>
-									<a href="#" class="underline text-darkGray">T&amp;C</a>
-								</div>
-							</div>
-							<div class="flex flex-col gap-2 min-w-[30%]">
-								<img
-									src="./assets/casino/casino_okeels.jpg"
-									alt="Okeels"
-									class="w-full h-12 object-cover rounded-md"
-								/>
-								<div class="flex flex-col h-full gap-2 w-full">
-									<button
-										class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5"
-										href="#"
-									>
-										Play now
-									</button>
-									<button
-										class="w-full text-white bg-gradient-to-r from-greenBright to-green rounded-md font-medium pb-1.5 pt-1 leading-4"
-										href="#"
-									>
-										Read full review
-									</button>
-								</div>
-							</div>
-						</li>
-					</ul>
+									<div class="flex-2 h-full flex flex-col justify-between">
+										<p
+											class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
+										>
+											Welcome offer
+										</p>
+										<div class="flex flex-col">
+											<h3 class="text-3xl text-greenBright font-bold">€300</h3>
+											<h4 class="font-medium text-xl">
+												120% up to €300 + 120 Free spins
+											</h4>
+										</div>
+										<div class="flex gap-6">
+											<a href="#" class="underline text-darkGray">Read more</a>
+											<a href="#" class="underline text-darkGray">T&amp;C</a>
+										</div>
+									</div>
+									<div class="flex flex-col justify-center gap-2 flex-1">
+										<img
+											src="./assets/casino/casino_okeels.jpg"
+											alt="Okeels"
+											class="w-full h-12 object-cover rounded-md"
+										/>
+										<div class="flex flex-col gap-2">
+											<button
+												class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-xl h-10 w-full pb-1.5 px-1 whitespace-nowrap"
+												href="#"
+											>
+												Play now
+											</button>
+										</div>
+									</div>
+								</li>
+								<li
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm"
+								>
+									<div class="flex-2 h-full flex flex-col justify-between">
+										<h3
+											class="text-3xl text-greenBright font-bold leading-none"
+										>
+											Jackie Jackpot Casino
+										</h3>
+										<div class="py-2">
+											<div class="flex gap-1 text-yellow">
+												<svg
+													id="Group_280"
+													data-name="Group 280"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													width="16"
+													height="16"
+													viewBox="0 0 13.632 13.632"
+													fill="currentColor"
+												>
+													<path
+														id="Path_68"
+														data-name="Path 68"
+														d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+														transform="translate(0 0)"
+													></path>
+													<path
+														id="Path_69"
+														data-name="Path 69"
+														d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+														transform="translate(-4.725 -3.077)"
+													></path>
+													<path
+														id="Path_70"
+														data-name="Path 70"
+														d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+														transform="translate(-0.66 -0.651)"
+													></path>
+												</svg>
+												<svg
+													id="Group_280"
+													data-name="Group 280"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													width="16"
+													height="16"
+													viewBox="0 0 13.632 13.632"
+													fill="currentColor"
+												>
+													<path
+														id="Path_68"
+														data-name="Path 68"
+														d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+														transform="translate(0 0)"
+													></path>
+													<path
+														id="Path_69"
+														data-name="Path 69"
+														d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+														transform="translate(-4.725 -3.077)"
+													></path>
+													<path
+														id="Path_70"
+														data-name="Path 70"
+														d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+														transform="translate(-0.66 -0.651)"
+													></path>
+												</svg>
+												<svg
+													id="Group_280"
+													data-name="Group 280"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													width="16"
+													height="16"
+													viewBox="0 0 13.632 13.632"
+												>
+													<g
+														id="Group_235"
+														data-name="Group 235"
+														transform="translate(0 0)"
+														fill="currentColor"
+													>
+														<path
+															id="Path_68"
+															data-name="Path 68"
+															d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+															transform="translate(0 0)"
+														></path>
+														<path
+															id="Path_69"
+															data-name="Path 69"
+															d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+															transform="translate(-4.725 -3.077)"
+														></path>
+														<path
+															id="Path_70"
+															data-name="Path 70"
+															d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+															transform="translate(-0.66 -0.651)"
+														></path>
+													</g>
+												</svg>
+												<svg
+													id="Group_280"
+													data-name="Group 280"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													width="16"
+													height="16"
+													viewBox="0 0 13.632 13.632"
+												>
+													<g
+														id="Group_235"
+														data-name="Group 235"
+														transform="translate(0 0)"
+														fill="currentColor"
+													>
+														<path
+															id="Path_68"
+															data-name="Path 68"
+															d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+															transform="translate(0 0)"
+														></path>
+														<path
+															id="Path_69"
+															data-name="Path 69"
+															d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+															transform="translate(-4.725 -3.077)"
+														></path>
+														<path
+															id="Path_70"
+															data-name="Path 70"
+															d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+															transform="translate(-0.66 -0.651)"
+														></path>
+													</g>
+												</svg>
+												<svg
+													id="Group_280"
+													data-name="Group 280"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													width="16"
+													height="16"
+													viewBox="0 0 13.632 13.632"
+												>
+													<g
+														id="Group_235"
+														data-name="Group 235"
+														transform="translate(0 0)"
+														fill="currentColor"
+													>
+														<path
+															id="Path_68"
+															data-name="Path 68"
+															d="M6.817,0a6.816,6.816,0,1,0,6.815,6.817A6.816,6.816,0,0,0,6.817,0m6.1,7a6.2,6.2,0,0,1-5.871,5.914,6.1,6.1,0,0,1-6.281-6.1,6.076,6.076,0,1,1,12.149-.279,4.378,4.378,0,0,1,0,.469"
+															transform="translate(0 0)"
+														></path>
+														<path
+															id="Path_69"
+															data-name="Path 69"
+															d="M13.275,8.65h0v1.3c.669,0,1.068.121,1.379-.258a.779.779,0,0,0-.006-.744c-.262-.359-.789-.3-1.375-.3"
+															transform="translate(-4.725 -3.077)"
+														></path>
+														<path
+															id="Path_70"
+															data-name="Path 70"
+															d="M7.617,1.831A5.641,5.641,0,0,0,1.853,7.348h0v.127A5.624,5.624,0,1,0,7.614,1.831m-.363,8.358H3.58V5.306H7.17v.952H4.654v.878H6.986v.978h-2.3V9.246H7.253Zm4.592-3.164a1.488,1.488,0,0,1-1.393,1.461,12.7,12.7,0,0,1-1.3.012V10.18H8.069V5.333a21.313,21.313,0,0,1,2.766.027c.751.1,1.088.8,1.01,1.665"
+															transform="translate(-0.66 -0.651)"
+														></path>
+													</g>
+												</svg>
+											</div>
+											<p class="text-yellow">
+												Excellent! <span class="text-greenBright">5/5</span>
+											</p>
+										</div>
+
+										<a href="#" class="underline text-darkGray">Read more</a>
+									</div>
+									<div class="flex flex-col justify-center gap-2 flex-1">
+										<img
+											src="./assets/casino/casino_okeels.jpg"
+											alt="Okeels"
+											class="w-full h-12 object-cover rounded-md"
+										/>
+										<div class="flex flex-col gap-2">
+											<button
+												class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-xl h-10 w-full pb-1.5 px-1 whitespace-nowrap"
+												href="#"
+											>
+												Play now
+											</button>
+										</div>
+									</div>
+								</li>
+								<li
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm"
+								>
+									<div class="flex-2 h-full flex flex-col justify-between">
+										<h3
+											class="text-3xl text-greenBright font-bold leading-none"
+										>
+											Jackie Jackpot Casino
+										</h3>
+
+										<a
+											href="casino-review.html#comment"
+											class="underline leading-none text-lg py-2"
+											>Be the first to review Jackie Jackpot Casino</a
+										>
+										<a href="#" class="underline text-darkGray">Read more</a>
+									</div>
+									<div class="flex flex-col justify-center gap-2 flex-1">
+										<img
+											src="./assets/casino/casino_okeels.jpg"
+											alt="Okeels"
+											class="w-full h-12 object-cover rounded-md"
+										/>
+										<div class="flex flex-col gap-2">
+											<button
+												class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-xl h-10 w-full pb-1.5 px-1 whitespace-nowrap"
+												href="#"
+											>
+												Play now
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<button
 						class="bg-gradient-to-r from-yellow to-orange h-10 pb-1 rounded-md shadow-sm text-white px-4"
 					>
 						See all offers
 					</button>
 				</section>
-				<section class="section">
-					<h2
-						class="bg-gradient-to-r from-greenBright to-green text-gradient text-4xl font-bold leading-none"
-					>
-						Exclusive<br />Welcome Offers
-					</h2>
-					<ul
-						class="grid grid-flow-row md:grid-cols-2 xl:grid-cols-none xl:grid-flow-col gap-5 py-5"
-					>
-						<li class="rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3">
-							<div class="flex justify-between gap-2">
-								<div class="flex flex-col w-full gap-2 flex-3">
-									<p
-										class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
-									>
-										Welcome offer
+				<section class="pl-page md:pr-page py-page">
+					<div class="splide py-5">
+						<div class="splide__track">
+							<ul
+								class="splide__list md:!grid md:grid-flow-row md:grid-cols-2 xl:grid-cols-none xl:grid-flow-col gap-5 py-5"
+							>
+								<li
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3"
+								>
+									<div class="flex justify-between gap-2">
+										<div class="flex flex-col w-full gap-2 flex-3">
+											<p
+												class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
+											>
+												Welcome offer
+											</p>
+											<div>
+												<h3
+													class="text-3xl text-greenBright font-bold leading-none"
+												>
+													€300
+												</h3>
+												<h4 class="font-medium text-xl leading-none">
+													120% up to €300 +
+												</h4>
+											</div>
+										</div>
+										<div class="flex flex-col gap-2 flex-2">
+											<img
+												src="./assets/casino/casino_okeels.jpg"
+												alt="Okeels"
+												class="w-full h-12 object-cover rounded-md"
+											/>
+											<div class="flex flex-col h-full gap-2 w-full">
+												<button
+													class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5 px-1"
+													href="#"
+												>
+													Play now
+												</button>
+											</div>
+										</div>
+									</div>
+									<p class="text-xs text-darkGray pt-3 max-w-sm">
+										New Players Only. Welcome, Offer of 200% up to £50. Wager
+										from real balance first. 50X wager the bonus. Contribution
+										varies per game. selected games only. Wager calculated on
+										bonus bets only. Bonus valid 30 days from receipt/ free
+										spins valid for 7 days from issue. Max conversion: 3x the
+										bonus amount. Excluded Skrill deposits. Withdrawal requests
+										void all active pending bonuses. Full Terms apply.
 									</p>
-									<div>
-										<h3
-											class="text-3xl text-greenBright font-bold leading-none"
-										>
-											€300
-										</h3>
-										<h4 class="font-medium text-xl leading-none">
-											120% up to €300 +
-										</h4>
+								</li>
+								<li
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3"
+								>
+									<div class="flex justify-between gap-2">
+										<div class="flex flex-col w-full gap-2 flex-3">
+											<p
+												class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
+											>
+												Welcome offer
+											</p>
+											<div>
+												<h3
+													class="text-3xl text-greenBright font-bold leading-none"
+												>
+													€300
+												</h3>
+												<h4 class="font-medium text-xl leading-none">
+													120% up to €300 +
+												</h4>
+											</div>
+										</div>
+										<div class="flex flex-col gap-2 flex-2">
+											<img
+												src="./assets/casino/casino_okeels.jpg"
+												alt="Okeels"
+												class="w-full h-12 object-cover rounded-md"
+											/>
+											<div class="flex flex-col h-full gap-2 w-full">
+												<button
+													class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5 px-1"
+													href="#"
+												>
+													Play now
+												</button>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="flex flex-col gap-2 flex-2">
-									<img
-										src="./assets/casino/casino_okeels.jpg"
-										alt="Okeels"
-										class="w-full h-12 object-cover rounded-md"
-									/>
-									<div class="flex flex-col h-full gap-2 w-full">
-										<button
-											class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5"
-											href="#"
-										>
-											Play now
-										</button>
-									</div>
-								</div>
-							</div>
-							<p class="text-xs text-darkGray pt-3">
-								New Players Only. Welcome, Offer of 200% up to £50. Wager from
-								real balance first. 50X wager the bonus. Contribution varies per
-								game. selected games only. Wager calculated on bonus bets only.
-								Bonus valid 30 days from receipt/ free spins valid for 7 days
-								from issue. Max conversion: 3x the bonus amount. Excluded Skrill
-								deposits. Withdrawal requests void all active pending bonuses.
-								Full Terms apply.
-							</p>
-						</li>
-						<li class="rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3">
-							<div class="flex justify-between gap-2">
-								<div class="flex flex-col w-full gap-2 flex-3">
-									<p
-										class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md"
-									>
-										Welcome offer
+									<p class="text-xs text-darkGray pt-3 max-w-sm">
+										New Players Only. Welcome, Offer of 200% up to £50. Wager
+										from real balance first. 50X wager the bonus. Contribution
+										varies per game. selected games only. Wager calculated on
+										bonus bets only. Bonus valid 30 days from receipt/ free
+										spins valid for 7 days from issue. Max conversion: 3x the
+										bonus amount. Excluded Skrill deposits. Withdrawal requests
+										void all active pending bonuses. Full Terms apply.
 									</p>
-									<div>
-										<h3
-											class="text-3xl text-greenBright font-bold leading-none"
-										>
-											€300
-										</h3>
-										<h4 class="font-medium text-xl leading-none">
-											120% up to €300 +
-										</h4>
-									</div>
-								</div>
-								<div class="flex flex-col gap-2 flex-2">
-									<img
-										src="./assets/casino/casino_okeels.jpg"
-										alt="Okeels"
-										class="w-full h-12 object-cover rounded-md"
-									/>
-									<div class="flex flex-col h-full gap-2 w-full">
-										<button
-											class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5"
-											href="#"
-										>
-											Play now
-										</button>
-									</div>
-								</div>
-							</div>
-							<p class="text-xs text-darkGray pt-3">
-								New Players Only. Welcome, Offer of 200% up to £50. Wager from
-								real balance first. 50X wager the bonus. Contribution varies per
-								game. selected games only. Wager calculated on bonus bets only.
-								Bonus valid 30 days from receipt/ free spins valid for 7 days
-								from issue. Max conversion: 3x the bonus amount. Excluded Skrill
-								deposits. Withdrawal requests void all active pending bonuses.
-								Full Terms apply.
-							</p>
-						</li>
-					</ul>
-					<button
-						class="bg-gradient-to-r from-yellow to-orange h-10 pb-1 rounded-md shadow-sm text-white px-4"
-					>
-						See all offers
-					</button>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 				<section class="section">
 					<h2

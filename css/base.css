@@ -90,6 +90,9 @@
   .px-page {
     @apply px-[5%] md:px-[15%]
   }
+  .py-page {
+    @apply py-3;
+  }
 }
 
 
