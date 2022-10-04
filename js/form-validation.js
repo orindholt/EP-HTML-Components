@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const emailFormElements = document.querySelectorAll("[data-id='email-form']");
+	const formElements = document.querySelectorAll("[data-validation='true']");
 
 	const emailRegEx =
 		/^([^.][a-z,0-9,!#$%&'*+\-/=?^_`{|}~.]{1,64})([^.,\s]@)([a-z\-]{1,255})(\.[a-z0-9]{2,})$/i;
+	const telRegEx = /(\+{1}\d{1,3})*(\d{8}$)|(^$)/;
 
 	// Demo client-side validation
-	emailFormElements.forEach(el => {
+	formElements.forEach(el => {
 		let formSubmitted = false;
 		const form = el;
 		const inputEl = form.querySelector("[data-id='input']");
@@ -13,9 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		const errorAttribute = inputEl.attributes["aria-invalid"];
 
-		function testInput(inputValue = inputEl.value) {
-			errorAttribute.value = emailRegEx.test(inputValue).toString();
-			isInvalid = errorAttribute.value == "true" ? true : false;
+		function testInput(input) {
+			const inputValue = input.value;
+			const inputType = input.type;
+
+			if (inputType === "email") {
+				isInvalid = emailRegEx.test(inputValue);
+			} else if (inputType === "tel") {
+				isInvalid = telRegEx.test(inputValue);
+			} else {
+				isInvalid = false;
+			}
+
+			isInvalid = emailRegEx.test(inputValue);
+			errorAttribute.value = isInvalid.toString();
 
 			if (isInvalid) {
 				errorEl.style.display = "none";
@@ -28,12 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		inputEl.addEventListener(
 			"input",
-			e => formSubmitted && testInput(e.target.value)
+			e => formSubmitted && testInput(e.target)
 		);
 
 		form.addEventListener("submit", e => {
 			e.preventDefault();
-			testInput();
+			testInput(inputEl);
 			formSubmitted = true;
 		});
 	});
