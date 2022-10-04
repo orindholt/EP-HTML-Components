@@ -21,7 +21,23 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css"
 		/>
-		<script src="./js/swiper.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				document.querySelectorAll(".splide").forEach(el => {
+					new Splide(el, {
+						arrows: false,
+						pagination: false,
+						padding: { right: "2.25rem" },
+						mediaQuery: "min",
+						breakpoints: {
+							768: {
+								destroy: true,
+							},
+						},
+					}).mount();
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -936,7 +952,7 @@
 						<div class="splide__track">
 							<ul class="splide__list md:!grid md:grid-cols-2 gap-5">
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm md:min-h-[10.625rem]"
 								>
 									<div class="flex-2 h-full flex flex-col justify-between">
 										<p
@@ -969,7 +985,7 @@
 										<img
 											src="./assets/casino/casino_okeels.jpg"
 											alt="Okeels"
-											class="w-full h-12 object-cover rounded-md"
+											class="w-full h-16 xl:h-20 object-cover rounded-md"
 										/>
 										<div class="flex flex-col gap-2">
 											<button
@@ -982,7 +998,7 @@
 									</div>
 								</li>
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm md:min-h-[10.625rem]"
 								>
 									<div class="flex-2 h-full flex flex-col justify-between">
 										<h3
@@ -1167,7 +1183,7 @@
 										<img
 											src="./assets/casino/casino_okeels.jpg"
 											alt="Okeels"
-											class="w-full h-12 object-cover rounded-md"
+											class="w-full h-16 xl:h-20 object-cover rounded-md"
 										/>
 										<div class="flex flex-col gap-2">
 											<button
@@ -1180,7 +1196,7 @@
 									</div>
 								</li>
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm md:min-h-[10.625rem]"
 								>
 									<div class="flex-2 h-full flex flex-col justify-between">
 										<h3
@@ -1200,7 +1216,7 @@
 										<img
 											src="./assets/casino/casino_okeels.jpg"
 											alt="Okeels"
-											class="w-full h-12 object-cover rounded-md"
+											class="w-full h-16 xl:h-20 object-cover rounded-md"
 										/>
 										<div class="flex flex-col gap-2">
 											<button
@@ -1252,7 +1268,7 @@
 											<img
 												src="./assets/casino/casino_okeels.jpg"
 												alt="Okeels"
-												class="w-full h-12 object-cover rounded-md"
+												class="w-full h-16 xl:h-20 object-cover rounded-md"
 											/>
 											<div class="flex flex-col h-full gap-2 w-full">
 												<button
@@ -1299,7 +1315,7 @@
 											<img
 												src="./assets/casino/casino_okeels.jpg"
 												alt="Okeels"
-												class="w-full h-12 object-cover rounded-md"
+												class="w-full h-16 xl:h-20 object-cover rounded-md"
 											/>
 											<div class="flex flex-col h-full gap-2 w-full">
 												<button
