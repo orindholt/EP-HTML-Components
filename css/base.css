@@ -90,6 +90,12 @@
   .py-page {
     @apply py-3;
   }
+  .pt-page {
+    @apply pt-3;
+  }
+  .pb-page {
+    @apply pb-3;
+  }
 }
 
 
