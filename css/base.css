@@ -72,11 +72,8 @@
   .error {
     @apply !border-red;
   }
-  .tab {
-    @apply text-xs border-2 border-solid border-teal rounded-base h-8 flex items-center gap-2 px-3 text-white;
-  }
   .tab.active {
-    @apply bg-gradient-to-bl from-teal to-purple !border-none;
+    @apply bg-gradient-to-bl from-teal to-purple !border-transparent bg-origin-border;
   }
 }
 

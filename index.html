@@ -27,7 +27,8 @@
 					new Splide(el, {
 						arrows: false,
 						pagination: false,
-						padding: { right: "2.25rem" },
+						padding: { left: "5%", right: "15%" },
+						focus: "center",
 						mediaQuery: "min",
 						breakpoints: {
 							768: {
@@ -942,9 +943,9 @@
 						Go to all our tournaments
 					</button>
 				</section>
-				<section class="pl-page md:pr-page py-page">
+				<section class="py-page md:px-page">
 					<h2
-						class="bg-gradient-to-r from-greenBright to-green text-gradient text-4xl font-bold leading-none"
+						class="bg-gradient-to-r from-greenBright to-green text-gradient text-4xl font-bold leading-none md-max:px-page"
 					>
 						Exclusive<br />Welcome Offers
 					</h2>
@@ -954,7 +955,7 @@
 								class="splide__list md:!grid md:grid-flow-row lg:grid-cols-2 gap-5"
 							>
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm md:min-h-[10.625rem]"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm lg:min-h-[10.625rem]"
 								>
 									<div class="flex-2 h-full flex flex-col">
 										<p
@@ -963,14 +964,18 @@
 											Welcome offer
 										</p>
 										<div class="flex flex-col my-auto">
-											<h3 class="text-3xl text-greenBright font-bold">€300</h3>
+											<h3
+												class="text-2xl lg:text-3xl text-greenBright font-bold !leading-none"
+											>
+												€300
+											</h3>
 											<h4
-												class="font-medium text-lg md-max:text-xl lg:text-xl !leading-none"
+												class="font-medium text-base xs:text-lg sm:text-xl !leading-none mt-1"
 											>
 												120% up to €300 + 120 Free spins
 											</h4>
 										</div>
-										<div class="w-1/2 flex justify-between gap-x-2 flex-wrap">
+										<div class="flex gap-x-2 md:gap-x-4 flex-wrap">
 											<a
 												href="#"
 												class="underline text-darkGray whitespace-nowrap"
@@ -1000,16 +1005,16 @@
 									</div>
 								</li>
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm md:min-h-[10.625rem]"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm lg:min-h-[10.625rem]"
 								>
 									<div class="flex-2 h-full flex flex-col">
 										<h3
-											class="text-2xl md-max:text-3xl lg:text-3xl text-greenBright font-bold !leading-none"
+											class="text-2xl lg:text-3xl text-greenBright font-bold !leading-none"
 										>
 											Jackie Jackpot Casino
 										</h3>
 										<div class="py-2 my-auto">
-											<div class="flex gap-1 text-yellow">
+											<div class="flex gap-0.5 sm:gap-1 text-yellow">
 												<svg
 													id="Group_280"
 													data-name="Group 280"
@@ -1198,11 +1203,11 @@
 									</div>
 								</li>
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm md:min-h-[10.625rem]"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 flex items-stretch justify-between gap-2 md-max:max-w-sm lg:min-h-[10.625rem]"
 								>
 									<div class="flex-2 h-full flex flex-col">
 										<h3
-											class="text-2xl md-max:text-3xl lg:text-3xl text-greenBright font-bold !leading-none"
+											class="text-2xl lg:text-3xl text-greenBright font-bold !leading-none"
 										>
 											Jackie Jackpot Casino
 										</h3>
@@ -1210,7 +1215,7 @@
 										<div class="my-auto">
 											<a
 												href="casino-review.html#comment"
-												class="underline !leading-none md-max:text-lg lg:text-lg py-2"
+												class="underline !leading-none text-base xs:text-lg sm:text-xl py-2"
 												>Be the first to review Jackie Jackpot Casino</a
 											>
 										</div>
@@ -1235,48 +1240,45 @@
 							</ul>
 						</div>
 					</div>
-					<button
-						class="bg-gradient-to-r from-yellow to-orange h-10 pb-1 rounded-md shadow-sm text-white px-4"
-					>
-						See all offers
-					</button>
 				</section>
-				<section class="pl-page md:pr-page py-page">
+				<section class="md:px-page py-page">
 					<div class="splide py-5">
 						<div class="splide__track">
 							<ul
 								class="splide__list md:!grid md:grid-flow-row lg:grid-cols-2 gap-5 py-5"
 							>
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 md-max:max-w-sm lg:min-h-[10.625rem]"
 								>
-									<div class="flex justify-between gap-2">
-										<div class="flex flex-col w-full gap-2 flex-3">
+									<div class="flex items-stretch justify-between gap-2">
+										<div class="flex-2 flex flex-col">
 											<p
 												class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md text-center"
 											>
 												Welcome offer
 											</p>
-											<div>
+											<div class="flex flex-col my-auto">
 												<h3
-													class="text-3xl text-greenBright font-bold leading-none"
+													class="text-2xl lg:text-3xl text-greenBright font-bold !leading-none"
 												>
 													€300
 												</h3>
-												<h4 class="font-medium text-xl leading-none">
-													120% up to €300 +
+												<h4
+													class="font-medium text-base xs:text-lg sm:text-xl !leading-none mt-1"
+												>
+													120% up to €300 + 120 Free spins
 												</h4>
 											</div>
 										</div>
-										<div class="flex flex-col gap-2 flex-2">
+										<div class="flex flex-col gap-2 flex-1 justify-between">
 											<img
 												src="./assets/casino/casino_okeels.jpg"
 												alt="Okeels"
 												class="w-full h-20 object-cover rounded-md min-w-[150px]"
 											/>
-											<div class="flex flex-col h-full gap-2 w-full">
+											<div class="flex flex-col gap-2">
 												<button
-													class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5 px-1"
+													class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-xl md-max:text-2xl lg:text-2xl h-10 w-full pb-1.5 px-1 whitespace-nowrap"
 													href="#"
 												>
 													Play now
@@ -1284,7 +1286,7 @@
 											</div>
 										</div>
 									</div>
-									<p class="text-xs text-darkGray pt-3 max-w-sm">
+									<p class="text-xs text-darkGray pt-3">
 										New Players Only. Welcome, Offer of 200% up to £50. Wager
 										from real balance first. 50X wager the bonus. Contribution
 										varies per game. selected games only. Wager calculated on
@@ -1295,35 +1297,37 @@
 									</p>
 								</li>
 								<li
-									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3"
+									class="splide__slide rounded-md bg-[#F4F7FC] border-2 border-greenBright p-3 md-max:max-w-sm lg:min-h-[10.625rem]"
 								>
-									<div class="flex justify-between gap-2">
-										<div class="flex flex-col w-full gap-2 flex-3">
+									<div class="flex items-stretch justify-between gap-2">
+										<div class="flex-2 flex flex-col">
 											<p
 												class="text-white bg-gradient-to-r from-greenBright to-green max-w-fit px-2 pb-0.5 rounded-md text-center"
 											>
 												Welcome offer
 											</p>
-											<div>
+											<div class="flex flex-col my-auto">
 												<h3
-													class="text-3xl text-greenBright font-bold leading-none"
+													class="text-2xl lg:text-3xl text-greenBright font-bold !leading-none"
 												>
 													€300
 												</h3>
-												<h4 class="font-medium text-xl leading-none">
-													120% up to €300 +
+												<h4
+													class="font-medium text-base xs:text-lg sm:text-xl !leading-none mt-1"
+												>
+													120% up to €300 + 120 Free spins
 												</h4>
 											</div>
 										</div>
-										<div class="flex flex-col gap-2 flex-2">
+										<div class="flex flex-col gap-2 flex-1 justify-between">
 											<img
 												src="./assets/casino/casino_okeels.jpg"
 												alt="Okeels"
 												class="w-full h-20 object-cover rounded-md min-w-[150px]"
 											/>
-											<div class="flex flex-col h-full gap-2 w-full">
+											<div class="flex flex-col gap-2">
 												<button
-													class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-2xl h-10 w-full pb-1.5 px-1"
+													class="bg-gradient-to-r from-yellow to-orange text-white rounded-md font-medium text-xl md-max:text-2xl lg:text-2xl h-10 w-full pb-1.5 px-1 whitespace-nowrap"
 													href="#"
 												>
 													Play now
@@ -1331,7 +1335,7 @@
 											</div>
 										</div>
 									</div>
-									<p class="text-xs text-darkGray pt-3 max-w-sm">
+									<p class="text-xs text-darkGray pt-3">
 										New Players Only. Welcome, Offer of 200% up to £50. Wager
 										from real balance first. 50X wager the bonus. Contribution
 										varies per game. selected games only. Wager calculated on
@@ -1343,6 +1347,13 @@
 								</li>
 							</ul>
 						</div>
+					</div>
+					<div class="md-max:px-page">
+						<button
+							class="bg-gradient-to-r from-yellow to-orange h-10 pb-1 rounded-md shadow-sm text-white px-4"
+						>
+							See all offers
+						</button>
 					</div>
 				</section>
 				<section class="section">
