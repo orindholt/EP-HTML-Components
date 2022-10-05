@@ -270,7 +270,9 @@
 											</svg>
 										</div>
 									</div>
-									<p class="text-sm">Fill in your email to verify it.</p>
+									<p class="text-xs xs:text-sm">
+										Fill in your email to verify it.
+									</p>
 									<form
 										action="#"
 										class="flex flex-col justify-between h-full"
@@ -571,7 +573,7 @@
 											</svg>
 										</div>
 									</div>
-									<p class="text-sm">
+									<p class="text-xs xs:text-sm">
 										We just sen you an email to email@email.com
 									</p>
 									<div class="flex flex-col justify-between h-full">
@@ -849,7 +851,7 @@
 											</svg>
 										</div>
 									</div>
-									<p class="text-sm">Enjoy your reward.</p>
+									<p class="text-xs xs:text-sm">Enjoy your reward.</p>
 									<div class="flex flex-col justify-between h-full">
 										<div class="flex justify-between items-center mt-auto">
 											<p class="flex gap-1 items-center">
@@ -1125,7 +1127,7 @@
 											</svg>
 										</div>
 									</div>
-									<p class="text-sm">
+									<p class="text-xs xs:text-sm">
 										Thanks for confirming your email. Go explore our current
 										tournaments!
 									</p>
@@ -1216,7 +1218,7 @@
 											/>
 										</div>
 									</div>
-									<p class="text-sm">
+									<p class="text-xs xs:text-sm">
 										Register and connect profile to claim EkstraPoints. THe more
 										you deposit, the higher the bonus
 									</p>
@@ -1274,7 +1276,7 @@
 											/>
 										</div>
 									</div>
-									<p class="text-sm">
+									<p class="text-xs xs:text-sm">
 										We just sen you an email to email@email.com
 									</p>
 									<div class="flex flex-col justify-between h-full">
@@ -1330,7 +1332,7 @@
 											/>
 										</div>
 									</div>
-									<p class="text-sm">
+									<p class="text-xs xs:text-sm">
 										Connecting complete!<br />Click to collect your reward.
 									</p>
 									<div class="flex flex-col justify-between h-full">
@@ -1386,7 +1388,7 @@
 											/>
 										</div>
 									</div>
-									<p class="text-sm">
+									<p class="text-xs xs:text-sm">
 										Connecting complete!<br />Click to collect your reward.
 									</p>
 									<p class="flex items-center gap-4 mt-auto">
@@ -1453,7 +1455,7 @@
 						</div>
 					</div>
 					<div
-						class="fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 px-6 grid place-content-center z-40"
+						class="fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 px-3 xs:px-6 grid place-content-center z-40"
 						data-id="tab-overlay"
 						data-visible="false"
 						style="display: none"
@@ -1488,10 +1490,10 @@
 								<div
 									class="w-full h-full bg-black bg-opacity-50 p-4 flex flex-col"
 								>
-									<div class="grid grid-cols-3 gap-2">
+									<div class="grid grid-flow-col xs:grid-cols-3 gap-2">
 										<button
 											type="button"
-											class="tab active"
+											class="tab text-xs border-2 border-solid border-teal rounded-base h-8 flex items-center gap-1 xs:gap-2 px-1.5 xs:px-3 text-white active"
 											data-id="tab-button"
 											data-type="email"
 										>
@@ -1515,7 +1517,7 @@
 										</button>
 										<button
 											type="button"
-											class="tab"
+											class="tab text-xs border-2 border-solid border-teal rounded-base h-8 flex items-center gap-1 xs:gap-2 px-1.5 xs:px-3 text-white"
 											data-id="tab-button"
 											data-type="username"
 										>
@@ -1539,7 +1541,7 @@
 										</button>
 										<button
 											type="button"
-											class="tab"
+											class="tab text-xs border-2 border-solid border-teal rounded-base h-8 flex items-center gap-1 xs:gap-2 px-1.5 xs:px-3 text-white"
 											data-id="tab-button"
 											data-type="phone"
 										>
@@ -1578,16 +1580,20 @@
 											Est reprehenderit, cupiditate eaque consequuntur!
 										</p>
 									</div>
-									<div class="flex items-center justify-between gap-2 my-auto">
+									<div
+										class="flex items-center justify-between gap-2 xs:gap-3 my-auto"
+									>
 										<div class="text-white">
-											<h3 class="text-xl font-bold">Already A Member?</h3>
-											<p class="text-sm">
+											<h3 class="text-base xs:text-xl font-bold">
+												Already A Member?
+											</h3>
+											<p class="text-xs xs:text-sm">
 												Connect by inserting one of the following information:
 											</p>
 										</div>
 										<button
 											type="submit"
-											class="bg-gradient-to-tr from-yellow to-orange text-2xl text-white font-medium h-12 sm:h-13 min-w-[7rem] sm:min-w-[8rem] pb-2 rounded-md shadow-base"
+											class="bg-gradient-to-tr from-yellow to-orange text-lg xs:text-2xl text-white font-medium h-12 xs:h-13 min-w-[6.25rem] xs:min-w-[7rem] sm:min-w-[8rem] pb-2 rounded-md shadow-base"
 										>
 											Connect
 										</button>
@@ -1595,17 +1601,19 @@
 								</div>
 							</form>
 							<div
-								class="bg-transparent rounded-b-md p-4 flex justify-between items-center gap-2"
+								class="bg-transparent rounded-b-md p-4 flex justify-between items-center gap-2 xs:gap-3"
 							>
 								<div>
-									<h3 class="text-xl font-bold">Not A Member Yet?</h3>
-									<p class="text-sm">
+									<h3 class="text-base xs:text-xl font-bold">
+										Not A Member Yet?
+									</h3>
+									<p class="text-xs xs:text-sm">
 										Register today by clicking the button below
 									</p>
 								</div>
 								<button
 									type="button"
-									class="bg-gradient-to-tr from-yellow to-orange text-2xl text-white font-medium h-12 sm:h-13 min-w-[7rem] sm:min-w-[8rem] pb-2 rounded-md shadow-base"
+									class="bg-gradient-to-tr from-yellow to-orange text-lg xs:text-2xl text-white font-medium h-12 xs:h-13 min-w-[6.25rem] xs:min-w-[7rem] sm:min-w-[8rem] pb-2 rounded-md shadow-base"
 								>
 									Register
 								</button>
