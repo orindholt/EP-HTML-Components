@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-	document.querySelectorAll("[data-slider='cards']").forEach(el => {
+	document.querySelectorAll("[data-slider='tab']").forEach(el => {
 		new Splide(el, {
 			arrows: false,
 			pagination: false,
-			padding: { left: "5%", right: "15%" },
+			padding: { left: "5%", right: "5%" },
+			autoWidth: true,
 			gap: "1rem",
-			focus: "center",
 			mediaQuery: "min",
 			breakpoints: {
 				768: {
